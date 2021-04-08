@@ -1,0 +1,2906 @@
+@prefix ns1: <http://opcfoundation.org/UA/#> .
+@prefix ns2: <http://opcfoundation.org/UA/IEC61850-7-3#> .
+@prefix ns3: <http://prediktor.com/UA-helpers/#> .
+@prefix ns4: <http://prediktor.com/RDS-like-typelib/#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://prediktor.com/sparql_testcase#s_12> a ns1:BaseObjectType,
+        ns4:GeneralSystemType,
+        ns4:SecondTopLevelSystemType,
+        ns4:TopSystemType ;
+    ns1:aggregates <http://prediktor.com/sparql_testcase#s_12.FunctionalAspectName>,
+        <http://prediktor.com/sparql_testcase#s_13> ;
+    ns1:browseName "System12" ;
+    ns1:browseNameNamespace <http://prediktor.com/sparql_testcase#> ;
+    ns1:description "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit" ;
+    ns1:displayName "System12" ;
+    ns1:hasChild <http://prediktor.com/sparql_testcase#s_12.FunctionalAspectName>,
+        <http://prediktor.com/sparql_testcase#s_13> ;
+    ns1:hasComponent <http://prediktor.com/sparql_testcase#s_13> ;
+    ns1:hasProperty <http://prediktor.com/sparql_testcase#s_12.FunctionalAspectName> ;
+    ns1:hierarchicalReferences <http://prediktor.com/sparql_testcase#s_12.FunctionalAspectName>,
+        <http://prediktor.com/sparql_testcase#s_13> ;
+    ns1:nodeClass "UAObject" ;
+    ns1:nodeId "ns=1;s=12" ;
+    ns1:references <http://prediktor.com/sparql_testcase#s_12.FunctionalAspectName>,
+        <http://prediktor.com/sparql_testcase#s_13> ;
+    ns4:functionalAspect <http://prediktor.com/sparql_testcase#s_13> .
+
+<http://prediktor.com/sparql_testcase#s_20> a ns1:BaseObjectType,
+        ns4:GeneralSystemType,
+        ns4:SecondTopLevelSystemType,
+        ns4:TopSystemType ;
+    ns1:aggregates <http://prediktor.com/sparql_testcase#s_20.FunctionalAspectName>,
+        <http://prediktor.com/sparql_testcase#s_20.PTUC>,
+        <http://prediktor.com/sparql_testcase#s_21> ;
+    ns1:browseName "System20" ;
+    ns1:browseNameNamespace <http://prediktor.com/sparql_testcase#> ;
+    ns1:description "Nisi ut aliquid ex ea commodi consequatur" ;
+    ns1:displayName "System20" ;
+    ns1:hasChild <http://prediktor.com/sparql_testcase#s_20.FunctionalAspectName>,
+        <http://prediktor.com/sparql_testcase#s_20.PTUC>,
+        <http://prediktor.com/sparql_testcase#s_21> ;
+    ns1:hasComponent <http://prediktor.com/sparql_testcase#s_20.PTUC>,
+        <http://prediktor.com/sparql_testcase#s_21> ;
+    ns1:hasProperty <http://prediktor.com/sparql_testcase#s_20.FunctionalAspectName> ;
+    ns1:hierarchicalReferences <http://prediktor.com/sparql_testcase#s_20.FunctionalAspectName>,
+        <http://prediktor.com/sparql_testcase#s_20.PTUC>,
+        <http://prediktor.com/sparql_testcase#s_21> ;
+    ns1:nodeClass "UAObject" ;
+    ns1:nodeId "ns=1;s=20" ;
+    ns1:references <http://prediktor.com/sparql_testcase#s_20.FunctionalAspectName>,
+        <http://prediktor.com/sparql_testcase#s_20.PTUC>,
+        <http://prediktor.com/sparql_testcase#s_21> ;
+    ns4:hasLogicalNode <http://prediktor.com/sparql_testcase#s_20.PTUC> ;
+    ns4:productAspect <http://prediktor.com/sparql_testcase#s_21> .
+
+<http://prediktor.com/sparql_testcase#s__MySiteName_> a ns1:BaseObjectType,
+        ns4:SiteType ;
+    ns1:aggregates <http://prediktor.com/sparql_testcase#s_1>,
+        <http://prediktor.com/sparql_testcase#s_16>,
+        <http://prediktor.com/sparql_testcase#s_8> ;
+    ns1:browseName "<MySiteName>" ;
+    ns1:browseNameNamespace <http://prediktor.com/sparql_testcase#> ;
+    ns1:description "" ;
+    ns1:displayName "<MySiteName>" ;
+    ns1:hasChild <http://prediktor.com/sparql_testcase#s_1>,
+        <http://prediktor.com/sparql_testcase#s_16>,
+        <http://prediktor.com/sparql_testcase#s_8> ;
+    ns1:hasComponent <http://prediktor.com/sparql_testcase#s_1>,
+        <http://prediktor.com/sparql_testcase#s_16>,
+        <http://prediktor.com/sparql_testcase#s_8> ;
+    ns1:hierarchicalReferences <http://prediktor.com/sparql_testcase#s_1>,
+        <http://prediktor.com/sparql_testcase#s_16>,
+        <http://prediktor.com/sparql_testcase#s_8> ;
+    ns1:nodeClass "UAObject" ;
+    ns1:nodeId "ns=1;s=<MySiteName>" ;
+    ns1:references <http://prediktor.com/sparql_testcase#s_1>,
+        <http://prediktor.com/sparql_testcase#s_16>,
+        <http://prediktor.com/sparql_testcase#s_8> ;
+    ns4:functionalAspect <http://prediktor.com/sparql_testcase#s_1>,
+        <http://prediktor.com/sparql_testcase#s_8> ;
+    ns4:productAspect <http://prediktor.com/sparql_testcase#s_16> .
+
+<http://prediktor.com/sparql_testcase#s_1.FunctionalAspectName_Value> ns3:isExternalValue false .
+
+<http://prediktor.com/sparql_testcase#s_10.FunctionalAspectName_Value> ns3:isExternalValue false .
+
+<http://prediktor.com/sparql_testcase#s_10.SVBR.Beh.q_Value> ns3:isExternalValue true .
+
+<http://prediktor.com/sparql_testcase#s_10.SVBR.Beh.stVal_Value> ns3:isExternalValue true .
+
+<http://prediktor.com/sparql_testcase#s_11.FunctionalAspectName_Value> ns3:isExternalValue false .
+
+<http://prediktor.com/sparql_testcase#s_11.PTUC.Beh.q_Value> ns3:isExternalValue true .
+
+<http://prediktor.com/sparql_testcase#s_11.PTUC.Beh.stVal_Value> ns3:isExternalValue true .
+
+<http://prediktor.com/sparql_testcase#s_11.PTUC.Op.general_Value> ns3:isExternalValue true .
+
+<http://prediktor.com/sparql_testcase#s_11.PTUC.Op.q_Value> ns3:isExternalValue true .
+
+<http://prediktor.com/sparql_testcase#s_11.PTUC.Str.dirGeneral_Value> ns3:isExternalValue true .
+
+<http://prediktor.com/sparql_testcase#s_11.PTUC.Str.general_Value> ns3:isExternalValue true .
+
+<http://prediktor.com/sparql_testcase#s_11.PTUC.Str.q_Value> ns3:isExternalValue true .
+
+<http://prediktor.com/sparql_testcase#s_12.FunctionalAspectName_Value> ns3:isExternalValue false .
+
+<http://prediktor.com/sparql_testcase#s_13.FunctionalAspectName_Value> ns3:isExternalValue false .
+
+<http://prediktor.com/sparql_testcase#s_13.SVBR.Beh.q_Value> ns3:isExternalValue true .
+
+<http://prediktor.com/sparql_testcase#s_13.SVBR.Beh.stVal_Value> ns3:isExternalValue true .
+
+<http://prediktor.com/sparql_testcase#s_14.FunctionalAspectName_Value> ns3:isExternalValue false .
+
+<http://prediktor.com/sparql_testcase#s_14.PTUC.Beh.q_Value> ns3:isExternalValue true .
+
+<http://prediktor.com/sparql_testcase#s_14.PTUC.Beh.stVal_Value> ns3:isExternalValue true .
+
+<http://prediktor.com/sparql_testcase#s_14.PTUC.Op.general_Value> ns3:isExternalValue true .
+
+<http://prediktor.com/sparql_testcase#s_14.PTUC.Op.q_Value> ns3:isExternalValue true .
+
+<http://prediktor.com/sparql_testcase#s_14.PTUC.Str.dirGeneral_Value> ns3:isExternalValue true .
+
+<http://prediktor.com/sparql_testcase#s_14.PTUC.Str.general_Value> ns3:isExternalValue true .
+
+<http://prediktor.com/sparql_testcase#s_14.PTUC.Str.q_Value> ns3:isExternalValue true .
+
+<http://prediktor.com/sparql_testcase#s_15.FunctionalAspectName_Value> ns3:isExternalValue false .
+
+<http://prediktor.com/sparql_testcase#s_16.FunctionalAspectName_Value> ns3:isExternalValue false .
+
+<http://prediktor.com/sparql_testcase#s_16.SVBR.Beh.q_Value> ns3:isExternalValue true .
+
+<http://prediktor.com/sparql_testcase#s_16.SVBR.Beh.stVal_Value> ns3:isExternalValue true .
+
+<http://prediktor.com/sparql_testcase#s_17.FunctionalAspectName_Value> ns3:isExternalValue false .
+
+<http://prediktor.com/sparql_testcase#s_18.FunctionalAspectName_Value> ns3:isExternalValue false .
+
+<http://prediktor.com/sparql_testcase#s_18.PTUC.Beh.q_Value> ns3:isExternalValue true .
+
+<http://prediktor.com/sparql_testcase#s_18.PTUC.Beh.stVal_Value> ns3:isExternalValue true .
+
+<http://prediktor.com/sparql_testcase#s_18.PTUC.Op.general_Value> ns3:isExternalValue true .
+
+<http://prediktor.com/sparql_testcase#s_18.PTUC.Op.q_Value> ns3:isExternalValue true .
+
+<http://prediktor.com/sparql_testcase#s_18.PTUC.Str.dirGeneral_Value> ns3:isExternalValue true .
+
+<http://prediktor.com/sparql_testcase#s_18.PTUC.Str.general_Value> ns3:isExternalValue true .
+
+<http://prediktor.com/sparql_testcase#s_18.PTUC.Str.q_Value> ns3:isExternalValue true .
+
+<http://prediktor.com/sparql_testcase#s_19.FunctionalAspectName_Value> ns3:isExternalValue false .
+
+<http://prediktor.com/sparql_testcase#s_19.SVBR.Beh.q_Value> ns3:isExternalValue true .
+
+<http://prediktor.com/sparql_testcase#s_19.SVBR.Beh.stVal_Value> ns3:isExternalValue true .
+
+<http://prediktor.com/sparql_testcase#s_2.FunctionalAspectName_Value> ns3:isExternalValue false .
+
+<http://prediktor.com/sparql_testcase#s_2.SVBR.Beh.q_Value> ns3:isExternalValue true .
+
+<http://prediktor.com/sparql_testcase#s_2.SVBR.Beh.stVal_Value> ns3:isExternalValue true .
+
+<http://prediktor.com/sparql_testcase#s_20.FunctionalAspectName_Value> ns3:isExternalValue false .
+
+<http://prediktor.com/sparql_testcase#s_20.PTUC.Beh.q_Value> ns3:isExternalValue true .
+
+<http://prediktor.com/sparql_testcase#s_20.PTUC.Beh.stVal_Value> ns3:isExternalValue true .
+
+<http://prediktor.com/sparql_testcase#s_20.PTUC.Op.general_Value> ns3:isExternalValue true .
+
+<http://prediktor.com/sparql_testcase#s_20.PTUC.Op.q_Value> ns3:isExternalValue true .
+
+<http://prediktor.com/sparql_testcase#s_20.PTUC.Str.dirGeneral_Value> ns3:isExternalValue true .
+
+<http://prediktor.com/sparql_testcase#s_20.PTUC.Str.general_Value> ns3:isExternalValue true .
+
+<http://prediktor.com/sparql_testcase#s_20.PTUC.Str.q_Value> ns3:isExternalValue true .
+
+<http://prediktor.com/sparql_testcase#s_21.FunctionalAspectName_Value> ns3:isExternalValue false .
+
+<http://prediktor.com/sparql_testcase#s_21.SVBR.Beh.q_Value> ns3:isExternalValue true .
+
+<http://prediktor.com/sparql_testcase#s_21.SVBR.Beh.stVal_Value> ns3:isExternalValue true .
+
+<http://prediktor.com/sparql_testcase#s_3.FunctionalAspectName_Value> ns3:isExternalValue false .
+
+<http://prediktor.com/sparql_testcase#s_3.PTUC.Beh.q_Value> ns3:isExternalValue true .
+
+<http://prediktor.com/sparql_testcase#s_3.PTUC.Beh.stVal_Value> ns3:isExternalValue true .
+
+<http://prediktor.com/sparql_testcase#s_3.PTUC.Op.general_Value> ns3:isExternalValue true .
+
+<http://prediktor.com/sparql_testcase#s_3.PTUC.Op.q_Value> ns3:isExternalValue true .
+
+<http://prediktor.com/sparql_testcase#s_3.PTUC.Str.dirGeneral_Value> ns3:isExternalValue true .
+
+<http://prediktor.com/sparql_testcase#s_3.PTUC.Str.general_Value> ns3:isExternalValue true .
+
+<http://prediktor.com/sparql_testcase#s_3.PTUC.Str.q_Value> ns3:isExternalValue true .
+
+<http://prediktor.com/sparql_testcase#s_4.FunctionalAspectName_Value> ns3:isExternalValue false .
+
+<http://prediktor.com/sparql_testcase#s_4.SVBR.Beh.q_Value> ns3:isExternalValue true .
+
+<http://prediktor.com/sparql_testcase#s_4.SVBR.Beh.stVal_Value> ns3:isExternalValue true .
+
+<http://prediktor.com/sparql_testcase#s_5.FunctionalAspectName_Value> ns3:isExternalValue false .
+
+<http://prediktor.com/sparql_testcase#s_5.PTUC.Beh.q_Value> ns3:isExternalValue true .
+
+<http://prediktor.com/sparql_testcase#s_5.PTUC.Beh.stVal_Value> ns3:isExternalValue true .
+
+<http://prediktor.com/sparql_testcase#s_5.PTUC.Op.general_Value> ns3:isExternalValue true .
+
+<http://prediktor.com/sparql_testcase#s_5.PTUC.Op.q_Value> ns3:isExternalValue true .
+
+<http://prediktor.com/sparql_testcase#s_5.PTUC.Str.dirGeneral_Value> ns3:isExternalValue true .
+
+<http://prediktor.com/sparql_testcase#s_5.PTUC.Str.general_Value> ns3:isExternalValue true .
+
+<http://prediktor.com/sparql_testcase#s_5.PTUC.Str.q_Value> ns3:isExternalValue true .
+
+<http://prediktor.com/sparql_testcase#s_6.FunctionalAspectName_Value> ns3:isExternalValue false .
+
+<http://prediktor.com/sparql_testcase#s_6.SVBR.Beh.q_Value> ns3:isExternalValue true .
+
+<http://prediktor.com/sparql_testcase#s_6.SVBR.Beh.stVal_Value> ns3:isExternalValue true .
+
+<http://prediktor.com/sparql_testcase#s_7.FunctionalAspectName_Value> ns3:isExternalValue false .
+
+<http://prediktor.com/sparql_testcase#s_7.PTUC.Beh.q_Value> ns3:isExternalValue true .
+
+<http://prediktor.com/sparql_testcase#s_7.PTUC.Beh.stVal_Value> ns3:isExternalValue true .
+
+<http://prediktor.com/sparql_testcase#s_7.PTUC.Op.general_Value> ns3:isExternalValue true .
+
+<http://prediktor.com/sparql_testcase#s_7.PTUC.Op.q_Value> ns3:isExternalValue true .
+
+<http://prediktor.com/sparql_testcase#s_7.PTUC.Str.dirGeneral_Value> ns3:isExternalValue true .
+
+<http://prediktor.com/sparql_testcase#s_7.PTUC.Str.general_Value> ns3:isExternalValue true .
+
+<http://prediktor.com/sparql_testcase#s_7.PTUC.Str.q_Value> ns3:isExternalValue true .
+
+<http://prediktor.com/sparql_testcase#s_8.FunctionalAspectName_Value> ns3:isExternalValue false .
+
+<http://prediktor.com/sparql_testcase#s_8.SVBR.Beh.q_Value> ns3:isExternalValue true .
+
+<http://prediktor.com/sparql_testcase#s_8.SVBR.Beh.stVal_Value> ns3:isExternalValue true .
+
+<http://prediktor.com/sparql_testcase#s_9.FunctionalAspectName_Value> ns3:isExternalValue false .
+
+<http://prediktor.com/sparql_testcase#s_9.PTUC.Beh.q_Value> ns3:isExternalValue true .
+
+<http://prediktor.com/sparql_testcase#s_9.PTUC.Beh.stVal_Value> ns3:isExternalValue true .
+
+<http://prediktor.com/sparql_testcase#s_9.PTUC.Op.general_Value> ns3:isExternalValue true .
+
+<http://prediktor.com/sparql_testcase#s_9.PTUC.Op.q_Value> ns3:isExternalValue true .
+
+<http://prediktor.com/sparql_testcase#s_9.PTUC.Str.dirGeneral_Value> ns3:isExternalValue true .
+
+<http://prediktor.com/sparql_testcase#s_9.PTUC.Str.general_Value> ns3:isExternalValue true .
+
+<http://prediktor.com/sparql_testcase#s_9.PTUC.Str.q_Value> ns3:isExternalValue true .
+
+<http://prediktor.com/sparql_testcase#s_1.FunctionalAspectName> a ns1:BaseVariableType,
+        ns1:PropertyType ;
+    ns1:browseName "FunctionalAspectName" ;
+    ns1:browseNameNamespace ns4: ;
+    ns1:description "Functional aspect name" ;
+    ns1:displayName "FunctionalAspectName" ;
+    ns1:nodeClass "UAVariable" ;
+    ns1:nodeId "ns=1;s=1.FunctionalAspectName" ;
+    ns1:value <http://prediktor.com/sparql_testcase#s_1.FunctionalAspectName_Value> .
+
+<http://prediktor.com/sparql_testcase#s_10.FunctionalAspectName> a ns1:BaseVariableType,
+        ns1:PropertyType ;
+    ns1:browseName "FunctionalAspectName" ;
+    ns1:browseNameNamespace ns4: ;
+    ns1:description "Functional aspect name" ;
+    ns1:displayName "FunctionalAspectName" ;
+    ns1:nodeClass "UAVariable" ;
+    ns1:nodeId "ns=1;s=10.FunctionalAspectName" ;
+    ns1:value <http://prediktor.com/sparql_testcase#s_10.FunctionalAspectName_Value> .
+
+<http://prediktor.com/sparql_testcase#s_11.FunctionalAspectName> a ns1:BaseVariableType,
+        ns1:PropertyType ;
+    ns1:browseName "FunctionalAspectName" ;
+    ns1:browseNameNamespace ns4: ;
+    ns1:description "Functional aspect name" ;
+    ns1:displayName "FunctionalAspectName" ;
+    ns1:nodeClass "UAVariable" ;
+    ns1:nodeId "ns=1;s=11.FunctionalAspectName" ;
+    ns1:value <http://prediktor.com/sparql_testcase#s_11.FunctionalAspectName_Value> .
+
+<http://prediktor.com/sparql_testcase#s_12.FunctionalAspectName> a ns1:BaseVariableType,
+        ns1:PropertyType ;
+    ns1:browseName "FunctionalAspectName" ;
+    ns1:browseNameNamespace ns4: ;
+    ns1:description "Functional aspect name" ;
+    ns1:displayName "FunctionalAspectName" ;
+    ns1:nodeClass "UAVariable" ;
+    ns1:nodeId "ns=1;s=12.FunctionalAspectName" ;
+    ns1:value <http://prediktor.com/sparql_testcase#s_12.FunctionalAspectName_Value> .
+
+<http://prediktor.com/sparql_testcase#s_13.FunctionalAspectName> a ns1:BaseVariableType,
+        ns1:PropertyType ;
+    ns1:browseName "FunctionalAspectName" ;
+    ns1:browseNameNamespace ns4: ;
+    ns1:description "Functional aspect name" ;
+    ns1:displayName "FunctionalAspectName" ;
+    ns1:nodeClass "UAVariable" ;
+    ns1:nodeId "ns=1;s=13.FunctionalAspectName" ;
+    ns1:value <http://prediktor.com/sparql_testcase#s_13.FunctionalAspectName_Value> .
+
+<http://prediktor.com/sparql_testcase#s_14.FunctionalAspectName> a ns1:BaseVariableType,
+        ns1:PropertyType ;
+    ns1:browseName "FunctionalAspectName" ;
+    ns1:browseNameNamespace ns4: ;
+    ns1:description "Functional aspect name" ;
+    ns1:displayName "FunctionalAspectName" ;
+    ns1:nodeClass "UAVariable" ;
+    ns1:nodeId "ns=1;s=14.FunctionalAspectName" ;
+    ns1:value <http://prediktor.com/sparql_testcase#s_14.FunctionalAspectName_Value> .
+
+<http://prediktor.com/sparql_testcase#s_15.FunctionalAspectName> a ns1:BaseVariableType,
+        ns1:PropertyType ;
+    ns1:browseName "FunctionalAspectName" ;
+    ns1:browseNameNamespace ns4: ;
+    ns1:description "Functional aspect name" ;
+    ns1:displayName "FunctionalAspectName" ;
+    ns1:nodeClass "UAVariable" ;
+    ns1:nodeId "ns=1;s=15.FunctionalAspectName" ;
+    ns1:value <http://prediktor.com/sparql_testcase#s_15.FunctionalAspectName_Value> .
+
+<http://prediktor.com/sparql_testcase#s_16.FunctionalAspectName> a ns1:BaseVariableType,
+        ns1:PropertyType ;
+    ns1:browseName "FunctionalAspectName" ;
+    ns1:browseNameNamespace ns4: ;
+    ns1:description "Functional aspect name" ;
+    ns1:displayName "FunctionalAspectName" ;
+    ns1:nodeClass "UAVariable" ;
+    ns1:nodeId "ns=1;s=16.FunctionalAspectName" ;
+    ns1:value <http://prediktor.com/sparql_testcase#s_16.FunctionalAspectName_Value> .
+
+<http://prediktor.com/sparql_testcase#s_17.FunctionalAspectName> a ns1:BaseVariableType,
+        ns1:PropertyType ;
+    ns1:browseName "FunctionalAspectName" ;
+    ns1:browseNameNamespace ns4: ;
+    ns1:description "Functional aspect name" ;
+    ns1:displayName "FunctionalAspectName" ;
+    ns1:nodeClass "UAVariable" ;
+    ns1:nodeId "ns=1;s=17.FunctionalAspectName" ;
+    ns1:value <http://prediktor.com/sparql_testcase#s_17.FunctionalAspectName_Value> .
+
+<http://prediktor.com/sparql_testcase#s_18.FunctionalAspectName> a ns1:BaseVariableType,
+        ns1:PropertyType ;
+    ns1:browseName "FunctionalAspectName" ;
+    ns1:browseNameNamespace ns4: ;
+    ns1:description "Functional aspect name" ;
+    ns1:displayName "FunctionalAspectName" ;
+    ns1:nodeClass "UAVariable" ;
+    ns1:nodeId "ns=1;s=18.FunctionalAspectName" ;
+    ns1:value <http://prediktor.com/sparql_testcase#s_18.FunctionalAspectName_Value> .
+
+<http://prediktor.com/sparql_testcase#s_19.FunctionalAspectName> a ns1:BaseVariableType,
+        ns1:PropertyType ;
+    ns1:browseName "FunctionalAspectName" ;
+    ns1:browseNameNamespace ns4: ;
+    ns1:description "Functional aspect name" ;
+    ns1:displayName "FunctionalAspectName" ;
+    ns1:nodeClass "UAVariable" ;
+    ns1:nodeId "ns=1;s=19.FunctionalAspectName" ;
+    ns1:value <http://prediktor.com/sparql_testcase#s_19.FunctionalAspectName_Value> .
+
+<http://prediktor.com/sparql_testcase#s_2.FunctionalAspectName> a ns1:BaseVariableType,
+        ns1:PropertyType ;
+    ns1:browseName "FunctionalAspectName" ;
+    ns1:browseNameNamespace ns4: ;
+    ns1:description "Functional aspect name" ;
+    ns1:displayName "FunctionalAspectName" ;
+    ns1:nodeClass "UAVariable" ;
+    ns1:nodeId "ns=1;s=2.FunctionalAspectName" ;
+    ns1:value <http://prediktor.com/sparql_testcase#s_2.FunctionalAspectName_Value> .
+
+<http://prediktor.com/sparql_testcase#s_20.FunctionalAspectName> a ns1:BaseVariableType,
+        ns1:PropertyType ;
+    ns1:browseName "FunctionalAspectName" ;
+    ns1:browseNameNamespace ns4: ;
+    ns1:description "Functional aspect name" ;
+    ns1:displayName "FunctionalAspectName" ;
+    ns1:nodeClass "UAVariable" ;
+    ns1:nodeId "ns=1;s=20.FunctionalAspectName" ;
+    ns1:value <http://prediktor.com/sparql_testcase#s_20.FunctionalAspectName_Value> .
+
+<http://prediktor.com/sparql_testcase#s_21.FunctionalAspectName> a ns1:BaseVariableType,
+        ns1:PropertyType ;
+    ns1:browseName "FunctionalAspectName" ;
+    ns1:browseNameNamespace ns4: ;
+    ns1:description "Functional aspect name" ;
+    ns1:displayName "FunctionalAspectName" ;
+    ns1:nodeClass "UAVariable" ;
+    ns1:nodeId "ns=1;s=21.FunctionalAspectName" ;
+    ns1:value <http://prediktor.com/sparql_testcase#s_21.FunctionalAspectName_Value> .
+
+<http://prediktor.com/sparql_testcase#s_3.FunctionalAspectName> a ns1:BaseVariableType,
+        ns1:PropertyType ;
+    ns1:browseName "FunctionalAspectName" ;
+    ns1:browseNameNamespace ns4: ;
+    ns1:description "Functional aspect name" ;
+    ns1:displayName "FunctionalAspectName" ;
+    ns1:nodeClass "UAVariable" ;
+    ns1:nodeId "ns=1;s=3.FunctionalAspectName" ;
+    ns1:value <http://prediktor.com/sparql_testcase#s_3.FunctionalAspectName_Value> .
+
+<http://prediktor.com/sparql_testcase#s_4.FunctionalAspectName> a ns1:BaseVariableType,
+        ns1:PropertyType ;
+    ns1:browseName "FunctionalAspectName" ;
+    ns1:browseNameNamespace ns4: ;
+    ns1:description "Functional aspect name" ;
+    ns1:displayName "FunctionalAspectName" ;
+    ns1:nodeClass "UAVariable" ;
+    ns1:nodeId "ns=1;s=4.FunctionalAspectName" ;
+    ns1:value <http://prediktor.com/sparql_testcase#s_4.FunctionalAspectName_Value> .
+
+<http://prediktor.com/sparql_testcase#s_5.FunctionalAspectName> a ns1:BaseVariableType,
+        ns1:PropertyType ;
+    ns1:browseName "FunctionalAspectName" ;
+    ns1:browseNameNamespace ns4: ;
+    ns1:description "Functional aspect name" ;
+    ns1:displayName "FunctionalAspectName" ;
+    ns1:nodeClass "UAVariable" ;
+    ns1:nodeId "ns=1;s=5.FunctionalAspectName" ;
+    ns1:value <http://prediktor.com/sparql_testcase#s_5.FunctionalAspectName_Value> .
+
+<http://prediktor.com/sparql_testcase#s_6.FunctionalAspectName> a ns1:BaseVariableType,
+        ns1:PropertyType ;
+    ns1:browseName "FunctionalAspectName" ;
+    ns1:browseNameNamespace ns4: ;
+    ns1:description "Functional aspect name" ;
+    ns1:displayName "FunctionalAspectName" ;
+    ns1:nodeClass "UAVariable" ;
+    ns1:nodeId "ns=1;s=6.FunctionalAspectName" ;
+    ns1:value <http://prediktor.com/sparql_testcase#s_6.FunctionalAspectName_Value> .
+
+<http://prediktor.com/sparql_testcase#s_7.FunctionalAspectName> a ns1:BaseVariableType,
+        ns1:PropertyType ;
+    ns1:browseName "FunctionalAspectName" ;
+    ns1:browseNameNamespace ns4: ;
+    ns1:description "Functional aspect name" ;
+    ns1:displayName "FunctionalAspectName" ;
+    ns1:nodeClass "UAVariable" ;
+    ns1:nodeId "ns=1;s=7.FunctionalAspectName" ;
+    ns1:value <http://prediktor.com/sparql_testcase#s_7.FunctionalAspectName_Value> .
+
+<http://prediktor.com/sparql_testcase#s_8.FunctionalAspectName> a ns1:BaseVariableType,
+        ns1:PropertyType ;
+    ns1:browseName "FunctionalAspectName" ;
+    ns1:browseNameNamespace ns4: ;
+    ns1:description "Functional aspect name" ;
+    ns1:displayName "FunctionalAspectName" ;
+    ns1:nodeClass "UAVariable" ;
+    ns1:nodeId "ns=1;s=8.FunctionalAspectName" ;
+    ns1:value <http://prediktor.com/sparql_testcase#s_8.FunctionalAspectName_Value> .
+
+<http://prediktor.com/sparql_testcase#s_9.FunctionalAspectName> a ns1:BaseVariableType,
+        ns1:PropertyType ;
+    ns1:browseName "FunctionalAspectName" ;
+    ns1:browseNameNamespace ns4: ;
+    ns1:description "Functional aspect name" ;
+    ns1:displayName "FunctionalAspectName" ;
+    ns1:nodeClass "UAVariable" ;
+    ns1:nodeId "ns=1;s=9.FunctionalAspectName" ;
+    ns1:value <http://prediktor.com/sparql_testcase#s_9.FunctionalAspectName_Value> .
+
+<http://prediktor.com/sparql_testcase#s_1> a ns1:BaseObjectType,
+        ns4:FirstTopLevelSystemType,
+        ns4:GeneralSystemType,
+        ns4:TopSystemType ;
+    ns1:aggregates <http://prediktor.com/sparql_testcase#s_1.FunctionalAspectName>,
+        <http://prediktor.com/sparql_testcase#s_2>,
+        <http://prediktor.com/sparql_testcase#s_3> ;
+    ns1:browseName "System1" ;
+    ns1:browseNameNamespace <http://prediktor.com/sparql_testcase#> ;
+    ns1:description "Lorem ipsum dolor sit amet" ;
+    ns1:displayName "System1" ;
+    ns1:hasChild <http://prediktor.com/sparql_testcase#s_1.FunctionalAspectName>,
+        <http://prediktor.com/sparql_testcase#s_2>,
+        <http://prediktor.com/sparql_testcase#s_3> ;
+    ns1:hasComponent <http://prediktor.com/sparql_testcase#s_2>,
+        <http://prediktor.com/sparql_testcase#s_3> ;
+    ns1:hasProperty <http://prediktor.com/sparql_testcase#s_1.FunctionalAspectName> ;
+    ns1:hierarchicalReferences <http://prediktor.com/sparql_testcase#s_1.FunctionalAspectName>,
+        <http://prediktor.com/sparql_testcase#s_2>,
+        <http://prediktor.com/sparql_testcase#s_3> ;
+    ns1:nodeClass "UAObject" ;
+    ns1:nodeId "ns=1;s=1" ;
+    ns1:references <http://prediktor.com/sparql_testcase#s_1.FunctionalAspectName>,
+        <http://prediktor.com/sparql_testcase#s_2>,
+        <http://prediktor.com/sparql_testcase#s_3> ;
+    ns4:functionalAspect <http://prediktor.com/sparql_testcase#s_2>,
+        <http://prediktor.com/sparql_testcase#s_3> .
+
+<http://prediktor.com/sparql_testcase#s_10> a ns1:BaseObjectType,
+        ns4:ComponentSystemType,
+        ns4:FirstBottomLevelSuperSuperType,
+        ns4:GeneralSystemType,
+        ns4:SecondBottomLevelSuperType,
+        ns4:SecondBottomLevelType ;
+    ns1:aggregates <http://prediktor.com/sparql_testcase#s_10.FunctionalAspectName>,
+        <http://prediktor.com/sparql_testcase#s_10.SVBR>,
+        <http://prediktor.com/sparql_testcase#s_11> ;
+    ns1:browseName "System10" ;
+    ns1:browseNameNamespace <http://prediktor.com/sparql_testcase#> ;
+    ns1:description "Totam rem aperiam" ;
+    ns1:displayName "System10" ;
+    ns1:hasChild <http://prediktor.com/sparql_testcase#s_10.FunctionalAspectName>,
+        <http://prediktor.com/sparql_testcase#s_10.SVBR>,
+        <http://prediktor.com/sparql_testcase#s_11> ;
+    ns1:hasComponent <http://prediktor.com/sparql_testcase#s_10.SVBR>,
+        <http://prediktor.com/sparql_testcase#s_11> ;
+    ns1:hasProperty <http://prediktor.com/sparql_testcase#s_10.FunctionalAspectName> ;
+    ns1:hierarchicalReferences <http://prediktor.com/sparql_testcase#s_10.FunctionalAspectName>,
+        <http://prediktor.com/sparql_testcase#s_10.SVBR>,
+        <http://prediktor.com/sparql_testcase#s_11> ;
+    ns1:nodeClass "UAObject" ;
+    ns1:nodeId "ns=1;s=10" ;
+    ns1:references <http://prediktor.com/sparql_testcase#s_10.FunctionalAspectName>,
+        <http://prediktor.com/sparql_testcase#s_10.SVBR>,
+        <http://prediktor.com/sparql_testcase#s_11> ;
+    ns4:functionalAspect <http://prediktor.com/sparql_testcase#s_11> ;
+    ns4:hasLogicalNode <http://prediktor.com/sparql_testcase#s_10.SVBR> .
+
+<http://prediktor.com/sparql_testcase#s_10.SVBR> a ns1:BaseObjectType,
+        ns2:IEC61850LNodeBaseObjectType,
+        <http://opcfoundation.org/UA/IEC61850-7-4#CommonLN>,
+        <http://opcfoundation.org/UA/IEC61850-7-4#SVBR> ;
+    ns1:aggregates <http://prediktor.com/sparql_testcase#s_10.SVBR.Beh> ;
+    ns1:browseName "SVBR" ;
+    ns1:browseNameNamespace <http://prediktor.com/sparql_testcase#> ;
+    ns1:description "" ;
+    ns1:displayName "SVBR" ;
+    ns1:hasChild <http://prediktor.com/sparql_testcase#s_10.SVBR.Beh> ;
+    ns1:hasComponent <http://prediktor.com/sparql_testcase#s_10.SVBR.Beh> ;
+    ns1:hierarchicalReferences <http://prediktor.com/sparql_testcase#s_10.SVBR.Beh> ;
+    ns1:nodeClass "UAObject" ;
+    ns1:nodeId "ns=1;s=10.SVBR" ;
+    ns1:references <http://prediktor.com/sparql_testcase#s_10.SVBR.Beh> ;
+    ns2:hasDataObject <http://prediktor.com/sparql_testcase#s_10.SVBR.Beh> .
+
+<http://prediktor.com/sparql_testcase#s_10.SVBR.Beh> a ns1:BaseObjectType,
+        ns2:ENS,
+        ns2:IEC61850DOBaseObjectType,
+        <http://opcfoundation.org/UA/IEC61850-7-4#ENSBehaviourModeKind> ;
+    ns1:aggregates <http://prediktor.com/sparql_testcase#s_10.SVBR.Beh.q>,
+        <http://prediktor.com/sparql_testcase#s_10.SVBR.Beh.stVal> ;
+    ns1:browseName "Beh" ;
+    ns1:browseNameNamespace <http://opcfoundation.org/UA/IEC61850-7-4#> ;
+    ns1:description "" ;
+    ns1:displayName "Beh" ;
+    ns1:hasChild <http://prediktor.com/sparql_testcase#s_10.SVBR.Beh.q>,
+        <http://prediktor.com/sparql_testcase#s_10.SVBR.Beh.stVal> ;
+    ns1:hasComponent <http://prediktor.com/sparql_testcase#s_10.SVBR.Beh.q>,
+        <http://prediktor.com/sparql_testcase#s_10.SVBR.Beh.stVal> ;
+    ns1:hierarchicalReferences <http://prediktor.com/sparql_testcase#s_10.SVBR.Beh.q>,
+        <http://prediktor.com/sparql_testcase#s_10.SVBR.Beh.stVal> ;
+    ns1:nodeClass "UAObject" ;
+    ns1:nodeId "ns=1;s=10.SVBR.Beh" ;
+    ns1:references <http://prediktor.com/sparql_testcase#s_10.SVBR.Beh.q>,
+        <http://prediktor.com/sparql_testcase#s_10.SVBR.Beh.stVal> ;
+    ns2:hasDataAttribute <http://prediktor.com/sparql_testcase#s_10.SVBR.Beh.q>,
+        <http://prediktor.com/sparql_testcase#s_10.SVBR.Beh.stVal> .
+
+<http://prediktor.com/sparql_testcase#s_10.SVBR.Beh.q> a ns1:BaseDataVariableType,
+        ns1:BaseVariableType ;
+    ns1:browseName "q" ;
+    ns1:browseNameNamespace <http://opcfoundation.org/UA/IEC61850-7-4#> ;
+    ns1:description "" ;
+    ns1:displayName "q" ;
+    ns1:nodeClass "UAVariable" ;
+    ns1:nodeId "ns=1;s=10.SVBR.Beh.q" ;
+    ns1:value <http://prediktor.com/sparql_testcase#s_10.SVBR.Beh.q_Value> .
+
+<http://prediktor.com/sparql_testcase#s_10.SVBR.Beh.stVal> a ns1:BaseDataVariableType,
+        ns1:BaseVariableType ;
+    ns1:browseName "stVal" ;
+    ns1:browseNameNamespace <http://opcfoundation.org/UA/IEC61850-7-4#> ;
+    ns1:description "" ;
+    ns1:displayName "stVal" ;
+    ns1:nodeClass "UAVariable" ;
+    ns1:nodeId "ns=1;s=10.SVBR.Beh.stVal" ;
+    ns1:value <http://prediktor.com/sparql_testcase#s_10.SVBR.Beh.stVal_Value> .
+
+<http://prediktor.com/sparql_testcase#s_11> a ns1:BaseObjectType,
+        ns4:ComponentSystemType,
+        ns4:FirstBottomLevelSuperSuperType,
+        ns4:GeneralSystemType,
+        ns4:SecondBottomLevelSuperType,
+        ns4:SecondBottomLevelType ;
+    ns1:aggregates <http://prediktor.com/sparql_testcase#s_11.FunctionalAspectName>,
+        <http://prediktor.com/sparql_testcase#s_11.PTUC> ;
+    ns1:browseName "System11" ;
+    ns1:browseNameNamespace <http://prediktor.com/sparql_testcase#> ;
+    ns1:description "Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo" ;
+    ns1:displayName "System11" ;
+    ns1:hasChild <http://prediktor.com/sparql_testcase#s_11.FunctionalAspectName>,
+        <http://prediktor.com/sparql_testcase#s_11.PTUC> ;
+    ns1:hasComponent <http://prediktor.com/sparql_testcase#s_11.PTUC> ;
+    ns1:hasProperty <http://prediktor.com/sparql_testcase#s_11.FunctionalAspectName> ;
+    ns1:hierarchicalReferences <http://prediktor.com/sparql_testcase#s_11.FunctionalAspectName>,
+        <http://prediktor.com/sparql_testcase#s_11.PTUC> ;
+    ns1:nodeClass "UAObject" ;
+    ns1:nodeId "ns=1;s=11" ;
+    ns1:references <http://prediktor.com/sparql_testcase#s_11.FunctionalAspectName>,
+        <http://prediktor.com/sparql_testcase#s_11.PTUC> ;
+    ns4:hasLogicalNode <http://prediktor.com/sparql_testcase#s_11.PTUC> .
+
+<http://prediktor.com/sparql_testcase#s_11.PTUC> a ns1:BaseObjectType,
+        ns2:IEC61850LNodeBaseObjectType,
+        <http://opcfoundation.org/UA/IEC61850-7-4#CommonLN>,
+        <http://opcfoundation.org/UA/IEC61850-7-4#PTUC> ;
+    ns1:aggregates <http://prediktor.com/sparql_testcase#s_11.PTUC.Beh>,
+        <http://prediktor.com/sparql_testcase#s_11.PTUC.Op>,
+        <http://prediktor.com/sparql_testcase#s_11.PTUC.Str> ;
+    ns1:browseName "PTUC" ;
+    ns1:browseNameNamespace <http://prediktor.com/sparql_testcase#> ;
+    ns1:description "" ;
+    ns1:displayName "PTUC" ;
+    ns1:hasChild <http://prediktor.com/sparql_testcase#s_11.PTUC.Beh>,
+        <http://prediktor.com/sparql_testcase#s_11.PTUC.Op>,
+        <http://prediktor.com/sparql_testcase#s_11.PTUC.Str> ;
+    ns1:hasComponent <http://prediktor.com/sparql_testcase#s_11.PTUC.Beh>,
+        <http://prediktor.com/sparql_testcase#s_11.PTUC.Op>,
+        <http://prediktor.com/sparql_testcase#s_11.PTUC.Str> ;
+    ns1:hierarchicalReferences <http://prediktor.com/sparql_testcase#s_11.PTUC.Beh>,
+        <http://prediktor.com/sparql_testcase#s_11.PTUC.Op>,
+        <http://prediktor.com/sparql_testcase#s_11.PTUC.Str> ;
+    ns1:nodeClass "UAObject" ;
+    ns1:nodeId "ns=1;s=11.PTUC" ;
+    ns1:references <http://prediktor.com/sparql_testcase#s_11.PTUC.Beh>,
+        <http://prediktor.com/sparql_testcase#s_11.PTUC.Op>,
+        <http://prediktor.com/sparql_testcase#s_11.PTUC.Str> ;
+    ns2:hasDataObject <http://prediktor.com/sparql_testcase#s_11.PTUC.Beh>,
+        <http://prediktor.com/sparql_testcase#s_11.PTUC.Op>,
+        <http://prediktor.com/sparql_testcase#s_11.PTUC.Str> .
+
+<http://prediktor.com/sparql_testcase#s_11.PTUC.Beh> a ns1:BaseObjectType,
+        ns2:ENS,
+        ns2:IEC61850DOBaseObjectType,
+        <http://opcfoundation.org/UA/IEC61850-7-4#ENSBehaviourModeKind> ;
+    ns1:aggregates <http://prediktor.com/sparql_testcase#s_11.PTUC.Beh.q>,
+        <http://prediktor.com/sparql_testcase#s_11.PTUC.Beh.stVal> ;
+    ns1:browseName "Beh" ;
+    ns1:browseNameNamespace <http://opcfoundation.org/UA/IEC61850-7-4#> ;
+    ns1:description "" ;
+    ns1:displayName "Beh" ;
+    ns1:hasChild <http://prediktor.com/sparql_testcase#s_11.PTUC.Beh.q>,
+        <http://prediktor.com/sparql_testcase#s_11.PTUC.Beh.stVal> ;
+    ns1:hasComponent <http://prediktor.com/sparql_testcase#s_11.PTUC.Beh.q>,
+        <http://prediktor.com/sparql_testcase#s_11.PTUC.Beh.stVal> ;
+    ns1:hierarchicalReferences <http://prediktor.com/sparql_testcase#s_11.PTUC.Beh.q>,
+        <http://prediktor.com/sparql_testcase#s_11.PTUC.Beh.stVal> ;
+    ns1:nodeClass "UAObject" ;
+    ns1:nodeId "ns=1;s=11.PTUC.Beh" ;
+    ns1:references <http://prediktor.com/sparql_testcase#s_11.PTUC.Beh.q>,
+        <http://prediktor.com/sparql_testcase#s_11.PTUC.Beh.stVal> ;
+    ns2:hasDataAttribute <http://prediktor.com/sparql_testcase#s_11.PTUC.Beh.q>,
+        <http://prediktor.com/sparql_testcase#s_11.PTUC.Beh.stVal> .
+
+<http://prediktor.com/sparql_testcase#s_11.PTUC.Beh.q> a ns1:BaseDataVariableType,
+        ns1:BaseVariableType ;
+    ns1:browseName "q" ;
+    ns1:browseNameNamespace <http://opcfoundation.org/UA/IEC61850-7-4#> ;
+    ns1:description "" ;
+    ns1:displayName "q" ;
+    ns1:nodeClass "UAVariable" ;
+    ns1:nodeId "ns=1;s=11.PTUC.Beh.q" ;
+    ns1:value <http://prediktor.com/sparql_testcase#s_11.PTUC.Beh.q_Value> .
+
+<http://prediktor.com/sparql_testcase#s_11.PTUC.Beh.stVal> a ns1:BaseDataVariableType,
+        ns1:BaseVariableType ;
+    ns1:browseName "stVal" ;
+    ns1:browseNameNamespace <http://opcfoundation.org/UA/IEC61850-7-4#> ;
+    ns1:description "" ;
+    ns1:displayName "stVal" ;
+    ns1:nodeClass "UAVariable" ;
+    ns1:nodeId "ns=1;s=11.PTUC.Beh.stVal" ;
+    ns1:value <http://prediktor.com/sparql_testcase#s_11.PTUC.Beh.stVal_Value> .
+
+<http://prediktor.com/sparql_testcase#s_11.PTUC.Op> a ns1:BaseObjectType,
+        ns2:ACT,
+        ns2:IEC61850DOBaseObjectType ;
+    ns1:aggregates <http://prediktor.com/sparql_testcase#s_11.PTUC.Op.general>,
+        <http://prediktor.com/sparql_testcase#s_11.PTUC.Op.q> ;
+    ns1:browseName "Op" ;
+    ns1:browseNameNamespace <http://opcfoundation.org/UA/IEC61850-7-4#> ;
+    ns1:description "" ;
+    ns1:displayName "Op" ;
+    ns1:hasChild <http://prediktor.com/sparql_testcase#s_11.PTUC.Op.general>,
+        <http://prediktor.com/sparql_testcase#s_11.PTUC.Op.q> ;
+    ns1:hasComponent <http://prediktor.com/sparql_testcase#s_11.PTUC.Op.general>,
+        <http://prediktor.com/sparql_testcase#s_11.PTUC.Op.q> ;
+    ns1:hierarchicalReferences <http://prediktor.com/sparql_testcase#s_11.PTUC.Op.general>,
+        <http://prediktor.com/sparql_testcase#s_11.PTUC.Op.q> ;
+    ns1:nodeClass "UAObject" ;
+    ns1:nodeId "ns=1;s=11.PTUC.Op" ;
+    ns1:references <http://prediktor.com/sparql_testcase#s_11.PTUC.Op.general>,
+        <http://prediktor.com/sparql_testcase#s_11.PTUC.Op.q> ;
+    ns2:hasDataAttribute <http://prediktor.com/sparql_testcase#s_11.PTUC.Op.general>,
+        <http://prediktor.com/sparql_testcase#s_11.PTUC.Op.q> .
+
+<http://prediktor.com/sparql_testcase#s_11.PTUC.Op.general> a ns1:BaseDataVariableType,
+        ns1:BaseVariableType ;
+    ns1:browseName "general" ;
+    ns1:browseNameNamespace <http://opcfoundation.org/UA/IEC61850-7-4#> ;
+    ns1:description "" ;
+    ns1:displayName "general" ;
+    ns1:nodeClass "UAVariable" ;
+    ns1:nodeId "ns=1;s=11.PTUC.Op.general" ;
+    ns1:value <http://prediktor.com/sparql_testcase#s_11.PTUC.Op.general_Value> .
+
+<http://prediktor.com/sparql_testcase#s_11.PTUC.Op.q> a ns1:BaseDataVariableType,
+        ns1:BaseVariableType ;
+    ns1:browseName "q" ;
+    ns1:browseNameNamespace <http://opcfoundation.org/UA/IEC61850-7-4#> ;
+    ns1:description "" ;
+    ns1:displayName "q" ;
+    ns1:nodeClass "UAVariable" ;
+    ns1:nodeId "ns=1;s=11.PTUC.Op.q" ;
+    ns1:value <http://prediktor.com/sparql_testcase#s_11.PTUC.Op.q_Value> .
+
+<http://prediktor.com/sparql_testcase#s_11.PTUC.Str> a ns1:BaseObjectType,
+        ns2:ACD,
+        ns2:IEC61850DOBaseObjectType ;
+    ns1:aggregates <http://prediktor.com/sparql_testcase#s_11.PTUC.Str.dirGeneral>,
+        <http://prediktor.com/sparql_testcase#s_11.PTUC.Str.general>,
+        <http://prediktor.com/sparql_testcase#s_11.PTUC.Str.q> ;
+    ns1:browseName "Str" ;
+    ns1:browseNameNamespace <http://opcfoundation.org/UA/IEC61850-7-4#> ;
+    ns1:description "" ;
+    ns1:displayName "Str" ;
+    ns1:hasChild <http://prediktor.com/sparql_testcase#s_11.PTUC.Str.dirGeneral>,
+        <http://prediktor.com/sparql_testcase#s_11.PTUC.Str.general>,
+        <http://prediktor.com/sparql_testcase#s_11.PTUC.Str.q> ;
+    ns1:hasComponent <http://prediktor.com/sparql_testcase#s_11.PTUC.Str.dirGeneral>,
+        <http://prediktor.com/sparql_testcase#s_11.PTUC.Str.general>,
+        <http://prediktor.com/sparql_testcase#s_11.PTUC.Str.q> ;
+    ns1:hierarchicalReferences <http://prediktor.com/sparql_testcase#s_11.PTUC.Str.dirGeneral>,
+        <http://prediktor.com/sparql_testcase#s_11.PTUC.Str.general>,
+        <http://prediktor.com/sparql_testcase#s_11.PTUC.Str.q> ;
+    ns1:nodeClass "UAObject" ;
+    ns1:nodeId "ns=1;s=11.PTUC.Str" ;
+    ns1:references <http://prediktor.com/sparql_testcase#s_11.PTUC.Str.dirGeneral>,
+        <http://prediktor.com/sparql_testcase#s_11.PTUC.Str.general>,
+        <http://prediktor.com/sparql_testcase#s_11.PTUC.Str.q> ;
+    ns2:hasDataAttribute <http://prediktor.com/sparql_testcase#s_11.PTUC.Str.dirGeneral>,
+        <http://prediktor.com/sparql_testcase#s_11.PTUC.Str.general>,
+        <http://prediktor.com/sparql_testcase#s_11.PTUC.Str.q> .
+
+<http://prediktor.com/sparql_testcase#s_11.PTUC.Str.dirGeneral> a ns1:BaseDataVariableType,
+        ns1:BaseVariableType ;
+    ns1:browseName "dirGeneral" ;
+    ns1:browseNameNamespace <http://opcfoundation.org/UA/IEC61850-7-4#> ;
+    ns1:description "" ;
+    ns1:displayName "dirGeneral" ;
+    ns1:nodeClass "UAVariable" ;
+    ns1:nodeId "ns=1;s=11.PTUC.Str.dirGeneral" ;
+    ns1:value <http://prediktor.com/sparql_testcase#s_11.PTUC.Str.dirGeneral_Value> .
+
+<http://prediktor.com/sparql_testcase#s_11.PTUC.Str.general> a ns1:BaseDataVariableType,
+        ns1:BaseVariableType ;
+    ns1:browseName "general" ;
+    ns1:browseNameNamespace <http://opcfoundation.org/UA/IEC61850-7-4#> ;
+    ns1:description "" ;
+    ns1:displayName "general" ;
+    ns1:nodeClass "UAVariable" ;
+    ns1:nodeId "ns=1;s=11.PTUC.Str.general" ;
+    ns1:value <http://prediktor.com/sparql_testcase#s_11.PTUC.Str.general_Value> .
+
+<http://prediktor.com/sparql_testcase#s_11.PTUC.Str.q> a ns1:BaseDataVariableType,
+        ns1:BaseVariableType ;
+    ns1:browseName "q" ;
+    ns1:browseNameNamespace <http://opcfoundation.org/UA/IEC61850-7-4#> ;
+    ns1:description "" ;
+    ns1:displayName "q" ;
+    ns1:nodeClass "UAVariable" ;
+    ns1:nodeId "ns=1;s=11.PTUC.Str.q" ;
+    ns1:value <http://prediktor.com/sparql_testcase#s_11.PTUC.Str.q_Value> .
+
+<http://prediktor.com/sparql_testcase#s_13> a ns1:BaseObjectType,
+        ns4:FirstMiddleLevelSuperType,
+        ns4:GeneralSystemType,
+        ns4:MiddleSystemType,
+        ns4:SecondMiddleLevelType ;
+    ns1:aggregates <http://prediktor.com/sparql_testcase#s_13.FunctionalAspectName>,
+        <http://prediktor.com/sparql_testcase#s_13.SVBR>,
+        <http://prediktor.com/sparql_testcase#s_14>,
+        <http://prediktor.com/sparql_testcase#s_15> ;
+    ns1:browseName "System13" ;
+    ns1:browseNameNamespace <http://prediktor.com/sparql_testcase#> ;
+    ns1:description "Sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt" ;
+    ns1:displayName "System13" ;
+    ns1:hasChild <http://prediktor.com/sparql_testcase#s_13.FunctionalAspectName>,
+        <http://prediktor.com/sparql_testcase#s_13.SVBR>,
+        <http://prediktor.com/sparql_testcase#s_14>,
+        <http://prediktor.com/sparql_testcase#s_15> ;
+    ns1:hasComponent <http://prediktor.com/sparql_testcase#s_13.SVBR>,
+        <http://prediktor.com/sparql_testcase#s_14>,
+        <http://prediktor.com/sparql_testcase#s_15> ;
+    ns1:hasProperty <http://prediktor.com/sparql_testcase#s_13.FunctionalAspectName> ;
+    ns1:hierarchicalReferences <http://prediktor.com/sparql_testcase#s_13.FunctionalAspectName>,
+        <http://prediktor.com/sparql_testcase#s_13.SVBR>,
+        <http://prediktor.com/sparql_testcase#s_14>,
+        <http://prediktor.com/sparql_testcase#s_15> ;
+    ns1:nodeClass "UAObject" ;
+    ns1:nodeId "ns=1;s=13" ;
+    ns1:references <http://prediktor.com/sparql_testcase#s_13.FunctionalAspectName>,
+        <http://prediktor.com/sparql_testcase#s_13.SVBR>,
+        <http://prediktor.com/sparql_testcase#s_14>,
+        <http://prediktor.com/sparql_testcase#s_15> ;
+    ns4:functionalAspect <http://prediktor.com/sparql_testcase#s_14>,
+        <http://prediktor.com/sparql_testcase#s_15> ;
+    ns4:hasLogicalNode <http://prediktor.com/sparql_testcase#s_13.SVBR> .
+
+<http://prediktor.com/sparql_testcase#s_13.SVBR> a ns1:BaseObjectType,
+        ns2:IEC61850LNodeBaseObjectType,
+        <http://opcfoundation.org/UA/IEC61850-7-4#CommonLN>,
+        <http://opcfoundation.org/UA/IEC61850-7-4#SVBR> ;
+    ns1:aggregates <http://prediktor.com/sparql_testcase#s_13.SVBR.Beh> ;
+    ns1:browseName "SVBR" ;
+    ns1:browseNameNamespace <http://prediktor.com/sparql_testcase#> ;
+    ns1:description "" ;
+    ns1:displayName "SVBR" ;
+    ns1:hasChild <http://prediktor.com/sparql_testcase#s_13.SVBR.Beh> ;
+    ns1:hasComponent <http://prediktor.com/sparql_testcase#s_13.SVBR.Beh> ;
+    ns1:hierarchicalReferences <http://prediktor.com/sparql_testcase#s_13.SVBR.Beh> ;
+    ns1:nodeClass "UAObject" ;
+    ns1:nodeId "ns=1;s=13.SVBR" ;
+    ns1:references <http://prediktor.com/sparql_testcase#s_13.SVBR.Beh> ;
+    ns2:hasDataObject <http://prediktor.com/sparql_testcase#s_13.SVBR.Beh> .
+
+<http://prediktor.com/sparql_testcase#s_13.SVBR.Beh> a ns1:BaseObjectType,
+        ns2:ENS,
+        ns2:IEC61850DOBaseObjectType,
+        <http://opcfoundation.org/UA/IEC61850-7-4#ENSBehaviourModeKind> ;
+    ns1:aggregates <http://prediktor.com/sparql_testcase#s_13.SVBR.Beh.q>,
+        <http://prediktor.com/sparql_testcase#s_13.SVBR.Beh.stVal> ;
+    ns1:browseName "Beh" ;
+    ns1:browseNameNamespace <http://opcfoundation.org/UA/IEC61850-7-4#> ;
+    ns1:description "" ;
+    ns1:displayName "Beh" ;
+    ns1:hasChild <http://prediktor.com/sparql_testcase#s_13.SVBR.Beh.q>,
+        <http://prediktor.com/sparql_testcase#s_13.SVBR.Beh.stVal> ;
+    ns1:hasComponent <http://prediktor.com/sparql_testcase#s_13.SVBR.Beh.q>,
+        <http://prediktor.com/sparql_testcase#s_13.SVBR.Beh.stVal> ;
+    ns1:hierarchicalReferences <http://prediktor.com/sparql_testcase#s_13.SVBR.Beh.q>,
+        <http://prediktor.com/sparql_testcase#s_13.SVBR.Beh.stVal> ;
+    ns1:nodeClass "UAObject" ;
+    ns1:nodeId "ns=1;s=13.SVBR.Beh" ;
+    ns1:references <http://prediktor.com/sparql_testcase#s_13.SVBR.Beh.q>,
+        <http://prediktor.com/sparql_testcase#s_13.SVBR.Beh.stVal> ;
+    ns2:hasDataAttribute <http://prediktor.com/sparql_testcase#s_13.SVBR.Beh.q>,
+        <http://prediktor.com/sparql_testcase#s_13.SVBR.Beh.stVal> .
+
+<http://prediktor.com/sparql_testcase#s_13.SVBR.Beh.q> a ns1:BaseDataVariableType,
+        ns1:BaseVariableType ;
+    ns1:browseName "q" ;
+    ns1:browseNameNamespace <http://opcfoundation.org/UA/IEC61850-7-4#> ;
+    ns1:description "" ;
+    ns1:displayName "q" ;
+    ns1:nodeClass "UAVariable" ;
+    ns1:nodeId "ns=1;s=13.SVBR.Beh.q" ;
+    ns1:value <http://prediktor.com/sparql_testcase#s_13.SVBR.Beh.q_Value> .
+
+<http://prediktor.com/sparql_testcase#s_13.SVBR.Beh.stVal> a ns1:BaseDataVariableType,
+        ns1:BaseVariableType ;
+    ns1:browseName "stVal" ;
+    ns1:browseNameNamespace <http://opcfoundation.org/UA/IEC61850-7-4#> ;
+    ns1:description "" ;
+    ns1:displayName "stVal" ;
+    ns1:nodeClass "UAVariable" ;
+    ns1:nodeId "ns=1;s=13.SVBR.Beh.stVal" ;
+    ns1:value <http://prediktor.com/sparql_testcase#s_13.SVBR.Beh.stVal_Value> .
+
+<http://prediktor.com/sparql_testcase#s_14> a ns1:BaseObjectType,
+        ns4:ComponentSystemType,
+        ns4:FirstBottomLevelSuperSuperType,
+        ns4:GeneralSystemType,
+        ns4:SecondBottomLevelSuperType,
+        ns4:SecondBottomLevelType ;
+    ns1:aggregates <http://prediktor.com/sparql_testcase#s_14.FunctionalAspectName>,
+        <http://prediktor.com/sparql_testcase#s_14.PTUC> ;
+    ns1:browseName "System14" ;
+    ns1:browseNameNamespace <http://prediktor.com/sparql_testcase#> ;
+    ns1:description "Neque porro quisquam est" ;
+    ns1:displayName "System14" ;
+    ns1:hasChild <http://prediktor.com/sparql_testcase#s_14.FunctionalAspectName>,
+        <http://prediktor.com/sparql_testcase#s_14.PTUC> ;
+    ns1:hasComponent <http://prediktor.com/sparql_testcase#s_14.PTUC> ;
+    ns1:hasProperty <http://prediktor.com/sparql_testcase#s_14.FunctionalAspectName> ;
+    ns1:hierarchicalReferences <http://prediktor.com/sparql_testcase#s_14.FunctionalAspectName>,
+        <http://prediktor.com/sparql_testcase#s_14.PTUC> ;
+    ns1:nodeClass "UAObject" ;
+    ns1:nodeId "ns=1;s=14" ;
+    ns1:references <http://prediktor.com/sparql_testcase#s_14.FunctionalAspectName>,
+        <http://prediktor.com/sparql_testcase#s_14.PTUC> ;
+    ns4:hasLogicalNode <http://prediktor.com/sparql_testcase#s_14.PTUC> .
+
+<http://prediktor.com/sparql_testcase#s_14.PTUC> a ns1:BaseObjectType,
+        ns2:IEC61850LNodeBaseObjectType,
+        <http://opcfoundation.org/UA/IEC61850-7-4#CommonLN>,
+        <http://opcfoundation.org/UA/IEC61850-7-4#PTUC> ;
+    ns1:aggregates <http://prediktor.com/sparql_testcase#s_14.PTUC.Beh>,
+        <http://prediktor.com/sparql_testcase#s_14.PTUC.Op>,
+        <http://prediktor.com/sparql_testcase#s_14.PTUC.Str> ;
+    ns1:browseName "PTUC" ;
+    ns1:browseNameNamespace <http://prediktor.com/sparql_testcase#> ;
+    ns1:description "" ;
+    ns1:displayName "PTUC" ;
+    ns1:hasChild <http://prediktor.com/sparql_testcase#s_14.PTUC.Beh>,
+        <http://prediktor.com/sparql_testcase#s_14.PTUC.Op>,
+        <http://prediktor.com/sparql_testcase#s_14.PTUC.Str> ;
+    ns1:hasComponent <http://prediktor.com/sparql_testcase#s_14.PTUC.Beh>,
+        <http://prediktor.com/sparql_testcase#s_14.PTUC.Op>,
+        <http://prediktor.com/sparql_testcase#s_14.PTUC.Str> ;
+    ns1:hierarchicalReferences <http://prediktor.com/sparql_testcase#s_14.PTUC.Beh>,
+        <http://prediktor.com/sparql_testcase#s_14.PTUC.Op>,
+        <http://prediktor.com/sparql_testcase#s_14.PTUC.Str> ;
+    ns1:nodeClass "UAObject" ;
+    ns1:nodeId "ns=1;s=14.PTUC" ;
+    ns1:references <http://prediktor.com/sparql_testcase#s_14.PTUC.Beh>,
+        <http://prediktor.com/sparql_testcase#s_14.PTUC.Op>,
+        <http://prediktor.com/sparql_testcase#s_14.PTUC.Str> ;
+    ns2:hasDataObject <http://prediktor.com/sparql_testcase#s_14.PTUC.Beh>,
+        <http://prediktor.com/sparql_testcase#s_14.PTUC.Op>,
+        <http://prediktor.com/sparql_testcase#s_14.PTUC.Str> .
+
+<http://prediktor.com/sparql_testcase#s_14.PTUC.Beh> a ns1:BaseObjectType,
+        ns2:ENS,
+        ns2:IEC61850DOBaseObjectType,
+        <http://opcfoundation.org/UA/IEC61850-7-4#ENSBehaviourModeKind> ;
+    ns1:aggregates <http://prediktor.com/sparql_testcase#s_14.PTUC.Beh.q>,
+        <http://prediktor.com/sparql_testcase#s_14.PTUC.Beh.stVal> ;
+    ns1:browseName "Beh" ;
+    ns1:browseNameNamespace <http://opcfoundation.org/UA/IEC61850-7-4#> ;
+    ns1:description "" ;
+    ns1:displayName "Beh" ;
+    ns1:hasChild <http://prediktor.com/sparql_testcase#s_14.PTUC.Beh.q>,
+        <http://prediktor.com/sparql_testcase#s_14.PTUC.Beh.stVal> ;
+    ns1:hasComponent <http://prediktor.com/sparql_testcase#s_14.PTUC.Beh.q>,
+        <http://prediktor.com/sparql_testcase#s_14.PTUC.Beh.stVal> ;
+    ns1:hierarchicalReferences <http://prediktor.com/sparql_testcase#s_14.PTUC.Beh.q>,
+        <http://prediktor.com/sparql_testcase#s_14.PTUC.Beh.stVal> ;
+    ns1:nodeClass "UAObject" ;
+    ns1:nodeId "ns=1;s=14.PTUC.Beh" ;
+    ns1:references <http://prediktor.com/sparql_testcase#s_14.PTUC.Beh.q>,
+        <http://prediktor.com/sparql_testcase#s_14.PTUC.Beh.stVal> ;
+    ns2:hasDataAttribute <http://prediktor.com/sparql_testcase#s_14.PTUC.Beh.q>,
+        <http://prediktor.com/sparql_testcase#s_14.PTUC.Beh.stVal> .
+
+<http://prediktor.com/sparql_testcase#s_14.PTUC.Beh.q> a ns1:BaseDataVariableType,
+        ns1:BaseVariableType ;
+    ns1:browseName "q" ;
+    ns1:browseNameNamespace <http://opcfoundation.org/UA/IEC61850-7-4#> ;
+    ns1:description "" ;
+    ns1:displayName "q" ;
+    ns1:nodeClass "UAVariable" ;
+    ns1:nodeId "ns=1;s=14.PTUC.Beh.q" ;
+    ns1:value <http://prediktor.com/sparql_testcase#s_14.PTUC.Beh.q_Value> .
+
+<http://prediktor.com/sparql_testcase#s_14.PTUC.Beh.stVal> a ns1:BaseDataVariableType,
+        ns1:BaseVariableType ;
+    ns1:browseName "stVal" ;
+    ns1:browseNameNamespace <http://opcfoundation.org/UA/IEC61850-7-4#> ;
+    ns1:description "" ;
+    ns1:displayName "stVal" ;
+    ns1:nodeClass "UAVariable" ;
+    ns1:nodeId "ns=1;s=14.PTUC.Beh.stVal" ;
+    ns1:value <http://prediktor.com/sparql_testcase#s_14.PTUC.Beh.stVal_Value> .
+
+<http://prediktor.com/sparql_testcase#s_14.PTUC.Op> a ns1:BaseObjectType,
+        ns2:ACT,
+        ns2:IEC61850DOBaseObjectType ;
+    ns1:aggregates <http://prediktor.com/sparql_testcase#s_14.PTUC.Op.general>,
+        <http://prediktor.com/sparql_testcase#s_14.PTUC.Op.q> ;
+    ns1:browseName "Op" ;
+    ns1:browseNameNamespace <http://opcfoundation.org/UA/IEC61850-7-4#> ;
+    ns1:description "" ;
+    ns1:displayName "Op" ;
+    ns1:hasChild <http://prediktor.com/sparql_testcase#s_14.PTUC.Op.general>,
+        <http://prediktor.com/sparql_testcase#s_14.PTUC.Op.q> ;
+    ns1:hasComponent <http://prediktor.com/sparql_testcase#s_14.PTUC.Op.general>,
+        <http://prediktor.com/sparql_testcase#s_14.PTUC.Op.q> ;
+    ns1:hierarchicalReferences <http://prediktor.com/sparql_testcase#s_14.PTUC.Op.general>,
+        <http://prediktor.com/sparql_testcase#s_14.PTUC.Op.q> ;
+    ns1:nodeClass "UAObject" ;
+    ns1:nodeId "ns=1;s=14.PTUC.Op" ;
+    ns1:references <http://prediktor.com/sparql_testcase#s_14.PTUC.Op.general>,
+        <http://prediktor.com/sparql_testcase#s_14.PTUC.Op.q> ;
+    ns2:hasDataAttribute <http://prediktor.com/sparql_testcase#s_14.PTUC.Op.general>,
+        <http://prediktor.com/sparql_testcase#s_14.PTUC.Op.q> .
+
+<http://prediktor.com/sparql_testcase#s_14.PTUC.Op.general> a ns1:BaseDataVariableType,
+        ns1:BaseVariableType ;
+    ns1:browseName "general" ;
+    ns1:browseNameNamespace <http://opcfoundation.org/UA/IEC61850-7-4#> ;
+    ns1:description "" ;
+    ns1:displayName "general" ;
+    ns1:nodeClass "UAVariable" ;
+    ns1:nodeId "ns=1;s=14.PTUC.Op.general" ;
+    ns1:value <http://prediktor.com/sparql_testcase#s_14.PTUC.Op.general_Value> .
+
+<http://prediktor.com/sparql_testcase#s_14.PTUC.Op.q> a ns1:BaseDataVariableType,
+        ns1:BaseVariableType ;
+    ns1:browseName "q" ;
+    ns1:browseNameNamespace <http://opcfoundation.org/UA/IEC61850-7-4#> ;
+    ns1:description "" ;
+    ns1:displayName "q" ;
+    ns1:nodeClass "UAVariable" ;
+    ns1:nodeId "ns=1;s=14.PTUC.Op.q" ;
+    ns1:value <http://prediktor.com/sparql_testcase#s_14.PTUC.Op.q_Value> .
+
+<http://prediktor.com/sparql_testcase#s_14.PTUC.Str> a ns1:BaseObjectType,
+        ns2:ACD,
+        ns2:IEC61850DOBaseObjectType ;
+    ns1:aggregates <http://prediktor.com/sparql_testcase#s_14.PTUC.Str.dirGeneral>,
+        <http://prediktor.com/sparql_testcase#s_14.PTUC.Str.general>,
+        <http://prediktor.com/sparql_testcase#s_14.PTUC.Str.q> ;
+    ns1:browseName "Str" ;
+    ns1:browseNameNamespace <http://opcfoundation.org/UA/IEC61850-7-4#> ;
+    ns1:description "" ;
+    ns1:displayName "Str" ;
+    ns1:hasChild <http://prediktor.com/sparql_testcase#s_14.PTUC.Str.dirGeneral>,
+        <http://prediktor.com/sparql_testcase#s_14.PTUC.Str.general>,
+        <http://prediktor.com/sparql_testcase#s_14.PTUC.Str.q> ;
+    ns1:hasComponent <http://prediktor.com/sparql_testcase#s_14.PTUC.Str.dirGeneral>,
+        <http://prediktor.com/sparql_testcase#s_14.PTUC.Str.general>,
+        <http://prediktor.com/sparql_testcase#s_14.PTUC.Str.q> ;
+    ns1:hierarchicalReferences <http://prediktor.com/sparql_testcase#s_14.PTUC.Str.dirGeneral>,
+        <http://prediktor.com/sparql_testcase#s_14.PTUC.Str.general>,
+        <http://prediktor.com/sparql_testcase#s_14.PTUC.Str.q> ;
+    ns1:nodeClass "UAObject" ;
+    ns1:nodeId "ns=1;s=14.PTUC.Str" ;
+    ns1:references <http://prediktor.com/sparql_testcase#s_14.PTUC.Str.dirGeneral>,
+        <http://prediktor.com/sparql_testcase#s_14.PTUC.Str.general>,
+        <http://prediktor.com/sparql_testcase#s_14.PTUC.Str.q> ;
+    ns2:hasDataAttribute <http://prediktor.com/sparql_testcase#s_14.PTUC.Str.dirGeneral>,
+        <http://prediktor.com/sparql_testcase#s_14.PTUC.Str.general>,
+        <http://prediktor.com/sparql_testcase#s_14.PTUC.Str.q> .
+
+<http://prediktor.com/sparql_testcase#s_14.PTUC.Str.dirGeneral> a ns1:BaseDataVariableType,
+        ns1:BaseVariableType ;
+    ns1:browseName "dirGeneral" ;
+    ns1:browseNameNamespace <http://opcfoundation.org/UA/IEC61850-7-4#> ;
+    ns1:description "" ;
+    ns1:displayName "dirGeneral" ;
+    ns1:nodeClass "UAVariable" ;
+    ns1:nodeId "ns=1;s=14.PTUC.Str.dirGeneral" ;
+    ns1:value <http://prediktor.com/sparql_testcase#s_14.PTUC.Str.dirGeneral_Value> .
+
+<http://prediktor.com/sparql_testcase#s_14.PTUC.Str.general> a ns1:BaseDataVariableType,
+        ns1:BaseVariableType ;
+    ns1:browseName "general" ;
+    ns1:browseNameNamespace <http://opcfoundation.org/UA/IEC61850-7-4#> ;
+    ns1:description "" ;
+    ns1:displayName "general" ;
+    ns1:nodeClass "UAVariable" ;
+    ns1:nodeId "ns=1;s=14.PTUC.Str.general" ;
+    ns1:value <http://prediktor.com/sparql_testcase#s_14.PTUC.Str.general_Value> .
+
+<http://prediktor.com/sparql_testcase#s_14.PTUC.Str.q> a ns1:BaseDataVariableType,
+        ns1:BaseVariableType ;
+    ns1:browseName "q" ;
+    ns1:browseNameNamespace <http://opcfoundation.org/UA/IEC61850-7-4#> ;
+    ns1:description "" ;
+    ns1:displayName "q" ;
+    ns1:nodeClass "UAVariable" ;
+    ns1:nodeId "ns=1;s=14.PTUC.Str.q" ;
+    ns1:value <http://prediktor.com/sparql_testcase#s_14.PTUC.Str.q_Value> .
+
+<http://prediktor.com/sparql_testcase#s_15> a ns1:BaseObjectType,
+        ns4:ComponentSystemType,
+        ns4:FirstBottomLevelSuperSuperType,
+        ns4:GeneralSystemType,
+        ns4:SecondBottomLevelSuperType,
+        ns4:SecondBottomLevelType ;
+    ns1:aggregates <http://prediktor.com/sparql_testcase#s_15.FunctionalAspectName> ;
+    ns1:browseName "System15" ;
+    ns1:browseNameNamespace <http://prediktor.com/sparql_testcase#> ;
+    ns1:description "Qui dolorem ipsum quia dolor sit amet" ;
+    ns1:displayName "System15" ;
+    ns1:hasChild <http://prediktor.com/sparql_testcase#s_15.FunctionalAspectName> ;
+    ns1:hasProperty <http://prediktor.com/sparql_testcase#s_15.FunctionalAspectName> ;
+    ns1:hierarchicalReferences <http://prediktor.com/sparql_testcase#s_15.FunctionalAspectName> ;
+    ns1:nodeClass "UAObject" ;
+    ns1:nodeId "ns=1;s=15" ;
+    ns1:references <http://prediktor.com/sparql_testcase#s_15.FunctionalAspectName> .
+
+<http://prediktor.com/sparql_testcase#s_16> a ns1:BaseObjectType,
+        ns4:FirstTopLevelSystemType,
+        ns4:GeneralSystemType,
+        ns4:TopSystemType ;
+    ns1:aggregates <http://prediktor.com/sparql_testcase#s_16.FunctionalAspectName>,
+        <http://prediktor.com/sparql_testcase#s_16.SVBR>,
+        <http://prediktor.com/sparql_testcase#s_17>,
+        <http://prediktor.com/sparql_testcase#s_18>,
+        <http://prediktor.com/sparql_testcase#s_19> ;
+    ns1:browseName "System16" ;
+    ns1:browseNameNamespace <http://prediktor.com/sparql_testcase#> ;
+    ns1:description "Adipisci velit" ;
+    ns1:displayName "System16" ;
+    ns1:hasChild <http://prediktor.com/sparql_testcase#s_16.FunctionalAspectName>,
+        <http://prediktor.com/sparql_testcase#s_16.SVBR>,
+        <http://prediktor.com/sparql_testcase#s_17>,
+        <http://prediktor.com/sparql_testcase#s_18>,
+        <http://prediktor.com/sparql_testcase#s_19> ;
+    ns1:hasComponent <http://prediktor.com/sparql_testcase#s_16.SVBR>,
+        <http://prediktor.com/sparql_testcase#s_17>,
+        <http://prediktor.com/sparql_testcase#s_18>,
+        <http://prediktor.com/sparql_testcase#s_19> ;
+    ns1:hasProperty <http://prediktor.com/sparql_testcase#s_16.FunctionalAspectName> ;
+    ns1:hierarchicalReferences <http://prediktor.com/sparql_testcase#s_16.FunctionalAspectName>,
+        <http://prediktor.com/sparql_testcase#s_16.SVBR>,
+        <http://prediktor.com/sparql_testcase#s_17>,
+        <http://prediktor.com/sparql_testcase#s_18>,
+        <http://prediktor.com/sparql_testcase#s_19> ;
+    ns1:nodeClass "UAObject" ;
+    ns1:nodeId "ns=1;s=16" ;
+    ns1:references <http://prediktor.com/sparql_testcase#s_16.FunctionalAspectName>,
+        <http://prediktor.com/sparql_testcase#s_16.SVBR>,
+        <http://prediktor.com/sparql_testcase#s_17>,
+        <http://prediktor.com/sparql_testcase#s_18>,
+        <http://prediktor.com/sparql_testcase#s_19> ;
+    ns4:hasLogicalNode <http://prediktor.com/sparql_testcase#s_16.SVBR> ;
+    ns4:productAspect <http://prediktor.com/sparql_testcase#s_17>,
+        <http://prediktor.com/sparql_testcase#s_18>,
+        <http://prediktor.com/sparql_testcase#s_19> .
+
+<http://prediktor.com/sparql_testcase#s_16.SVBR> a ns1:BaseObjectType,
+        ns2:IEC61850LNodeBaseObjectType,
+        <http://opcfoundation.org/UA/IEC61850-7-4#CommonLN>,
+        <http://opcfoundation.org/UA/IEC61850-7-4#SVBR> ;
+    ns1:aggregates <http://prediktor.com/sparql_testcase#s_16.SVBR.Beh> ;
+    ns1:browseName "SVBR" ;
+    ns1:browseNameNamespace <http://prediktor.com/sparql_testcase#> ;
+    ns1:description "" ;
+    ns1:displayName "SVBR" ;
+    ns1:hasChild <http://prediktor.com/sparql_testcase#s_16.SVBR.Beh> ;
+    ns1:hasComponent <http://prediktor.com/sparql_testcase#s_16.SVBR.Beh> ;
+    ns1:hierarchicalReferences <http://prediktor.com/sparql_testcase#s_16.SVBR.Beh> ;
+    ns1:nodeClass "UAObject" ;
+    ns1:nodeId "ns=1;s=16.SVBR" ;
+    ns1:references <http://prediktor.com/sparql_testcase#s_16.SVBR.Beh> ;
+    ns2:hasDataObject <http://prediktor.com/sparql_testcase#s_16.SVBR.Beh> .
+
+<http://prediktor.com/sparql_testcase#s_16.SVBR.Beh> a ns1:BaseObjectType,
+        ns2:ENS,
+        ns2:IEC61850DOBaseObjectType,
+        <http://opcfoundation.org/UA/IEC61850-7-4#ENSBehaviourModeKind> ;
+    ns1:aggregates <http://prediktor.com/sparql_testcase#s_16.SVBR.Beh.q>,
+        <http://prediktor.com/sparql_testcase#s_16.SVBR.Beh.stVal> ;
+    ns1:browseName "Beh" ;
+    ns1:browseNameNamespace <http://opcfoundation.org/UA/IEC61850-7-4#> ;
+    ns1:description "" ;
+    ns1:displayName "Beh" ;
+    ns1:hasChild <http://prediktor.com/sparql_testcase#s_16.SVBR.Beh.q>,
+        <http://prediktor.com/sparql_testcase#s_16.SVBR.Beh.stVal> ;
+    ns1:hasComponent <http://prediktor.com/sparql_testcase#s_16.SVBR.Beh.q>,
+        <http://prediktor.com/sparql_testcase#s_16.SVBR.Beh.stVal> ;
+    ns1:hierarchicalReferences <http://prediktor.com/sparql_testcase#s_16.SVBR.Beh.q>,
+        <http://prediktor.com/sparql_testcase#s_16.SVBR.Beh.stVal> ;
+    ns1:nodeClass "UAObject" ;
+    ns1:nodeId "ns=1;s=16.SVBR.Beh" ;
+    ns1:references <http://prediktor.com/sparql_testcase#s_16.SVBR.Beh.q>,
+        <http://prediktor.com/sparql_testcase#s_16.SVBR.Beh.stVal> ;
+    ns2:hasDataAttribute <http://prediktor.com/sparql_testcase#s_16.SVBR.Beh.q>,
+        <http://prediktor.com/sparql_testcase#s_16.SVBR.Beh.stVal> .
+
+<http://prediktor.com/sparql_testcase#s_16.SVBR.Beh.q> a ns1:BaseDataVariableType,
+        ns1:BaseVariableType ;
+    ns1:browseName "q" ;
+    ns1:browseNameNamespace <http://opcfoundation.org/UA/IEC61850-7-4#> ;
+    ns1:description "" ;
+    ns1:displayName "q" ;
+    ns1:nodeClass "UAVariable" ;
+    ns1:nodeId "ns=1;s=16.SVBR.Beh.q" ;
+    ns1:value <http://prediktor.com/sparql_testcase#s_16.SVBR.Beh.q_Value> .
+
+<http://prediktor.com/sparql_testcase#s_16.SVBR.Beh.stVal> a ns1:BaseDataVariableType,
+        ns1:BaseVariableType ;
+    ns1:browseName "stVal" ;
+    ns1:browseNameNamespace <http://opcfoundation.org/UA/IEC61850-7-4#> ;
+    ns1:description "" ;
+    ns1:displayName "stVal" ;
+    ns1:nodeClass "UAVariable" ;
+    ns1:nodeId "ns=1;s=16.SVBR.Beh.stVal" ;
+    ns1:value <http://prediktor.com/sparql_testcase#s_16.SVBR.Beh.stVal_Value> .
+
+<http://prediktor.com/sparql_testcase#s_17> a ns1:BaseObjectType,
+        ns4:FirstMiddleLevelSuperType,
+        ns4:FirstMiddleLevelType,
+        ns4:GeneralSystemType,
+        ns4:MiddleSystemType ;
+    ns1:aggregates <http://prediktor.com/sparql_testcase#s_17.FunctionalAspectName> ;
+    ns1:browseName "System17" ;
+    ns1:browseNameNamespace <http://prediktor.com/sparql_testcase#> ;
+    ns1:description "Sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem" ;
+    ns1:displayName "System17" ;
+    ns1:hasChild <http://prediktor.com/sparql_testcase#s_17.FunctionalAspectName> ;
+    ns1:hasProperty <http://prediktor.com/sparql_testcase#s_17.FunctionalAspectName> ;
+    ns1:hierarchicalReferences <http://prediktor.com/sparql_testcase#s_17.FunctionalAspectName> ;
+    ns1:nodeClass "UAObject" ;
+    ns1:nodeId "ns=1;s=17" ;
+    ns1:references <http://prediktor.com/sparql_testcase#s_17.FunctionalAspectName> .
+
+<http://prediktor.com/sparql_testcase#s_18> a ns1:BaseObjectType,
+        ns4:FirstMiddleLevelSuperType,
+        ns4:FirstMiddleLevelType,
+        ns4:GeneralSystemType,
+        ns4:MiddleSystemType ;
+    ns1:aggregates <http://prediktor.com/sparql_testcase#s_18.FunctionalAspectName>,
+        <http://prediktor.com/sparql_testcase#s_18.PTUC> ;
+    ns1:browseName "System18" ;
+    ns1:browseNameNamespace <http://prediktor.com/sparql_testcase#> ;
+    ns1:description "Ut enim ad minima veniam" ;
+    ns1:displayName "System18" ;
+    ns1:hasChild <http://prediktor.com/sparql_testcase#s_18.FunctionalAspectName>,
+        <http://prediktor.com/sparql_testcase#s_18.PTUC> ;
+    ns1:hasComponent <http://prediktor.com/sparql_testcase#s_18.PTUC> ;
+    ns1:hasProperty <http://prediktor.com/sparql_testcase#s_18.FunctionalAspectName> ;
+    ns1:hierarchicalReferences <http://prediktor.com/sparql_testcase#s_18.FunctionalAspectName>,
+        <http://prediktor.com/sparql_testcase#s_18.PTUC> ;
+    ns1:nodeClass "UAObject" ;
+    ns1:nodeId "ns=1;s=18" ;
+    ns1:references <http://prediktor.com/sparql_testcase#s_18.FunctionalAspectName>,
+        <http://prediktor.com/sparql_testcase#s_18.PTUC> ;
+    ns4:hasLogicalNode <http://prediktor.com/sparql_testcase#s_18.PTUC> .
+
+<http://prediktor.com/sparql_testcase#s_18.PTUC> a ns1:BaseObjectType,
+        ns2:IEC61850LNodeBaseObjectType,
+        <http://opcfoundation.org/UA/IEC61850-7-4#CommonLN>,
+        <http://opcfoundation.org/UA/IEC61850-7-4#PTUC> ;
+    ns1:aggregates <http://prediktor.com/sparql_testcase#s_18.PTUC.Beh>,
+        <http://prediktor.com/sparql_testcase#s_18.PTUC.Op>,
+        <http://prediktor.com/sparql_testcase#s_18.PTUC.Str> ;
+    ns1:browseName "PTUC" ;
+    ns1:browseNameNamespace <http://prediktor.com/sparql_testcase#> ;
+    ns1:description "" ;
+    ns1:displayName "PTUC" ;
+    ns1:hasChild <http://prediktor.com/sparql_testcase#s_18.PTUC.Beh>,
+        <http://prediktor.com/sparql_testcase#s_18.PTUC.Op>,
+        <http://prediktor.com/sparql_testcase#s_18.PTUC.Str> ;
+    ns1:hasComponent <http://prediktor.com/sparql_testcase#s_18.PTUC.Beh>,
+        <http://prediktor.com/sparql_testcase#s_18.PTUC.Op>,
+        <http://prediktor.com/sparql_testcase#s_18.PTUC.Str> ;
+    ns1:hierarchicalReferences <http://prediktor.com/sparql_testcase#s_18.PTUC.Beh>,
+        <http://prediktor.com/sparql_testcase#s_18.PTUC.Op>,
+        <http://prediktor.com/sparql_testcase#s_18.PTUC.Str> ;
+    ns1:nodeClass "UAObject" ;
+    ns1:nodeId "ns=1;s=18.PTUC" ;
+    ns1:references <http://prediktor.com/sparql_testcase#s_18.PTUC.Beh>,
+        <http://prediktor.com/sparql_testcase#s_18.PTUC.Op>,
+        <http://prediktor.com/sparql_testcase#s_18.PTUC.Str> ;
+    ns2:hasDataObject <http://prediktor.com/sparql_testcase#s_18.PTUC.Beh>,
+        <http://prediktor.com/sparql_testcase#s_18.PTUC.Op>,
+        <http://prediktor.com/sparql_testcase#s_18.PTUC.Str> .
+
+<http://prediktor.com/sparql_testcase#s_18.PTUC.Beh> a ns1:BaseObjectType,
+        ns2:ENS,
+        ns2:IEC61850DOBaseObjectType,
+        <http://opcfoundation.org/UA/IEC61850-7-4#ENSBehaviourModeKind> ;
+    ns1:aggregates <http://prediktor.com/sparql_testcase#s_18.PTUC.Beh.q>,
+        <http://prediktor.com/sparql_testcase#s_18.PTUC.Beh.stVal> ;
+    ns1:browseName "Beh" ;
+    ns1:browseNameNamespace <http://opcfoundation.org/UA/IEC61850-7-4#> ;
+    ns1:description "" ;
+    ns1:displayName "Beh" ;
+    ns1:hasChild <http://prediktor.com/sparql_testcase#s_18.PTUC.Beh.q>,
+        <http://prediktor.com/sparql_testcase#s_18.PTUC.Beh.stVal> ;
+    ns1:hasComponent <http://prediktor.com/sparql_testcase#s_18.PTUC.Beh.q>,
+        <http://prediktor.com/sparql_testcase#s_18.PTUC.Beh.stVal> ;
+    ns1:hierarchicalReferences <http://prediktor.com/sparql_testcase#s_18.PTUC.Beh.q>,
+        <http://prediktor.com/sparql_testcase#s_18.PTUC.Beh.stVal> ;
+    ns1:nodeClass "UAObject" ;
+    ns1:nodeId "ns=1;s=18.PTUC.Beh" ;
+    ns1:references <http://prediktor.com/sparql_testcase#s_18.PTUC.Beh.q>,
+        <http://prediktor.com/sparql_testcase#s_18.PTUC.Beh.stVal> ;
+    ns2:hasDataAttribute <http://prediktor.com/sparql_testcase#s_18.PTUC.Beh.q>,
+        <http://prediktor.com/sparql_testcase#s_18.PTUC.Beh.stVal> .
+
+<http://prediktor.com/sparql_testcase#s_18.PTUC.Beh.q> a ns1:BaseDataVariableType,
+        ns1:BaseVariableType ;
+    ns1:browseName "q" ;
+    ns1:browseNameNamespace <http://opcfoundation.org/UA/IEC61850-7-4#> ;
+    ns1:description "" ;
+    ns1:displayName "q" ;
+    ns1:nodeClass "UAVariable" ;
+    ns1:nodeId "ns=1;s=18.PTUC.Beh.q" ;
+    ns1:value <http://prediktor.com/sparql_testcase#s_18.PTUC.Beh.q_Value> .
+
+<http://prediktor.com/sparql_testcase#s_18.PTUC.Beh.stVal> a ns1:BaseDataVariableType,
+        ns1:BaseVariableType ;
+    ns1:browseName "stVal" ;
+    ns1:browseNameNamespace <http://opcfoundation.org/UA/IEC61850-7-4#> ;
+    ns1:description "" ;
+    ns1:displayName "stVal" ;
+    ns1:nodeClass "UAVariable" ;
+    ns1:nodeId "ns=1;s=18.PTUC.Beh.stVal" ;
+    ns1:value <http://prediktor.com/sparql_testcase#s_18.PTUC.Beh.stVal_Value> .
+
+<http://prediktor.com/sparql_testcase#s_18.PTUC.Op> a ns1:BaseObjectType,
+        ns2:ACT,
+        ns2:IEC61850DOBaseObjectType ;
+    ns1:aggregates <http://prediktor.com/sparql_testcase#s_18.PTUC.Op.general>,
+        <http://prediktor.com/sparql_testcase#s_18.PTUC.Op.q> ;
+    ns1:browseName "Op" ;
+    ns1:browseNameNamespace <http://opcfoundation.org/UA/IEC61850-7-4#> ;
+    ns1:description "" ;
+    ns1:displayName "Op" ;
+    ns1:hasChild <http://prediktor.com/sparql_testcase#s_18.PTUC.Op.general>,
+        <http://prediktor.com/sparql_testcase#s_18.PTUC.Op.q> ;
+    ns1:hasComponent <http://prediktor.com/sparql_testcase#s_18.PTUC.Op.general>,
+        <http://prediktor.com/sparql_testcase#s_18.PTUC.Op.q> ;
+    ns1:hierarchicalReferences <http://prediktor.com/sparql_testcase#s_18.PTUC.Op.general>,
+        <http://prediktor.com/sparql_testcase#s_18.PTUC.Op.q> ;
+    ns1:nodeClass "UAObject" ;
+    ns1:nodeId "ns=1;s=18.PTUC.Op" ;
+    ns1:references <http://prediktor.com/sparql_testcase#s_18.PTUC.Op.general>,
+        <http://prediktor.com/sparql_testcase#s_18.PTUC.Op.q> ;
+    ns2:hasDataAttribute <http://prediktor.com/sparql_testcase#s_18.PTUC.Op.general>,
+        <http://prediktor.com/sparql_testcase#s_18.PTUC.Op.q> .
+
+<http://prediktor.com/sparql_testcase#s_18.PTUC.Op.general> a ns1:BaseDataVariableType,
+        ns1:BaseVariableType ;
+    ns1:browseName "general" ;
+    ns1:browseNameNamespace <http://opcfoundation.org/UA/IEC61850-7-4#> ;
+    ns1:description "" ;
+    ns1:displayName "general" ;
+    ns1:nodeClass "UAVariable" ;
+    ns1:nodeId "ns=1;s=18.PTUC.Op.general" ;
+    ns1:value <http://prediktor.com/sparql_testcase#s_18.PTUC.Op.general_Value> .
+
+<http://prediktor.com/sparql_testcase#s_18.PTUC.Op.q> a ns1:BaseDataVariableType,
+        ns1:BaseVariableType ;
+    ns1:browseName "q" ;
+    ns1:browseNameNamespace <http://opcfoundation.org/UA/IEC61850-7-4#> ;
+    ns1:description "" ;
+    ns1:displayName "q" ;
+    ns1:nodeClass "UAVariable" ;
+    ns1:nodeId "ns=1;s=18.PTUC.Op.q" ;
+    ns1:value <http://prediktor.com/sparql_testcase#s_18.PTUC.Op.q_Value> .
+
+<http://prediktor.com/sparql_testcase#s_18.PTUC.Str> a ns1:BaseObjectType,
+        ns2:ACD,
+        ns2:IEC61850DOBaseObjectType ;
+    ns1:aggregates <http://prediktor.com/sparql_testcase#s_18.PTUC.Str.dirGeneral>,
+        <http://prediktor.com/sparql_testcase#s_18.PTUC.Str.general>,
+        <http://prediktor.com/sparql_testcase#s_18.PTUC.Str.q> ;
+    ns1:browseName "Str" ;
+    ns1:browseNameNamespace <http://opcfoundation.org/UA/IEC61850-7-4#> ;
+    ns1:description "" ;
+    ns1:displayName "Str" ;
+    ns1:hasChild <http://prediktor.com/sparql_testcase#s_18.PTUC.Str.dirGeneral>,
+        <http://prediktor.com/sparql_testcase#s_18.PTUC.Str.general>,
+        <http://prediktor.com/sparql_testcase#s_18.PTUC.Str.q> ;
+    ns1:hasComponent <http://prediktor.com/sparql_testcase#s_18.PTUC.Str.dirGeneral>,
+        <http://prediktor.com/sparql_testcase#s_18.PTUC.Str.general>,
+        <http://prediktor.com/sparql_testcase#s_18.PTUC.Str.q> ;
+    ns1:hierarchicalReferences <http://prediktor.com/sparql_testcase#s_18.PTUC.Str.dirGeneral>,
+        <http://prediktor.com/sparql_testcase#s_18.PTUC.Str.general>,
+        <http://prediktor.com/sparql_testcase#s_18.PTUC.Str.q> ;
+    ns1:nodeClass "UAObject" ;
+    ns1:nodeId "ns=1;s=18.PTUC.Str" ;
+    ns1:references <http://prediktor.com/sparql_testcase#s_18.PTUC.Str.dirGeneral>,
+        <http://prediktor.com/sparql_testcase#s_18.PTUC.Str.general>,
+        <http://prediktor.com/sparql_testcase#s_18.PTUC.Str.q> ;
+    ns2:hasDataAttribute <http://prediktor.com/sparql_testcase#s_18.PTUC.Str.dirGeneral>,
+        <http://prediktor.com/sparql_testcase#s_18.PTUC.Str.general>,
+        <http://prediktor.com/sparql_testcase#s_18.PTUC.Str.q> .
+
+<http://prediktor.com/sparql_testcase#s_18.PTUC.Str.dirGeneral> a ns1:BaseDataVariableType,
+        ns1:BaseVariableType ;
+    ns1:browseName "dirGeneral" ;
+    ns1:browseNameNamespace <http://opcfoundation.org/UA/IEC61850-7-4#> ;
+    ns1:description "" ;
+    ns1:displayName "dirGeneral" ;
+    ns1:nodeClass "UAVariable" ;
+    ns1:nodeId "ns=1;s=18.PTUC.Str.dirGeneral" ;
+    ns1:value <http://prediktor.com/sparql_testcase#s_18.PTUC.Str.dirGeneral_Value> .
+
+<http://prediktor.com/sparql_testcase#s_18.PTUC.Str.general> a ns1:BaseDataVariableType,
+        ns1:BaseVariableType ;
+    ns1:browseName "general" ;
+    ns1:browseNameNamespace <http://opcfoundation.org/UA/IEC61850-7-4#> ;
+    ns1:description "" ;
+    ns1:displayName "general" ;
+    ns1:nodeClass "UAVariable" ;
+    ns1:nodeId "ns=1;s=18.PTUC.Str.general" ;
+    ns1:value <http://prediktor.com/sparql_testcase#s_18.PTUC.Str.general_Value> .
+
+<http://prediktor.com/sparql_testcase#s_18.PTUC.Str.q> a ns1:BaseDataVariableType,
+        ns1:BaseVariableType ;
+    ns1:browseName "q" ;
+    ns1:browseNameNamespace <http://opcfoundation.org/UA/IEC61850-7-4#> ;
+    ns1:description "" ;
+    ns1:displayName "q" ;
+    ns1:nodeClass "UAVariable" ;
+    ns1:nodeId "ns=1;s=18.PTUC.Str.q" ;
+    ns1:value <http://prediktor.com/sparql_testcase#s_18.PTUC.Str.q_Value> .
+
+<http://prediktor.com/sparql_testcase#s_19> a ns1:BaseObjectType,
+        ns4:FirstMiddleLevelSuperType,
+        ns4:FourthMiddleLevelType,
+        ns4:GeneralSystemType,
+        ns4:MiddleSystemType ;
+    ns1:aggregates <http://prediktor.com/sparql_testcase#s_19.FunctionalAspectName>,
+        <http://prediktor.com/sparql_testcase#s_19.SVBR> ;
+    ns1:browseName "System19" ;
+    ns1:browseNameNamespace <http://prediktor.com/sparql_testcase#> ;
+    ns1:description "Quis nostrum exercitationem ullam corporis suscipit laboriosam" ;
+    ns1:displayName "System19" ;
+    ns1:hasChild <http://prediktor.com/sparql_testcase#s_19.FunctionalAspectName>,
+        <http://prediktor.com/sparql_testcase#s_19.SVBR> ;
+    ns1:hasComponent <http://prediktor.com/sparql_testcase#s_19.SVBR> ;
+    ns1:hasProperty <http://prediktor.com/sparql_testcase#s_19.FunctionalAspectName> ;
+    ns1:hierarchicalReferences <http://prediktor.com/sparql_testcase#s_19.FunctionalAspectName>,
+        <http://prediktor.com/sparql_testcase#s_19.SVBR> ;
+    ns1:nodeClass "UAObject" ;
+    ns1:nodeId "ns=1;s=19" ;
+    ns1:references <http://prediktor.com/sparql_testcase#s_19.FunctionalAspectName>,
+        <http://prediktor.com/sparql_testcase#s_19.SVBR> ;
+    ns4:hasLogicalNode <http://prediktor.com/sparql_testcase#s_19.SVBR> .
+
+<http://prediktor.com/sparql_testcase#s_19.SVBR> a ns1:BaseObjectType,
+        ns2:IEC61850LNodeBaseObjectType,
+        <http://opcfoundation.org/UA/IEC61850-7-4#CommonLN>,
+        <http://opcfoundation.org/UA/IEC61850-7-4#SVBR> ;
+    ns1:aggregates <http://prediktor.com/sparql_testcase#s_19.SVBR.Beh> ;
+    ns1:browseName "SVBR" ;
+    ns1:browseNameNamespace <http://prediktor.com/sparql_testcase#> ;
+    ns1:description "" ;
+    ns1:displayName "SVBR" ;
+    ns1:hasChild <http://prediktor.com/sparql_testcase#s_19.SVBR.Beh> ;
+    ns1:hasComponent <http://prediktor.com/sparql_testcase#s_19.SVBR.Beh> ;
+    ns1:hierarchicalReferences <http://prediktor.com/sparql_testcase#s_19.SVBR.Beh> ;
+    ns1:nodeClass "UAObject" ;
+    ns1:nodeId "ns=1;s=19.SVBR" ;
+    ns1:references <http://prediktor.com/sparql_testcase#s_19.SVBR.Beh> ;
+    ns2:hasDataObject <http://prediktor.com/sparql_testcase#s_19.SVBR.Beh> .
+
+<http://prediktor.com/sparql_testcase#s_19.SVBR.Beh> a ns1:BaseObjectType,
+        ns2:ENS,
+        ns2:IEC61850DOBaseObjectType,
+        <http://opcfoundation.org/UA/IEC61850-7-4#ENSBehaviourModeKind> ;
+    ns1:aggregates <http://prediktor.com/sparql_testcase#s_19.SVBR.Beh.q>,
+        <http://prediktor.com/sparql_testcase#s_19.SVBR.Beh.stVal> ;
+    ns1:browseName "Beh" ;
+    ns1:browseNameNamespace <http://opcfoundation.org/UA/IEC61850-7-4#> ;
+    ns1:description "" ;
+    ns1:displayName "Beh" ;
+    ns1:hasChild <http://prediktor.com/sparql_testcase#s_19.SVBR.Beh.q>,
+        <http://prediktor.com/sparql_testcase#s_19.SVBR.Beh.stVal> ;
+    ns1:hasComponent <http://prediktor.com/sparql_testcase#s_19.SVBR.Beh.q>,
+        <http://prediktor.com/sparql_testcase#s_19.SVBR.Beh.stVal> ;
+    ns1:hierarchicalReferences <http://prediktor.com/sparql_testcase#s_19.SVBR.Beh.q>,
+        <http://prediktor.com/sparql_testcase#s_19.SVBR.Beh.stVal> ;
+    ns1:nodeClass "UAObject" ;
+    ns1:nodeId "ns=1;s=19.SVBR.Beh" ;
+    ns1:references <http://prediktor.com/sparql_testcase#s_19.SVBR.Beh.q>,
+        <http://prediktor.com/sparql_testcase#s_19.SVBR.Beh.stVal> ;
+    ns2:hasDataAttribute <http://prediktor.com/sparql_testcase#s_19.SVBR.Beh.q>,
+        <http://prediktor.com/sparql_testcase#s_19.SVBR.Beh.stVal> .
+
+<http://prediktor.com/sparql_testcase#s_19.SVBR.Beh.q> a ns1:BaseDataVariableType,
+        ns1:BaseVariableType ;
+    ns1:browseName "q" ;
+    ns1:browseNameNamespace <http://opcfoundation.org/UA/IEC61850-7-4#> ;
+    ns1:description "" ;
+    ns1:displayName "q" ;
+    ns1:nodeClass "UAVariable" ;
+    ns1:nodeId "ns=1;s=19.SVBR.Beh.q" ;
+    ns1:value <http://prediktor.com/sparql_testcase#s_19.SVBR.Beh.q_Value> .
+
+<http://prediktor.com/sparql_testcase#s_19.SVBR.Beh.stVal> a ns1:BaseDataVariableType,
+        ns1:BaseVariableType ;
+    ns1:browseName "stVal" ;
+    ns1:browseNameNamespace <http://opcfoundation.org/UA/IEC61850-7-4#> ;
+    ns1:description "" ;
+    ns1:displayName "stVal" ;
+    ns1:nodeClass "UAVariable" ;
+    ns1:nodeId "ns=1;s=19.SVBR.Beh.stVal" ;
+    ns1:value <http://prediktor.com/sparql_testcase#s_19.SVBR.Beh.stVal_Value> .
+
+<http://prediktor.com/sparql_testcase#s_2> a ns1:BaseObjectType,
+        ns4:FirstMiddleLevelSuperType,
+        ns4:FirstMiddleLevelType,
+        ns4:GeneralSystemType,
+        ns4:MiddleSystemType ;
+    ns1:aggregates <http://prediktor.com/sparql_testcase#s_2.FunctionalAspectName>,
+        <http://prediktor.com/sparql_testcase#s_2.SVBR>,
+        <http://prediktor.com/sparql_testcase#s_4>,
+        <http://prediktor.com/sparql_testcase#s_5> ;
+    ns1:browseName "System2" ;
+    ns1:browseNameNamespace <http://prediktor.com/sparql_testcase#> ;
+    ns1:description "Consectetur adipiscing elit" ;
+    ns1:displayName "System2" ;
+    ns1:hasChild <http://prediktor.com/sparql_testcase#s_2.FunctionalAspectName>,
+        <http://prediktor.com/sparql_testcase#s_2.SVBR>,
+        <http://prediktor.com/sparql_testcase#s_4>,
+        <http://prediktor.com/sparql_testcase#s_5> ;
+    ns1:hasComponent <http://prediktor.com/sparql_testcase#s_2.SVBR>,
+        <http://prediktor.com/sparql_testcase#s_4>,
+        <http://prediktor.com/sparql_testcase#s_5> ;
+    ns1:hasProperty <http://prediktor.com/sparql_testcase#s_2.FunctionalAspectName> ;
+    ns1:hierarchicalReferences <http://prediktor.com/sparql_testcase#s_2.FunctionalAspectName>,
+        <http://prediktor.com/sparql_testcase#s_2.SVBR>,
+        <http://prediktor.com/sparql_testcase#s_4>,
+        <http://prediktor.com/sparql_testcase#s_5> ;
+    ns1:nodeClass "UAObject" ;
+    ns1:nodeId "ns=1;s=2" ;
+    ns1:references <http://prediktor.com/sparql_testcase#s_2.FunctionalAspectName>,
+        <http://prediktor.com/sparql_testcase#s_2.SVBR>,
+        <http://prediktor.com/sparql_testcase#s_4>,
+        <http://prediktor.com/sparql_testcase#s_5> ;
+    ns4:functionalAspect <http://prediktor.com/sparql_testcase#s_4>,
+        <http://prediktor.com/sparql_testcase#s_5> ;
+    ns4:hasLogicalNode <http://prediktor.com/sparql_testcase#s_2.SVBR> .
+
+<http://prediktor.com/sparql_testcase#s_2.SVBR> a ns1:BaseObjectType,
+        ns2:IEC61850LNodeBaseObjectType,
+        <http://opcfoundation.org/UA/IEC61850-7-4#CommonLN>,
+        <http://opcfoundation.org/UA/IEC61850-7-4#SVBR> ;
+    ns1:aggregates <http://prediktor.com/sparql_testcase#s_2.SVBR.Beh> ;
+    ns1:browseName "SVBR" ;
+    ns1:browseNameNamespace <http://prediktor.com/sparql_testcase#> ;
+    ns1:description "" ;
+    ns1:displayName "SVBR" ;
+    ns1:hasChild <http://prediktor.com/sparql_testcase#s_2.SVBR.Beh> ;
+    ns1:hasComponent <http://prediktor.com/sparql_testcase#s_2.SVBR.Beh> ;
+    ns1:hierarchicalReferences <http://prediktor.com/sparql_testcase#s_2.SVBR.Beh> ;
+    ns1:nodeClass "UAObject" ;
+    ns1:nodeId "ns=1;s=2.SVBR" ;
+    ns1:references <http://prediktor.com/sparql_testcase#s_2.SVBR.Beh> ;
+    ns2:hasDataObject <http://prediktor.com/sparql_testcase#s_2.SVBR.Beh> .
+
+<http://prediktor.com/sparql_testcase#s_2.SVBR.Beh> a ns1:BaseObjectType,
+        ns2:ENS,
+        ns2:IEC61850DOBaseObjectType,
+        <http://opcfoundation.org/UA/IEC61850-7-4#ENSBehaviourModeKind> ;
+    ns1:aggregates <http://prediktor.com/sparql_testcase#s_2.SVBR.Beh.q>,
+        <http://prediktor.com/sparql_testcase#s_2.SVBR.Beh.stVal> ;
+    ns1:browseName "Beh" ;
+    ns1:browseNameNamespace <http://opcfoundation.org/UA/IEC61850-7-4#> ;
+    ns1:description "" ;
+    ns1:displayName "Beh" ;
+    ns1:hasChild <http://prediktor.com/sparql_testcase#s_2.SVBR.Beh.q>,
+        <http://prediktor.com/sparql_testcase#s_2.SVBR.Beh.stVal> ;
+    ns1:hasComponent <http://prediktor.com/sparql_testcase#s_2.SVBR.Beh.q>,
+        <http://prediktor.com/sparql_testcase#s_2.SVBR.Beh.stVal> ;
+    ns1:hierarchicalReferences <http://prediktor.com/sparql_testcase#s_2.SVBR.Beh.q>,
+        <http://prediktor.com/sparql_testcase#s_2.SVBR.Beh.stVal> ;
+    ns1:nodeClass "UAObject" ;
+    ns1:nodeId "ns=1;s=2.SVBR.Beh" ;
+    ns1:references <http://prediktor.com/sparql_testcase#s_2.SVBR.Beh.q>,
+        <http://prediktor.com/sparql_testcase#s_2.SVBR.Beh.stVal> ;
+    ns2:hasDataAttribute <http://prediktor.com/sparql_testcase#s_2.SVBR.Beh.q>,
+        <http://prediktor.com/sparql_testcase#s_2.SVBR.Beh.stVal> .
+
+<http://prediktor.com/sparql_testcase#s_2.SVBR.Beh.q> a ns1:BaseDataVariableType,
+        ns1:BaseVariableType ;
+    ns1:browseName "q" ;
+    ns1:browseNameNamespace <http://opcfoundation.org/UA/IEC61850-7-4#> ;
+    ns1:description "" ;
+    ns1:displayName "q" ;
+    ns1:nodeClass "UAVariable" ;
+    ns1:nodeId "ns=1;s=2.SVBR.Beh.q" ;
+    ns1:value <http://prediktor.com/sparql_testcase#s_2.SVBR.Beh.q_Value> .
+
+<http://prediktor.com/sparql_testcase#s_2.SVBR.Beh.stVal> a ns1:BaseDataVariableType,
+        ns1:BaseVariableType ;
+    ns1:browseName "stVal" ;
+    ns1:browseNameNamespace <http://opcfoundation.org/UA/IEC61850-7-4#> ;
+    ns1:description "" ;
+    ns1:displayName "stVal" ;
+    ns1:nodeClass "UAVariable" ;
+    ns1:nodeId "ns=1;s=2.SVBR.Beh.stVal" ;
+    ns1:value <http://prediktor.com/sparql_testcase#s_2.SVBR.Beh.stVal_Value> .
+
+<http://prediktor.com/sparql_testcase#s_20.PTUC> a ns1:BaseObjectType,
+        ns2:IEC61850LNodeBaseObjectType,
+        <http://opcfoundation.org/UA/IEC61850-7-4#CommonLN>,
+        <http://opcfoundation.org/UA/IEC61850-7-4#PTUC> ;
+    ns1:aggregates <http://prediktor.com/sparql_testcase#s_20.PTUC.Beh>,
+        <http://prediktor.com/sparql_testcase#s_20.PTUC.Op>,
+        <http://prediktor.com/sparql_testcase#s_20.PTUC.Str> ;
+    ns1:browseName "PTUC" ;
+    ns1:browseNameNamespace <http://prediktor.com/sparql_testcase#> ;
+    ns1:description "" ;
+    ns1:displayName "PTUC" ;
+    ns1:hasChild <http://prediktor.com/sparql_testcase#s_20.PTUC.Beh>,
+        <http://prediktor.com/sparql_testcase#s_20.PTUC.Op>,
+        <http://prediktor.com/sparql_testcase#s_20.PTUC.Str> ;
+    ns1:hasComponent <http://prediktor.com/sparql_testcase#s_20.PTUC.Beh>,
+        <http://prediktor.com/sparql_testcase#s_20.PTUC.Op>,
+        <http://prediktor.com/sparql_testcase#s_20.PTUC.Str> ;
+    ns1:hierarchicalReferences <http://prediktor.com/sparql_testcase#s_20.PTUC.Beh>,
+        <http://prediktor.com/sparql_testcase#s_20.PTUC.Op>,
+        <http://prediktor.com/sparql_testcase#s_20.PTUC.Str> ;
+    ns1:nodeClass "UAObject" ;
+    ns1:nodeId "ns=1;s=20.PTUC" ;
+    ns1:references <http://prediktor.com/sparql_testcase#s_20.PTUC.Beh>,
+        <http://prediktor.com/sparql_testcase#s_20.PTUC.Op>,
+        <http://prediktor.com/sparql_testcase#s_20.PTUC.Str> ;
+    ns2:hasDataObject <http://prediktor.com/sparql_testcase#s_20.PTUC.Beh>,
+        <http://prediktor.com/sparql_testcase#s_20.PTUC.Op>,
+        <http://prediktor.com/sparql_testcase#s_20.PTUC.Str> .
+
+<http://prediktor.com/sparql_testcase#s_20.PTUC.Beh> a ns1:BaseObjectType,
+        ns2:ENS,
+        ns2:IEC61850DOBaseObjectType,
+        <http://opcfoundation.org/UA/IEC61850-7-4#ENSBehaviourModeKind> ;
+    ns1:aggregates <http://prediktor.com/sparql_testcase#s_20.PTUC.Beh.q>,
+        <http://prediktor.com/sparql_testcase#s_20.PTUC.Beh.stVal> ;
+    ns1:browseName "Beh" ;
+    ns1:browseNameNamespace <http://opcfoundation.org/UA/IEC61850-7-4#> ;
+    ns1:description "" ;
+    ns1:displayName "Beh" ;
+    ns1:hasChild <http://prediktor.com/sparql_testcase#s_20.PTUC.Beh.q>,
+        <http://prediktor.com/sparql_testcase#s_20.PTUC.Beh.stVal> ;
+    ns1:hasComponent <http://prediktor.com/sparql_testcase#s_20.PTUC.Beh.q>,
+        <http://prediktor.com/sparql_testcase#s_20.PTUC.Beh.stVal> ;
+    ns1:hierarchicalReferences <http://prediktor.com/sparql_testcase#s_20.PTUC.Beh.q>,
+        <http://prediktor.com/sparql_testcase#s_20.PTUC.Beh.stVal> ;
+    ns1:nodeClass "UAObject" ;
+    ns1:nodeId "ns=1;s=20.PTUC.Beh" ;
+    ns1:references <http://prediktor.com/sparql_testcase#s_20.PTUC.Beh.q>,
+        <http://prediktor.com/sparql_testcase#s_20.PTUC.Beh.stVal> ;
+    ns2:hasDataAttribute <http://prediktor.com/sparql_testcase#s_20.PTUC.Beh.q>,
+        <http://prediktor.com/sparql_testcase#s_20.PTUC.Beh.stVal> .
+
+<http://prediktor.com/sparql_testcase#s_20.PTUC.Beh.q> a ns1:BaseDataVariableType,
+        ns1:BaseVariableType ;
+    ns1:browseName "q" ;
+    ns1:browseNameNamespace <http://opcfoundation.org/UA/IEC61850-7-4#> ;
+    ns1:description "" ;
+    ns1:displayName "q" ;
+    ns1:nodeClass "UAVariable" ;
+    ns1:nodeId "ns=1;s=20.PTUC.Beh.q" ;
+    ns1:value <http://prediktor.com/sparql_testcase#s_20.PTUC.Beh.q_Value> .
+
+<http://prediktor.com/sparql_testcase#s_20.PTUC.Beh.stVal> a ns1:BaseDataVariableType,
+        ns1:BaseVariableType ;
+    ns1:browseName "stVal" ;
+    ns1:browseNameNamespace <http://opcfoundation.org/UA/IEC61850-7-4#> ;
+    ns1:description "" ;
+    ns1:displayName "stVal" ;
+    ns1:nodeClass "UAVariable" ;
+    ns1:nodeId "ns=1;s=20.PTUC.Beh.stVal" ;
+    ns1:value <http://prediktor.com/sparql_testcase#s_20.PTUC.Beh.stVal_Value> .
+
+<http://prediktor.com/sparql_testcase#s_20.PTUC.Op> a ns1:BaseObjectType,
+        ns2:ACT,
+        ns2:IEC61850DOBaseObjectType ;
+    ns1:aggregates <http://prediktor.com/sparql_testcase#s_20.PTUC.Op.general>,
+        <http://prediktor.com/sparql_testcase#s_20.PTUC.Op.q> ;
+    ns1:browseName "Op" ;
+    ns1:browseNameNamespace <http://opcfoundation.org/UA/IEC61850-7-4#> ;
+    ns1:description "" ;
+    ns1:displayName "Op" ;
+    ns1:hasChild <http://prediktor.com/sparql_testcase#s_20.PTUC.Op.general>,
+        <http://prediktor.com/sparql_testcase#s_20.PTUC.Op.q> ;
+    ns1:hasComponent <http://prediktor.com/sparql_testcase#s_20.PTUC.Op.general>,
+        <http://prediktor.com/sparql_testcase#s_20.PTUC.Op.q> ;
+    ns1:hierarchicalReferences <http://prediktor.com/sparql_testcase#s_20.PTUC.Op.general>,
+        <http://prediktor.com/sparql_testcase#s_20.PTUC.Op.q> ;
+    ns1:nodeClass "UAObject" ;
+    ns1:nodeId "ns=1;s=20.PTUC.Op" ;
+    ns1:references <http://prediktor.com/sparql_testcase#s_20.PTUC.Op.general>,
+        <http://prediktor.com/sparql_testcase#s_20.PTUC.Op.q> ;
+    ns2:hasDataAttribute <http://prediktor.com/sparql_testcase#s_20.PTUC.Op.general>,
+        <http://prediktor.com/sparql_testcase#s_20.PTUC.Op.q> .
+
+<http://prediktor.com/sparql_testcase#s_20.PTUC.Op.general> a ns1:BaseDataVariableType,
+        ns1:BaseVariableType ;
+    ns1:browseName "general" ;
+    ns1:browseNameNamespace <http://opcfoundation.org/UA/IEC61850-7-4#> ;
+    ns1:description "" ;
+    ns1:displayName "general" ;
+    ns1:nodeClass "UAVariable" ;
+    ns1:nodeId "ns=1;s=20.PTUC.Op.general" ;
+    ns1:value <http://prediktor.com/sparql_testcase#s_20.PTUC.Op.general_Value> .
+
+<http://prediktor.com/sparql_testcase#s_20.PTUC.Op.q> a ns1:BaseDataVariableType,
+        ns1:BaseVariableType ;
+    ns1:browseName "q" ;
+    ns1:browseNameNamespace <http://opcfoundation.org/UA/IEC61850-7-4#> ;
+    ns1:description "" ;
+    ns1:displayName "q" ;
+    ns1:nodeClass "UAVariable" ;
+    ns1:nodeId "ns=1;s=20.PTUC.Op.q" ;
+    ns1:value <http://prediktor.com/sparql_testcase#s_20.PTUC.Op.q_Value> .
+
+<http://prediktor.com/sparql_testcase#s_20.PTUC.Str> a ns1:BaseObjectType,
+        ns2:ACD,
+        ns2:IEC61850DOBaseObjectType ;
+    ns1:aggregates <http://prediktor.com/sparql_testcase#s_20.PTUC.Str.dirGeneral>,
+        <http://prediktor.com/sparql_testcase#s_20.PTUC.Str.general>,
+        <http://prediktor.com/sparql_testcase#s_20.PTUC.Str.q> ;
+    ns1:browseName "Str" ;
+    ns1:browseNameNamespace <http://opcfoundation.org/UA/IEC61850-7-4#> ;
+    ns1:description "" ;
+    ns1:displayName "Str" ;
+    ns1:hasChild <http://prediktor.com/sparql_testcase#s_20.PTUC.Str.dirGeneral>,
+        <http://prediktor.com/sparql_testcase#s_20.PTUC.Str.general>,
+        <http://prediktor.com/sparql_testcase#s_20.PTUC.Str.q> ;
+    ns1:hasComponent <http://prediktor.com/sparql_testcase#s_20.PTUC.Str.dirGeneral>,
+        <http://prediktor.com/sparql_testcase#s_20.PTUC.Str.general>,
+        <http://prediktor.com/sparql_testcase#s_20.PTUC.Str.q> ;
+    ns1:hierarchicalReferences <http://prediktor.com/sparql_testcase#s_20.PTUC.Str.dirGeneral>,
+        <http://prediktor.com/sparql_testcase#s_20.PTUC.Str.general>,
+        <http://prediktor.com/sparql_testcase#s_20.PTUC.Str.q> ;
+    ns1:nodeClass "UAObject" ;
+    ns1:nodeId "ns=1;s=20.PTUC.Str" ;
+    ns1:references <http://prediktor.com/sparql_testcase#s_20.PTUC.Str.dirGeneral>,
+        <http://prediktor.com/sparql_testcase#s_20.PTUC.Str.general>,
+        <http://prediktor.com/sparql_testcase#s_20.PTUC.Str.q> ;
+    ns2:hasDataAttribute <http://prediktor.com/sparql_testcase#s_20.PTUC.Str.dirGeneral>,
+        <http://prediktor.com/sparql_testcase#s_20.PTUC.Str.general>,
+        <http://prediktor.com/sparql_testcase#s_20.PTUC.Str.q> .
+
+<http://prediktor.com/sparql_testcase#s_20.PTUC.Str.dirGeneral> a ns1:BaseDataVariableType,
+        ns1:BaseVariableType ;
+    ns1:browseName "dirGeneral" ;
+    ns1:browseNameNamespace <http://opcfoundation.org/UA/IEC61850-7-4#> ;
+    ns1:description "" ;
+    ns1:displayName "dirGeneral" ;
+    ns1:nodeClass "UAVariable" ;
+    ns1:nodeId "ns=1;s=20.PTUC.Str.dirGeneral" ;
+    ns1:value <http://prediktor.com/sparql_testcase#s_20.PTUC.Str.dirGeneral_Value> .
+
+<http://prediktor.com/sparql_testcase#s_20.PTUC.Str.general> a ns1:BaseDataVariableType,
+        ns1:BaseVariableType ;
+    ns1:browseName "general" ;
+    ns1:browseNameNamespace <http://opcfoundation.org/UA/IEC61850-7-4#> ;
+    ns1:description "" ;
+    ns1:displayName "general" ;
+    ns1:nodeClass "UAVariable" ;
+    ns1:nodeId "ns=1;s=20.PTUC.Str.general" ;
+    ns1:value <http://prediktor.com/sparql_testcase#s_20.PTUC.Str.general_Value> .
+
+<http://prediktor.com/sparql_testcase#s_20.PTUC.Str.q> a ns1:BaseDataVariableType,
+        ns1:BaseVariableType ;
+    ns1:browseName "q" ;
+    ns1:browseNameNamespace <http://opcfoundation.org/UA/IEC61850-7-4#> ;
+    ns1:description "" ;
+    ns1:displayName "q" ;
+    ns1:nodeClass "UAVariable" ;
+    ns1:nodeId "ns=1;s=20.PTUC.Str.q" ;
+    ns1:value <http://prediktor.com/sparql_testcase#s_20.PTUC.Str.q_Value> .
+
+<http://prediktor.com/sparql_testcase#s_21> a ns1:BaseObjectType,
+        ns4:FirstMiddleLevelSuperType,
+        ns4:GeneralSystemType,
+        ns4:MiddleSystemType,
+        ns4:SecondMiddleLevelType ;
+    ns1:aggregates <http://prediktor.com/sparql_testcase#s_21.FunctionalAspectName>,
+        <http://prediktor.com/sparql_testcase#s_21.SVBR> ;
+    ns1:browseName "System21" ;
+    ns1:browseNameNamespace <http://prediktor.com/sparql_testcase#> ;
+    ns1:description "Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur" ;
+    ns1:displayName "System21" ;
+    ns1:hasChild <http://prediktor.com/sparql_testcase#s_21.FunctionalAspectName>,
+        <http://prediktor.com/sparql_testcase#s_21.SVBR> ;
+    ns1:hasComponent <http://prediktor.com/sparql_testcase#s_21.SVBR> ;
+    ns1:hasProperty <http://prediktor.com/sparql_testcase#s_21.FunctionalAspectName> ;
+    ns1:hierarchicalReferences <http://prediktor.com/sparql_testcase#s_21.FunctionalAspectName>,
+        <http://prediktor.com/sparql_testcase#s_21.SVBR> ;
+    ns1:nodeClass "UAObject" ;
+    ns1:nodeId "ns=1;s=21" ;
+    ns1:references <http://prediktor.com/sparql_testcase#s_21.FunctionalAspectName>,
+        <http://prediktor.com/sparql_testcase#s_21.SVBR> ;
+    ns4:hasLogicalNode <http://prediktor.com/sparql_testcase#s_21.SVBR> .
+
+<http://prediktor.com/sparql_testcase#s_21.SVBR> a ns1:BaseObjectType,
+        ns2:IEC61850LNodeBaseObjectType,
+        <http://opcfoundation.org/UA/IEC61850-7-4#CommonLN>,
+        <http://opcfoundation.org/UA/IEC61850-7-4#SVBR> ;
+    ns1:aggregates <http://prediktor.com/sparql_testcase#s_21.SVBR.Beh> ;
+    ns1:browseName "SVBR" ;
+    ns1:browseNameNamespace <http://prediktor.com/sparql_testcase#> ;
+    ns1:description "" ;
+    ns1:displayName "SVBR" ;
+    ns1:hasChild <http://prediktor.com/sparql_testcase#s_21.SVBR.Beh> ;
+    ns1:hasComponent <http://prediktor.com/sparql_testcase#s_21.SVBR.Beh> ;
+    ns1:hierarchicalReferences <http://prediktor.com/sparql_testcase#s_21.SVBR.Beh> ;
+    ns1:nodeClass "UAObject" ;
+    ns1:nodeId "ns=1;s=21.SVBR" ;
+    ns1:references <http://prediktor.com/sparql_testcase#s_21.SVBR.Beh> ;
+    ns2:hasDataObject <http://prediktor.com/sparql_testcase#s_21.SVBR.Beh> .
+
+<http://prediktor.com/sparql_testcase#s_21.SVBR.Beh> a ns1:BaseObjectType,
+        ns2:ENS,
+        ns2:IEC61850DOBaseObjectType,
+        <http://opcfoundation.org/UA/IEC61850-7-4#ENSBehaviourModeKind> ;
+    ns1:aggregates <http://prediktor.com/sparql_testcase#s_21.SVBR.Beh.q>,
+        <http://prediktor.com/sparql_testcase#s_21.SVBR.Beh.stVal> ;
+    ns1:browseName "Beh" ;
+    ns1:browseNameNamespace <http://opcfoundation.org/UA/IEC61850-7-4#> ;
+    ns1:description "" ;
+    ns1:displayName "Beh" ;
+    ns1:hasChild <http://prediktor.com/sparql_testcase#s_21.SVBR.Beh.q>,
+        <http://prediktor.com/sparql_testcase#s_21.SVBR.Beh.stVal> ;
+    ns1:hasComponent <http://prediktor.com/sparql_testcase#s_21.SVBR.Beh.q>,
+        <http://prediktor.com/sparql_testcase#s_21.SVBR.Beh.stVal> ;
+    ns1:hierarchicalReferences <http://prediktor.com/sparql_testcase#s_21.SVBR.Beh.q>,
+        <http://prediktor.com/sparql_testcase#s_21.SVBR.Beh.stVal> ;
+    ns1:nodeClass "UAObject" ;
+    ns1:nodeId "ns=1;s=21.SVBR.Beh" ;
+    ns1:references <http://prediktor.com/sparql_testcase#s_21.SVBR.Beh.q>,
+        <http://prediktor.com/sparql_testcase#s_21.SVBR.Beh.stVal> ;
+    ns2:hasDataAttribute <http://prediktor.com/sparql_testcase#s_21.SVBR.Beh.q>,
+        <http://prediktor.com/sparql_testcase#s_21.SVBR.Beh.stVal> .
+
+<http://prediktor.com/sparql_testcase#s_21.SVBR.Beh.q> a ns1:BaseDataVariableType,
+        ns1:BaseVariableType ;
+    ns1:browseName "q" ;
+    ns1:browseNameNamespace <http://opcfoundation.org/UA/IEC61850-7-4#> ;
+    ns1:description "" ;
+    ns1:displayName "q" ;
+    ns1:nodeClass "UAVariable" ;
+    ns1:nodeId "ns=1;s=21.SVBR.Beh.q" ;
+    ns1:value <http://prediktor.com/sparql_testcase#s_21.SVBR.Beh.q_Value> .
+
+<http://prediktor.com/sparql_testcase#s_21.SVBR.Beh.stVal> a ns1:BaseDataVariableType,
+        ns1:BaseVariableType ;
+    ns1:browseName "stVal" ;
+    ns1:browseNameNamespace <http://opcfoundation.org/UA/IEC61850-7-4#> ;
+    ns1:description "" ;
+    ns1:displayName "stVal" ;
+    ns1:nodeClass "UAVariable" ;
+    ns1:nodeId "ns=1;s=21.SVBR.Beh.stVal" ;
+    ns1:value <http://prediktor.com/sparql_testcase#s_21.SVBR.Beh.stVal_Value> .
+
+<http://prediktor.com/sparql_testcase#s_3> a ns1:BaseObjectType,
+        ns4:FirstMiddleLevelSuperType,
+        ns4:FirstMiddleLevelType,
+        ns4:GeneralSystemType,
+        ns4:MiddleSystemType ;
+    ns1:aggregates <http://prediktor.com/sparql_testcase#s_3.FunctionalAspectName>,
+        <http://prediktor.com/sparql_testcase#s_3.PTUC>,
+        <http://prediktor.com/sparql_testcase#s_6> ;
+    ns1:browseName "System3" ;
+    ns1:browseNameNamespace <http://prediktor.com/sparql_testcase#> ;
+    ns1:description "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua" ;
+    ns1:displayName "System3" ;
+    ns1:hasChild <http://prediktor.com/sparql_testcase#s_3.FunctionalAspectName>,
+        <http://prediktor.com/sparql_testcase#s_3.PTUC>,
+        <http://prediktor.com/sparql_testcase#s_6> ;
+    ns1:hasComponent <http://prediktor.com/sparql_testcase#s_3.PTUC>,
+        <http://prediktor.com/sparql_testcase#s_6> ;
+    ns1:hasProperty <http://prediktor.com/sparql_testcase#s_3.FunctionalAspectName> ;
+    ns1:hierarchicalReferences <http://prediktor.com/sparql_testcase#s_3.FunctionalAspectName>,
+        <http://prediktor.com/sparql_testcase#s_3.PTUC>,
+        <http://prediktor.com/sparql_testcase#s_6> ;
+    ns1:nodeClass "UAObject" ;
+    ns1:nodeId "ns=1;s=3" ;
+    ns1:references <http://prediktor.com/sparql_testcase#s_3.FunctionalAspectName>,
+        <http://prediktor.com/sparql_testcase#s_3.PTUC>,
+        <http://prediktor.com/sparql_testcase#s_6> ;
+    ns4:functionalAspect <http://prediktor.com/sparql_testcase#s_6> ;
+    ns4:hasLogicalNode <http://prediktor.com/sparql_testcase#s_3.PTUC> .
+
+<http://prediktor.com/sparql_testcase#s_3.PTUC> a ns1:BaseObjectType,
+        ns2:IEC61850LNodeBaseObjectType,
+        <http://opcfoundation.org/UA/IEC61850-7-4#CommonLN>,
+        <http://opcfoundation.org/UA/IEC61850-7-4#PTUC> ;
+    ns1:aggregates <http://prediktor.com/sparql_testcase#s_3.PTUC.Beh>,
+        <http://prediktor.com/sparql_testcase#s_3.PTUC.Op>,
+        <http://prediktor.com/sparql_testcase#s_3.PTUC.Str> ;
+    ns1:browseName "PTUC" ;
+    ns1:browseNameNamespace <http://prediktor.com/sparql_testcase#> ;
+    ns1:description "" ;
+    ns1:displayName "PTUC" ;
+    ns1:hasChild <http://prediktor.com/sparql_testcase#s_3.PTUC.Beh>,
+        <http://prediktor.com/sparql_testcase#s_3.PTUC.Op>,
+        <http://prediktor.com/sparql_testcase#s_3.PTUC.Str> ;
+    ns1:hasComponent <http://prediktor.com/sparql_testcase#s_3.PTUC.Beh>,
+        <http://prediktor.com/sparql_testcase#s_3.PTUC.Op>,
+        <http://prediktor.com/sparql_testcase#s_3.PTUC.Str> ;
+    ns1:hierarchicalReferences <http://prediktor.com/sparql_testcase#s_3.PTUC.Beh>,
+        <http://prediktor.com/sparql_testcase#s_3.PTUC.Op>,
+        <http://prediktor.com/sparql_testcase#s_3.PTUC.Str> ;
+    ns1:nodeClass "UAObject" ;
+    ns1:nodeId "ns=1;s=3.PTUC" ;
+    ns1:references <http://prediktor.com/sparql_testcase#s_3.PTUC.Beh>,
+        <http://prediktor.com/sparql_testcase#s_3.PTUC.Op>,
+        <http://prediktor.com/sparql_testcase#s_3.PTUC.Str> ;
+    ns2:hasDataObject <http://prediktor.com/sparql_testcase#s_3.PTUC.Beh>,
+        <http://prediktor.com/sparql_testcase#s_3.PTUC.Op>,
+        <http://prediktor.com/sparql_testcase#s_3.PTUC.Str> .
+
+<http://prediktor.com/sparql_testcase#s_3.PTUC.Beh> a ns1:BaseObjectType,
+        ns2:ENS,
+        ns2:IEC61850DOBaseObjectType,
+        <http://opcfoundation.org/UA/IEC61850-7-4#ENSBehaviourModeKind> ;
+    ns1:aggregates <http://prediktor.com/sparql_testcase#s_3.PTUC.Beh.q>,
+        <http://prediktor.com/sparql_testcase#s_3.PTUC.Beh.stVal> ;
+    ns1:browseName "Beh" ;
+    ns1:browseNameNamespace <http://opcfoundation.org/UA/IEC61850-7-4#> ;
+    ns1:description "" ;
+    ns1:displayName "Beh" ;
+    ns1:hasChild <http://prediktor.com/sparql_testcase#s_3.PTUC.Beh.q>,
+        <http://prediktor.com/sparql_testcase#s_3.PTUC.Beh.stVal> ;
+    ns1:hasComponent <http://prediktor.com/sparql_testcase#s_3.PTUC.Beh.q>,
+        <http://prediktor.com/sparql_testcase#s_3.PTUC.Beh.stVal> ;
+    ns1:hierarchicalReferences <http://prediktor.com/sparql_testcase#s_3.PTUC.Beh.q>,
+        <http://prediktor.com/sparql_testcase#s_3.PTUC.Beh.stVal> ;
+    ns1:nodeClass "UAObject" ;
+    ns1:nodeId "ns=1;s=3.PTUC.Beh" ;
+    ns1:references <http://prediktor.com/sparql_testcase#s_3.PTUC.Beh.q>,
+        <http://prediktor.com/sparql_testcase#s_3.PTUC.Beh.stVal> ;
+    ns2:hasDataAttribute <http://prediktor.com/sparql_testcase#s_3.PTUC.Beh.q>,
+        <http://prediktor.com/sparql_testcase#s_3.PTUC.Beh.stVal> .
+
+<http://prediktor.com/sparql_testcase#s_3.PTUC.Beh.q> a ns1:BaseDataVariableType,
+        ns1:BaseVariableType ;
+    ns1:browseName "q" ;
+    ns1:browseNameNamespace <http://opcfoundation.org/UA/IEC61850-7-4#> ;
+    ns1:description "" ;
+    ns1:displayName "q" ;
+    ns1:nodeClass "UAVariable" ;
+    ns1:nodeId "ns=1;s=3.PTUC.Beh.q" ;
+    ns1:value <http://prediktor.com/sparql_testcase#s_3.PTUC.Beh.q_Value> .
+
+<http://prediktor.com/sparql_testcase#s_3.PTUC.Beh.stVal> a ns1:BaseDataVariableType,
+        ns1:BaseVariableType ;
+    ns1:browseName "stVal" ;
+    ns1:browseNameNamespace <http://opcfoundation.org/UA/IEC61850-7-4#> ;
+    ns1:description "" ;
+    ns1:displayName "stVal" ;
+    ns1:nodeClass "UAVariable" ;
+    ns1:nodeId "ns=1;s=3.PTUC.Beh.stVal" ;
+    ns1:value <http://prediktor.com/sparql_testcase#s_3.PTUC.Beh.stVal_Value> .
+
+<http://prediktor.com/sparql_testcase#s_3.PTUC.Op> a ns1:BaseObjectType,
+        ns2:ACT,
+        ns2:IEC61850DOBaseObjectType ;
+    ns1:aggregates <http://prediktor.com/sparql_testcase#s_3.PTUC.Op.general>,
+        <http://prediktor.com/sparql_testcase#s_3.PTUC.Op.q> ;
+    ns1:browseName "Op" ;
+    ns1:browseNameNamespace <http://opcfoundation.org/UA/IEC61850-7-4#> ;
+    ns1:description "" ;
+    ns1:displayName "Op" ;
+    ns1:hasChild <http://prediktor.com/sparql_testcase#s_3.PTUC.Op.general>,
+        <http://prediktor.com/sparql_testcase#s_3.PTUC.Op.q> ;
+    ns1:hasComponent <http://prediktor.com/sparql_testcase#s_3.PTUC.Op.general>,
+        <http://prediktor.com/sparql_testcase#s_3.PTUC.Op.q> ;
+    ns1:hierarchicalReferences <http://prediktor.com/sparql_testcase#s_3.PTUC.Op.general>,
+        <http://prediktor.com/sparql_testcase#s_3.PTUC.Op.q> ;
+    ns1:nodeClass "UAObject" ;
+    ns1:nodeId "ns=1;s=3.PTUC.Op" ;
+    ns1:references <http://prediktor.com/sparql_testcase#s_3.PTUC.Op.general>,
+        <http://prediktor.com/sparql_testcase#s_3.PTUC.Op.q> ;
+    ns2:hasDataAttribute <http://prediktor.com/sparql_testcase#s_3.PTUC.Op.general>,
+        <http://prediktor.com/sparql_testcase#s_3.PTUC.Op.q> .
+
+<http://prediktor.com/sparql_testcase#s_3.PTUC.Op.general> a ns1:BaseDataVariableType,
+        ns1:BaseVariableType ;
+    ns1:browseName "general" ;
+    ns1:browseNameNamespace <http://opcfoundation.org/UA/IEC61850-7-4#> ;
+    ns1:description "" ;
+    ns1:displayName "general" ;
+    ns1:nodeClass "UAVariable" ;
+    ns1:nodeId "ns=1;s=3.PTUC.Op.general" ;
+    ns1:value <http://prediktor.com/sparql_testcase#s_3.PTUC.Op.general_Value> .
+
+<http://prediktor.com/sparql_testcase#s_3.PTUC.Op.q> a ns1:BaseDataVariableType,
+        ns1:BaseVariableType ;
+    ns1:browseName "q" ;
+    ns1:browseNameNamespace <http://opcfoundation.org/UA/IEC61850-7-4#> ;
+    ns1:description "" ;
+    ns1:displayName "q" ;
+    ns1:nodeClass "UAVariable" ;
+    ns1:nodeId "ns=1;s=3.PTUC.Op.q" ;
+    ns1:value <http://prediktor.com/sparql_testcase#s_3.PTUC.Op.q_Value> .
+
+<http://prediktor.com/sparql_testcase#s_3.PTUC.Str> a ns1:BaseObjectType,
+        ns2:ACD,
+        ns2:IEC61850DOBaseObjectType ;
+    ns1:aggregates <http://prediktor.com/sparql_testcase#s_3.PTUC.Str.dirGeneral>,
+        <http://prediktor.com/sparql_testcase#s_3.PTUC.Str.general>,
+        <http://prediktor.com/sparql_testcase#s_3.PTUC.Str.q> ;
+    ns1:browseName "Str" ;
+    ns1:browseNameNamespace <http://opcfoundation.org/UA/IEC61850-7-4#> ;
+    ns1:description "" ;
+    ns1:displayName "Str" ;
+    ns1:hasChild <http://prediktor.com/sparql_testcase#s_3.PTUC.Str.dirGeneral>,
+        <http://prediktor.com/sparql_testcase#s_3.PTUC.Str.general>,
+        <http://prediktor.com/sparql_testcase#s_3.PTUC.Str.q> ;
+    ns1:hasComponent <http://prediktor.com/sparql_testcase#s_3.PTUC.Str.dirGeneral>,
+        <http://prediktor.com/sparql_testcase#s_3.PTUC.Str.general>,
+        <http://prediktor.com/sparql_testcase#s_3.PTUC.Str.q> ;
+    ns1:hierarchicalReferences <http://prediktor.com/sparql_testcase#s_3.PTUC.Str.dirGeneral>,
+        <http://prediktor.com/sparql_testcase#s_3.PTUC.Str.general>,
+        <http://prediktor.com/sparql_testcase#s_3.PTUC.Str.q> ;
+    ns1:nodeClass "UAObject" ;
+    ns1:nodeId "ns=1;s=3.PTUC.Str" ;
+    ns1:references <http://prediktor.com/sparql_testcase#s_3.PTUC.Str.dirGeneral>,
+        <http://prediktor.com/sparql_testcase#s_3.PTUC.Str.general>,
+        <http://prediktor.com/sparql_testcase#s_3.PTUC.Str.q> ;
+    ns2:hasDataAttribute <http://prediktor.com/sparql_testcase#s_3.PTUC.Str.dirGeneral>,
+        <http://prediktor.com/sparql_testcase#s_3.PTUC.Str.general>,
+        <http://prediktor.com/sparql_testcase#s_3.PTUC.Str.q> .
+
+<http://prediktor.com/sparql_testcase#s_3.PTUC.Str.dirGeneral> a ns1:BaseDataVariableType,
+        ns1:BaseVariableType ;
+    ns1:browseName "dirGeneral" ;
+    ns1:browseNameNamespace <http://opcfoundation.org/UA/IEC61850-7-4#> ;
+    ns1:description "" ;
+    ns1:displayName "dirGeneral" ;
+    ns1:nodeClass "UAVariable" ;
+    ns1:nodeId "ns=1;s=3.PTUC.Str.dirGeneral" ;
+    ns1:value <http://prediktor.com/sparql_testcase#s_3.PTUC.Str.dirGeneral_Value> .
+
+<http://prediktor.com/sparql_testcase#s_3.PTUC.Str.general> a ns1:BaseDataVariableType,
+        ns1:BaseVariableType ;
+    ns1:browseName "general" ;
+    ns1:browseNameNamespace <http://opcfoundation.org/UA/IEC61850-7-4#> ;
+    ns1:description "" ;
+    ns1:displayName "general" ;
+    ns1:nodeClass "UAVariable" ;
+    ns1:nodeId "ns=1;s=3.PTUC.Str.general" ;
+    ns1:value <http://prediktor.com/sparql_testcase#s_3.PTUC.Str.general_Value> .
+
+<http://prediktor.com/sparql_testcase#s_3.PTUC.Str.q> a ns1:BaseDataVariableType,
+        ns1:BaseVariableType ;
+    ns1:browseName "q" ;
+    ns1:browseNameNamespace <http://opcfoundation.org/UA/IEC61850-7-4#> ;
+    ns1:description "" ;
+    ns1:displayName "q" ;
+    ns1:nodeClass "UAVariable" ;
+    ns1:nodeId "ns=1;s=3.PTUC.Str.q" ;
+    ns1:value <http://prediktor.com/sparql_testcase#s_3.PTUC.Str.q_Value> .
+
+<http://prediktor.com/sparql_testcase#s_4> a ns1:BaseObjectType,
+        ns4:FirstMiddleLevelSuperType,
+        ns4:FourthMiddleLevelType,
+        ns4:GeneralSystemType,
+        ns4:MiddleSystemType ;
+    ns1:aggregates <http://prediktor.com/sparql_testcase#s_4.FunctionalAspectName>,
+        <http://prediktor.com/sparql_testcase#s_4.SVBR>,
+        <http://prediktor.com/sparql_testcase#s_7> ;
+    ns1:browseName "System4" ;
+    ns1:browseNameNamespace <http://prediktor.com/sparql_testcase#> ;
+    ns1:description "Ut enim ad minim veniam" ;
+    ns1:displayName "System4" ;
+    ns1:hasChild <http://prediktor.com/sparql_testcase#s_4.FunctionalAspectName>,
+        <http://prediktor.com/sparql_testcase#s_4.SVBR>,
+        <http://prediktor.com/sparql_testcase#s_7> ;
+    ns1:hasComponent <http://prediktor.com/sparql_testcase#s_4.SVBR>,
+        <http://prediktor.com/sparql_testcase#s_7> ;
+    ns1:hasProperty <http://prediktor.com/sparql_testcase#s_4.FunctionalAspectName> ;
+    ns1:hierarchicalReferences <http://prediktor.com/sparql_testcase#s_4.FunctionalAspectName>,
+        <http://prediktor.com/sparql_testcase#s_4.SVBR>,
+        <http://prediktor.com/sparql_testcase#s_7> ;
+    ns1:nodeClass "UAObject" ;
+    ns1:nodeId "ns=1;s=4" ;
+    ns1:references <http://prediktor.com/sparql_testcase#s_4.FunctionalAspectName>,
+        <http://prediktor.com/sparql_testcase#s_4.SVBR>,
+        <http://prediktor.com/sparql_testcase#s_7> ;
+    ns4:functionalAspect <http://prediktor.com/sparql_testcase#s_7> ;
+    ns4:hasLogicalNode <http://prediktor.com/sparql_testcase#s_4.SVBR> .
+
+<http://prediktor.com/sparql_testcase#s_4.SVBR> a ns1:BaseObjectType,
+        ns2:IEC61850LNodeBaseObjectType,
+        <http://opcfoundation.org/UA/IEC61850-7-4#CommonLN>,
+        <http://opcfoundation.org/UA/IEC61850-7-4#SVBR> ;
+    ns1:aggregates <http://prediktor.com/sparql_testcase#s_4.SVBR.Beh> ;
+    ns1:browseName "SVBR" ;
+    ns1:browseNameNamespace <http://prediktor.com/sparql_testcase#> ;
+    ns1:description "" ;
+    ns1:displayName "SVBR" ;
+    ns1:hasChild <http://prediktor.com/sparql_testcase#s_4.SVBR.Beh> ;
+    ns1:hasComponent <http://prediktor.com/sparql_testcase#s_4.SVBR.Beh> ;
+    ns1:hierarchicalReferences <http://prediktor.com/sparql_testcase#s_4.SVBR.Beh> ;
+    ns1:nodeClass "UAObject" ;
+    ns1:nodeId "ns=1;s=4.SVBR" ;
+    ns1:references <http://prediktor.com/sparql_testcase#s_4.SVBR.Beh> ;
+    ns2:hasDataObject <http://prediktor.com/sparql_testcase#s_4.SVBR.Beh> .
+
+<http://prediktor.com/sparql_testcase#s_4.SVBR.Beh> a ns1:BaseObjectType,
+        ns2:ENS,
+        ns2:IEC61850DOBaseObjectType,
+        <http://opcfoundation.org/UA/IEC61850-7-4#ENSBehaviourModeKind> ;
+    ns1:aggregates <http://prediktor.com/sparql_testcase#s_4.SVBR.Beh.q>,
+        <http://prediktor.com/sparql_testcase#s_4.SVBR.Beh.stVal> ;
+    ns1:browseName "Beh" ;
+    ns1:browseNameNamespace <http://opcfoundation.org/UA/IEC61850-7-4#> ;
+    ns1:description "" ;
+    ns1:displayName "Beh" ;
+    ns1:hasChild <http://prediktor.com/sparql_testcase#s_4.SVBR.Beh.q>,
+        <http://prediktor.com/sparql_testcase#s_4.SVBR.Beh.stVal> ;
+    ns1:hasComponent <http://prediktor.com/sparql_testcase#s_4.SVBR.Beh.q>,
+        <http://prediktor.com/sparql_testcase#s_4.SVBR.Beh.stVal> ;
+    ns1:hierarchicalReferences <http://prediktor.com/sparql_testcase#s_4.SVBR.Beh.q>,
+        <http://prediktor.com/sparql_testcase#s_4.SVBR.Beh.stVal> ;
+    ns1:nodeClass "UAObject" ;
+    ns1:nodeId "ns=1;s=4.SVBR.Beh" ;
+    ns1:references <http://prediktor.com/sparql_testcase#s_4.SVBR.Beh.q>,
+        <http://prediktor.com/sparql_testcase#s_4.SVBR.Beh.stVal> ;
+    ns2:hasDataAttribute <http://prediktor.com/sparql_testcase#s_4.SVBR.Beh.q>,
+        <http://prediktor.com/sparql_testcase#s_4.SVBR.Beh.stVal> .
+
+<http://prediktor.com/sparql_testcase#s_4.SVBR.Beh.q> a ns1:BaseDataVariableType,
+        ns1:BaseVariableType ;
+    ns1:browseName "q" ;
+    ns1:browseNameNamespace <http://opcfoundation.org/UA/IEC61850-7-4#> ;
+    ns1:description "" ;
+    ns1:displayName "q" ;
+    ns1:nodeClass "UAVariable" ;
+    ns1:nodeId "ns=1;s=4.SVBR.Beh.q" ;
+    ns1:value <http://prediktor.com/sparql_testcase#s_4.SVBR.Beh.q_Value> .
+
+<http://prediktor.com/sparql_testcase#s_4.SVBR.Beh.stVal> a ns1:BaseDataVariableType,
+        ns1:BaseVariableType ;
+    ns1:browseName "stVal" ;
+    ns1:browseNameNamespace <http://opcfoundation.org/UA/IEC61850-7-4#> ;
+    ns1:description "" ;
+    ns1:displayName "stVal" ;
+    ns1:nodeClass "UAVariable" ;
+    ns1:nodeId "ns=1;s=4.SVBR.Beh.stVal" ;
+    ns1:value <http://prediktor.com/sparql_testcase#s_4.SVBR.Beh.stVal_Value> .
+
+<http://prediktor.com/sparql_testcase#s_5> a ns1:BaseObjectType,
+        ns4:ComponentSystemType,
+        ns4:FirstBottomLevelSuperSuperType,
+        ns4:GeneralSystemType,
+        ns4:SecondBottomLevelSuperType,
+        ns4:SecondBottomLevelType ;
+    ns1:aggregates <http://prediktor.com/sparql_testcase#s_5.FunctionalAspectName>,
+        <http://prediktor.com/sparql_testcase#s_5.PTUC> ;
+    ns1:browseName "System5" ;
+    ns1:browseNameNamespace <http://prediktor.com/sparql_testcase#> ;
+    ns1:description "Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat" ;
+    ns1:displayName "System5" ;
+    ns1:hasChild <http://prediktor.com/sparql_testcase#s_5.FunctionalAspectName>,
+        <http://prediktor.com/sparql_testcase#s_5.PTUC> ;
+    ns1:hasComponent <http://prediktor.com/sparql_testcase#s_5.PTUC> ;
+    ns1:hasProperty <http://prediktor.com/sparql_testcase#s_5.FunctionalAspectName> ;
+    ns1:hierarchicalReferences <http://prediktor.com/sparql_testcase#s_5.FunctionalAspectName>,
+        <http://prediktor.com/sparql_testcase#s_5.PTUC> ;
+    ns1:nodeClass "UAObject" ;
+    ns1:nodeId "ns=1;s=5" ;
+    ns1:references <http://prediktor.com/sparql_testcase#s_5.FunctionalAspectName>,
+        <http://prediktor.com/sparql_testcase#s_5.PTUC> ;
+    ns4:hasLogicalNode <http://prediktor.com/sparql_testcase#s_5.PTUC> .
+
+<http://prediktor.com/sparql_testcase#s_5.PTUC> a ns1:BaseObjectType,
+        ns2:IEC61850LNodeBaseObjectType,
+        <http://opcfoundation.org/UA/IEC61850-7-4#CommonLN>,
+        <http://opcfoundation.org/UA/IEC61850-7-4#PTUC> ;
+    ns1:aggregates <http://prediktor.com/sparql_testcase#s_5.PTUC.Beh>,
+        <http://prediktor.com/sparql_testcase#s_5.PTUC.Op>,
+        <http://prediktor.com/sparql_testcase#s_5.PTUC.Str> ;
+    ns1:browseName "PTUC" ;
+    ns1:browseNameNamespace <http://prediktor.com/sparql_testcase#> ;
+    ns1:description "" ;
+    ns1:displayName "PTUC" ;
+    ns1:hasChild <http://prediktor.com/sparql_testcase#s_5.PTUC.Beh>,
+        <http://prediktor.com/sparql_testcase#s_5.PTUC.Op>,
+        <http://prediktor.com/sparql_testcase#s_5.PTUC.Str> ;
+    ns1:hasComponent <http://prediktor.com/sparql_testcase#s_5.PTUC.Beh>,
+        <http://prediktor.com/sparql_testcase#s_5.PTUC.Op>,
+        <http://prediktor.com/sparql_testcase#s_5.PTUC.Str> ;
+    ns1:hierarchicalReferences <http://prediktor.com/sparql_testcase#s_5.PTUC.Beh>,
+        <http://prediktor.com/sparql_testcase#s_5.PTUC.Op>,
+        <http://prediktor.com/sparql_testcase#s_5.PTUC.Str> ;
+    ns1:nodeClass "UAObject" ;
+    ns1:nodeId "ns=1;s=5.PTUC" ;
+    ns1:references <http://prediktor.com/sparql_testcase#s_5.PTUC.Beh>,
+        <http://prediktor.com/sparql_testcase#s_5.PTUC.Op>,
+        <http://prediktor.com/sparql_testcase#s_5.PTUC.Str> ;
+    ns2:hasDataObject <http://prediktor.com/sparql_testcase#s_5.PTUC.Beh>,
+        <http://prediktor.com/sparql_testcase#s_5.PTUC.Op>,
+        <http://prediktor.com/sparql_testcase#s_5.PTUC.Str> .
+
+<http://prediktor.com/sparql_testcase#s_5.PTUC.Beh> a ns1:BaseObjectType,
+        ns2:ENS,
+        ns2:IEC61850DOBaseObjectType,
+        <http://opcfoundation.org/UA/IEC61850-7-4#ENSBehaviourModeKind> ;
+    ns1:aggregates <http://prediktor.com/sparql_testcase#s_5.PTUC.Beh.q>,
+        <http://prediktor.com/sparql_testcase#s_5.PTUC.Beh.stVal> ;
+    ns1:browseName "Beh" ;
+    ns1:browseNameNamespace <http://opcfoundation.org/UA/IEC61850-7-4#> ;
+    ns1:description "" ;
+    ns1:displayName "Beh" ;
+    ns1:hasChild <http://prediktor.com/sparql_testcase#s_5.PTUC.Beh.q>,
+        <http://prediktor.com/sparql_testcase#s_5.PTUC.Beh.stVal> ;
+    ns1:hasComponent <http://prediktor.com/sparql_testcase#s_5.PTUC.Beh.q>,
+        <http://prediktor.com/sparql_testcase#s_5.PTUC.Beh.stVal> ;
+    ns1:hierarchicalReferences <http://prediktor.com/sparql_testcase#s_5.PTUC.Beh.q>,
+        <http://prediktor.com/sparql_testcase#s_5.PTUC.Beh.stVal> ;
+    ns1:nodeClass "UAObject" ;
+    ns1:nodeId "ns=1;s=5.PTUC.Beh" ;
+    ns1:references <http://prediktor.com/sparql_testcase#s_5.PTUC.Beh.q>,
+        <http://prediktor.com/sparql_testcase#s_5.PTUC.Beh.stVal> ;
+    ns2:hasDataAttribute <http://prediktor.com/sparql_testcase#s_5.PTUC.Beh.q>,
+        <http://prediktor.com/sparql_testcase#s_5.PTUC.Beh.stVal> .
+
+<http://prediktor.com/sparql_testcase#s_5.PTUC.Beh.q> a ns1:BaseDataVariableType,
+        ns1:BaseVariableType ;
+    ns1:browseName "q" ;
+    ns1:browseNameNamespace <http://opcfoundation.org/UA/IEC61850-7-4#> ;
+    ns1:description "" ;
+    ns1:displayName "q" ;
+    ns1:nodeClass "UAVariable" ;
+    ns1:nodeId "ns=1;s=5.PTUC.Beh.q" ;
+    ns1:value <http://prediktor.com/sparql_testcase#s_5.PTUC.Beh.q_Value> .
+
+<http://prediktor.com/sparql_testcase#s_5.PTUC.Beh.stVal> a ns1:BaseDataVariableType,
+        ns1:BaseVariableType ;
+    ns1:browseName "stVal" ;
+    ns1:browseNameNamespace <http://opcfoundation.org/UA/IEC61850-7-4#> ;
+    ns1:description "" ;
+    ns1:displayName "stVal" ;
+    ns1:nodeClass "UAVariable" ;
+    ns1:nodeId "ns=1;s=5.PTUC.Beh.stVal" ;
+    ns1:value <http://prediktor.com/sparql_testcase#s_5.PTUC.Beh.stVal_Value> .
+
+<http://prediktor.com/sparql_testcase#s_5.PTUC.Op> a ns1:BaseObjectType,
+        ns2:ACT,
+        ns2:IEC61850DOBaseObjectType ;
+    ns1:aggregates <http://prediktor.com/sparql_testcase#s_5.PTUC.Op.general>,
+        <http://prediktor.com/sparql_testcase#s_5.PTUC.Op.q> ;
+    ns1:browseName "Op" ;
+    ns1:browseNameNamespace <http://opcfoundation.org/UA/IEC61850-7-4#> ;
+    ns1:description "" ;
+    ns1:displayName "Op" ;
+    ns1:hasChild <http://prediktor.com/sparql_testcase#s_5.PTUC.Op.general>,
+        <http://prediktor.com/sparql_testcase#s_5.PTUC.Op.q> ;
+    ns1:hasComponent <http://prediktor.com/sparql_testcase#s_5.PTUC.Op.general>,
+        <http://prediktor.com/sparql_testcase#s_5.PTUC.Op.q> ;
+    ns1:hierarchicalReferences <http://prediktor.com/sparql_testcase#s_5.PTUC.Op.general>,
+        <http://prediktor.com/sparql_testcase#s_5.PTUC.Op.q> ;
+    ns1:nodeClass "UAObject" ;
+    ns1:nodeId "ns=1;s=5.PTUC.Op" ;
+    ns1:references <http://prediktor.com/sparql_testcase#s_5.PTUC.Op.general>,
+        <http://prediktor.com/sparql_testcase#s_5.PTUC.Op.q> ;
+    ns2:hasDataAttribute <http://prediktor.com/sparql_testcase#s_5.PTUC.Op.general>,
+        <http://prediktor.com/sparql_testcase#s_5.PTUC.Op.q> .
+
+<http://prediktor.com/sparql_testcase#s_5.PTUC.Op.general> a ns1:BaseDataVariableType,
+        ns1:BaseVariableType ;
+    ns1:browseName "general" ;
+    ns1:browseNameNamespace <http://opcfoundation.org/UA/IEC61850-7-4#> ;
+    ns1:description "" ;
+    ns1:displayName "general" ;
+    ns1:nodeClass "UAVariable" ;
+    ns1:nodeId "ns=1;s=5.PTUC.Op.general" ;
+    ns1:value <http://prediktor.com/sparql_testcase#s_5.PTUC.Op.general_Value> .
+
+<http://prediktor.com/sparql_testcase#s_5.PTUC.Op.q> a ns1:BaseDataVariableType,
+        ns1:BaseVariableType ;
+    ns1:browseName "q" ;
+    ns1:browseNameNamespace <http://opcfoundation.org/UA/IEC61850-7-4#> ;
+    ns1:description "" ;
+    ns1:displayName "q" ;
+    ns1:nodeClass "UAVariable" ;
+    ns1:nodeId "ns=1;s=5.PTUC.Op.q" ;
+    ns1:value <http://prediktor.com/sparql_testcase#s_5.PTUC.Op.q_Value> .
+
+<http://prediktor.com/sparql_testcase#s_5.PTUC.Str> a ns1:BaseObjectType,
+        ns2:ACD,
+        ns2:IEC61850DOBaseObjectType ;
+    ns1:aggregates <http://prediktor.com/sparql_testcase#s_5.PTUC.Str.dirGeneral>,
+        <http://prediktor.com/sparql_testcase#s_5.PTUC.Str.general>,
+        <http://prediktor.com/sparql_testcase#s_5.PTUC.Str.q> ;
+    ns1:browseName "Str" ;
+    ns1:browseNameNamespace <http://opcfoundation.org/UA/IEC61850-7-4#> ;
+    ns1:description "" ;
+    ns1:displayName "Str" ;
+    ns1:hasChild <http://prediktor.com/sparql_testcase#s_5.PTUC.Str.dirGeneral>,
+        <http://prediktor.com/sparql_testcase#s_5.PTUC.Str.general>,
+        <http://prediktor.com/sparql_testcase#s_5.PTUC.Str.q> ;
+    ns1:hasComponent <http://prediktor.com/sparql_testcase#s_5.PTUC.Str.dirGeneral>,
+        <http://prediktor.com/sparql_testcase#s_5.PTUC.Str.general>,
+        <http://prediktor.com/sparql_testcase#s_5.PTUC.Str.q> ;
+    ns1:hierarchicalReferences <http://prediktor.com/sparql_testcase#s_5.PTUC.Str.dirGeneral>,
+        <http://prediktor.com/sparql_testcase#s_5.PTUC.Str.general>,
+        <http://prediktor.com/sparql_testcase#s_5.PTUC.Str.q> ;
+    ns1:nodeClass "UAObject" ;
+    ns1:nodeId "ns=1;s=5.PTUC.Str" ;
+    ns1:references <http://prediktor.com/sparql_testcase#s_5.PTUC.Str.dirGeneral>,
+        <http://prediktor.com/sparql_testcase#s_5.PTUC.Str.general>,
+        <http://prediktor.com/sparql_testcase#s_5.PTUC.Str.q> ;
+    ns2:hasDataAttribute <http://prediktor.com/sparql_testcase#s_5.PTUC.Str.dirGeneral>,
+        <http://prediktor.com/sparql_testcase#s_5.PTUC.Str.general>,
+        <http://prediktor.com/sparql_testcase#s_5.PTUC.Str.q> .
+
+<http://prediktor.com/sparql_testcase#s_5.PTUC.Str.dirGeneral> a ns1:BaseDataVariableType,
+        ns1:BaseVariableType ;
+    ns1:browseName "dirGeneral" ;
+    ns1:browseNameNamespace <http://opcfoundation.org/UA/IEC61850-7-4#> ;
+    ns1:description "" ;
+    ns1:displayName "dirGeneral" ;
+    ns1:nodeClass "UAVariable" ;
+    ns1:nodeId "ns=1;s=5.PTUC.Str.dirGeneral" ;
+    ns1:value <http://prediktor.com/sparql_testcase#s_5.PTUC.Str.dirGeneral_Value> .
+
+<http://prediktor.com/sparql_testcase#s_5.PTUC.Str.general> a ns1:BaseDataVariableType,
+        ns1:BaseVariableType ;
+    ns1:browseName "general" ;
+    ns1:browseNameNamespace <http://opcfoundation.org/UA/IEC61850-7-4#> ;
+    ns1:description "" ;
+    ns1:displayName "general" ;
+    ns1:nodeClass "UAVariable" ;
+    ns1:nodeId "ns=1;s=5.PTUC.Str.general" ;
+    ns1:value <http://prediktor.com/sparql_testcase#s_5.PTUC.Str.general_Value> .
+
+<http://prediktor.com/sparql_testcase#s_5.PTUC.Str.q> a ns1:BaseDataVariableType,
+        ns1:BaseVariableType ;
+    ns1:browseName "q" ;
+    ns1:browseNameNamespace <http://opcfoundation.org/UA/IEC61850-7-4#> ;
+    ns1:description "" ;
+    ns1:displayName "q" ;
+    ns1:nodeClass "UAVariable" ;
+    ns1:nodeId "ns=1;s=5.PTUC.Str.q" ;
+    ns1:value <http://prediktor.com/sparql_testcase#s_5.PTUC.Str.q_Value> .
+
+<http://prediktor.com/sparql_testcase#s_6> a ns1:BaseObjectType,
+        ns4:ComponentSystemType,
+        ns4:FirstBottomLevelSuperSuperType,
+        ns4:GeneralSystemType,
+        ns4:SecondBottomLevelSuperType,
+        ns4:SecondBottomLevelType ;
+    ns1:aggregates <http://prediktor.com/sparql_testcase#s_6.FunctionalAspectName>,
+        <http://prediktor.com/sparql_testcase#s_6.SVBR> ;
+    ns1:browseName "System6" ;
+    ns1:browseNameNamespace <http://prediktor.com/sparql_testcase#> ;
+    ns1:description "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur" ;
+    ns1:displayName "System6" ;
+    ns1:hasChild <http://prediktor.com/sparql_testcase#s_6.FunctionalAspectName>,
+        <http://prediktor.com/sparql_testcase#s_6.SVBR> ;
+    ns1:hasComponent <http://prediktor.com/sparql_testcase#s_6.SVBR> ;
+    ns1:hasProperty <http://prediktor.com/sparql_testcase#s_6.FunctionalAspectName> ;
+    ns1:hierarchicalReferences <http://prediktor.com/sparql_testcase#s_6.FunctionalAspectName>,
+        <http://prediktor.com/sparql_testcase#s_6.SVBR> ;
+    ns1:nodeClass "UAObject" ;
+    ns1:nodeId "ns=1;s=6" ;
+    ns1:references <http://prediktor.com/sparql_testcase#s_6.FunctionalAspectName>,
+        <http://prediktor.com/sparql_testcase#s_6.SVBR> ;
+    ns4:hasLogicalNode <http://prediktor.com/sparql_testcase#s_6.SVBR> .
+
+<http://prediktor.com/sparql_testcase#s_6.SVBR> a ns1:BaseObjectType,
+        ns2:IEC61850LNodeBaseObjectType,
+        <http://opcfoundation.org/UA/IEC61850-7-4#CommonLN>,
+        <http://opcfoundation.org/UA/IEC61850-7-4#SVBR> ;
+    ns1:aggregates <http://prediktor.com/sparql_testcase#s_6.SVBR.Beh> ;
+    ns1:browseName "SVBR" ;
+    ns1:browseNameNamespace <http://prediktor.com/sparql_testcase#> ;
+    ns1:description "" ;
+    ns1:displayName "SVBR" ;
+    ns1:hasChild <http://prediktor.com/sparql_testcase#s_6.SVBR.Beh> ;
+    ns1:hasComponent <http://prediktor.com/sparql_testcase#s_6.SVBR.Beh> ;
+    ns1:hierarchicalReferences <http://prediktor.com/sparql_testcase#s_6.SVBR.Beh> ;
+    ns1:nodeClass "UAObject" ;
+    ns1:nodeId "ns=1;s=6.SVBR" ;
+    ns1:references <http://prediktor.com/sparql_testcase#s_6.SVBR.Beh> ;
+    ns2:hasDataObject <http://prediktor.com/sparql_testcase#s_6.SVBR.Beh> .
+
+<http://prediktor.com/sparql_testcase#s_6.SVBR.Beh> a ns1:BaseObjectType,
+        ns2:ENS,
+        ns2:IEC61850DOBaseObjectType,
+        <http://opcfoundation.org/UA/IEC61850-7-4#ENSBehaviourModeKind> ;
+    ns1:aggregates <http://prediktor.com/sparql_testcase#s_6.SVBR.Beh.q>,
+        <http://prediktor.com/sparql_testcase#s_6.SVBR.Beh.stVal> ;
+    ns1:browseName "Beh" ;
+    ns1:browseNameNamespace <http://opcfoundation.org/UA/IEC61850-7-4#> ;
+    ns1:description "" ;
+    ns1:displayName "Beh" ;
+    ns1:hasChild <http://prediktor.com/sparql_testcase#s_6.SVBR.Beh.q>,
+        <http://prediktor.com/sparql_testcase#s_6.SVBR.Beh.stVal> ;
+    ns1:hasComponent <http://prediktor.com/sparql_testcase#s_6.SVBR.Beh.q>,
+        <http://prediktor.com/sparql_testcase#s_6.SVBR.Beh.stVal> ;
+    ns1:hierarchicalReferences <http://prediktor.com/sparql_testcase#s_6.SVBR.Beh.q>,
+        <http://prediktor.com/sparql_testcase#s_6.SVBR.Beh.stVal> ;
+    ns1:nodeClass "UAObject" ;
+    ns1:nodeId "ns=1;s=6.SVBR.Beh" ;
+    ns1:references <http://prediktor.com/sparql_testcase#s_6.SVBR.Beh.q>,
+        <http://prediktor.com/sparql_testcase#s_6.SVBR.Beh.stVal> ;
+    ns2:hasDataAttribute <http://prediktor.com/sparql_testcase#s_6.SVBR.Beh.q>,
+        <http://prediktor.com/sparql_testcase#s_6.SVBR.Beh.stVal> .
+
+<http://prediktor.com/sparql_testcase#s_6.SVBR.Beh.q> a ns1:BaseDataVariableType,
+        ns1:BaseVariableType ;
+    ns1:browseName "q" ;
+    ns1:browseNameNamespace <http://opcfoundation.org/UA/IEC61850-7-4#> ;
+    ns1:description "" ;
+    ns1:displayName "q" ;
+    ns1:nodeClass "UAVariable" ;
+    ns1:nodeId "ns=1;s=6.SVBR.Beh.q" ;
+    ns1:value <http://prediktor.com/sparql_testcase#s_6.SVBR.Beh.q_Value> .
+
+<http://prediktor.com/sparql_testcase#s_6.SVBR.Beh.stVal> a ns1:BaseDataVariableType,
+        ns1:BaseVariableType ;
+    ns1:browseName "stVal" ;
+    ns1:browseNameNamespace <http://opcfoundation.org/UA/IEC61850-7-4#> ;
+    ns1:description "" ;
+    ns1:displayName "stVal" ;
+    ns1:nodeClass "UAVariable" ;
+    ns1:nodeId "ns=1;s=6.SVBR.Beh.stVal" ;
+    ns1:value <http://prediktor.com/sparql_testcase#s_6.SVBR.Beh.stVal_Value> .
+
+<http://prediktor.com/sparql_testcase#s_7> a ns1:BaseObjectType,
+        ns4:ComponentSystemType,
+        ns4:FirstBottomLevelSuperSuperType,
+        ns4:FirstBottomLevelSuperType,
+        ns4:FirstBottomLevelType,
+        ns4:GeneralSystemType ;
+    ns1:aggregates <http://prediktor.com/sparql_testcase#s_7.FunctionalAspectName>,
+        <http://prediktor.com/sparql_testcase#s_7.PTUC> ;
+    ns1:browseName "System7" ;
+    ns1:browseNameNamespace <http://prediktor.com/sparql_testcase#> ;
+    ns1:description "Excepteur sint occaecat cupidatat non proident" ;
+    ns1:displayName "System7" ;
+    ns1:hasChild <http://prediktor.com/sparql_testcase#s_7.FunctionalAspectName>,
+        <http://prediktor.com/sparql_testcase#s_7.PTUC> ;
+    ns1:hasComponent <http://prediktor.com/sparql_testcase#s_7.PTUC> ;
+    ns1:hasProperty <http://prediktor.com/sparql_testcase#s_7.FunctionalAspectName> ;
+    ns1:hierarchicalReferences <http://prediktor.com/sparql_testcase#s_7.FunctionalAspectName>,
+        <http://prediktor.com/sparql_testcase#s_7.PTUC> ;
+    ns1:nodeClass "UAObject" ;
+    ns1:nodeId "ns=1;s=7" ;
+    ns1:references <http://prediktor.com/sparql_testcase#s_7.FunctionalAspectName>,
+        <http://prediktor.com/sparql_testcase#s_7.PTUC> ;
+    ns4:hasLogicalNode <http://prediktor.com/sparql_testcase#s_7.PTUC> .
+
+<http://prediktor.com/sparql_testcase#s_7.PTUC> a ns1:BaseObjectType,
+        ns2:IEC61850LNodeBaseObjectType,
+        <http://opcfoundation.org/UA/IEC61850-7-4#CommonLN>,
+        <http://opcfoundation.org/UA/IEC61850-7-4#PTUC> ;
+    ns1:aggregates <http://prediktor.com/sparql_testcase#s_7.PTUC.Beh>,
+        <http://prediktor.com/sparql_testcase#s_7.PTUC.Op>,
+        <http://prediktor.com/sparql_testcase#s_7.PTUC.Str> ;
+    ns1:browseName "PTUC" ;
+    ns1:browseNameNamespace <http://prediktor.com/sparql_testcase#> ;
+    ns1:description "" ;
+    ns1:displayName "PTUC" ;
+    ns1:hasChild <http://prediktor.com/sparql_testcase#s_7.PTUC.Beh>,
+        <http://prediktor.com/sparql_testcase#s_7.PTUC.Op>,
+        <http://prediktor.com/sparql_testcase#s_7.PTUC.Str> ;
+    ns1:hasComponent <http://prediktor.com/sparql_testcase#s_7.PTUC.Beh>,
+        <http://prediktor.com/sparql_testcase#s_7.PTUC.Op>,
+        <http://prediktor.com/sparql_testcase#s_7.PTUC.Str> ;
+    ns1:hierarchicalReferences <http://prediktor.com/sparql_testcase#s_7.PTUC.Beh>,
+        <http://prediktor.com/sparql_testcase#s_7.PTUC.Op>,
+        <http://prediktor.com/sparql_testcase#s_7.PTUC.Str> ;
+    ns1:nodeClass "UAObject" ;
+    ns1:nodeId "ns=1;s=7.PTUC" ;
+    ns1:references <http://prediktor.com/sparql_testcase#s_7.PTUC.Beh>,
+        <http://prediktor.com/sparql_testcase#s_7.PTUC.Op>,
+        <http://prediktor.com/sparql_testcase#s_7.PTUC.Str> ;
+    ns2:hasDataObject <http://prediktor.com/sparql_testcase#s_7.PTUC.Beh>,
+        <http://prediktor.com/sparql_testcase#s_7.PTUC.Op>,
+        <http://prediktor.com/sparql_testcase#s_7.PTUC.Str> .
+
+<http://prediktor.com/sparql_testcase#s_7.PTUC.Beh> a ns1:BaseObjectType,
+        ns2:ENS,
+        ns2:IEC61850DOBaseObjectType,
+        <http://opcfoundation.org/UA/IEC61850-7-4#ENSBehaviourModeKind> ;
+    ns1:aggregates <http://prediktor.com/sparql_testcase#s_7.PTUC.Beh.q>,
+        <http://prediktor.com/sparql_testcase#s_7.PTUC.Beh.stVal> ;
+    ns1:browseName "Beh" ;
+    ns1:browseNameNamespace <http://opcfoundation.org/UA/IEC61850-7-4#> ;
+    ns1:description "" ;
+    ns1:displayName "Beh" ;
+    ns1:hasChild <http://prediktor.com/sparql_testcase#s_7.PTUC.Beh.q>,
+        <http://prediktor.com/sparql_testcase#s_7.PTUC.Beh.stVal> ;
+    ns1:hasComponent <http://prediktor.com/sparql_testcase#s_7.PTUC.Beh.q>,
+        <http://prediktor.com/sparql_testcase#s_7.PTUC.Beh.stVal> ;
+    ns1:hierarchicalReferences <http://prediktor.com/sparql_testcase#s_7.PTUC.Beh.q>,
+        <http://prediktor.com/sparql_testcase#s_7.PTUC.Beh.stVal> ;
+    ns1:nodeClass "UAObject" ;
+    ns1:nodeId "ns=1;s=7.PTUC.Beh" ;
+    ns1:references <http://prediktor.com/sparql_testcase#s_7.PTUC.Beh.q>,
+        <http://prediktor.com/sparql_testcase#s_7.PTUC.Beh.stVal> ;
+    ns2:hasDataAttribute <http://prediktor.com/sparql_testcase#s_7.PTUC.Beh.q>,
+        <http://prediktor.com/sparql_testcase#s_7.PTUC.Beh.stVal> .
+
+<http://prediktor.com/sparql_testcase#s_7.PTUC.Beh.q> a ns1:BaseDataVariableType,
+        ns1:BaseVariableType ;
+    ns1:browseName "q" ;
+    ns1:browseNameNamespace <http://opcfoundation.org/UA/IEC61850-7-4#> ;
+    ns1:description "" ;
+    ns1:displayName "q" ;
+    ns1:nodeClass "UAVariable" ;
+    ns1:nodeId "ns=1;s=7.PTUC.Beh.q" ;
+    ns1:value <http://prediktor.com/sparql_testcase#s_7.PTUC.Beh.q_Value> .
+
+<http://prediktor.com/sparql_testcase#s_7.PTUC.Beh.stVal> a ns1:BaseDataVariableType,
+        ns1:BaseVariableType ;
+    ns1:browseName "stVal" ;
+    ns1:browseNameNamespace <http://opcfoundation.org/UA/IEC61850-7-4#> ;
+    ns1:description "" ;
+    ns1:displayName "stVal" ;
+    ns1:nodeClass "UAVariable" ;
+    ns1:nodeId "ns=1;s=7.PTUC.Beh.stVal" ;
+    ns1:value <http://prediktor.com/sparql_testcase#s_7.PTUC.Beh.stVal_Value> .
+
+<http://prediktor.com/sparql_testcase#s_7.PTUC.Op> a ns1:BaseObjectType,
+        ns2:ACT,
+        ns2:IEC61850DOBaseObjectType ;
+    ns1:aggregates <http://prediktor.com/sparql_testcase#s_7.PTUC.Op.general>,
+        <http://prediktor.com/sparql_testcase#s_7.PTUC.Op.q> ;
+    ns1:browseName "Op" ;
+    ns1:browseNameNamespace <http://opcfoundation.org/UA/IEC61850-7-4#> ;
+    ns1:description "" ;
+    ns1:displayName "Op" ;
+    ns1:hasChild <http://prediktor.com/sparql_testcase#s_7.PTUC.Op.general>,
+        <http://prediktor.com/sparql_testcase#s_7.PTUC.Op.q> ;
+    ns1:hasComponent <http://prediktor.com/sparql_testcase#s_7.PTUC.Op.general>,
+        <http://prediktor.com/sparql_testcase#s_7.PTUC.Op.q> ;
+    ns1:hierarchicalReferences <http://prediktor.com/sparql_testcase#s_7.PTUC.Op.general>,
+        <http://prediktor.com/sparql_testcase#s_7.PTUC.Op.q> ;
+    ns1:nodeClass "UAObject" ;
+    ns1:nodeId "ns=1;s=7.PTUC.Op" ;
+    ns1:references <http://prediktor.com/sparql_testcase#s_7.PTUC.Op.general>,
+        <http://prediktor.com/sparql_testcase#s_7.PTUC.Op.q> ;
+    ns2:hasDataAttribute <http://prediktor.com/sparql_testcase#s_7.PTUC.Op.general>,
+        <http://prediktor.com/sparql_testcase#s_7.PTUC.Op.q> .
+
+<http://prediktor.com/sparql_testcase#s_7.PTUC.Op.general> a ns1:BaseDataVariableType,
+        ns1:BaseVariableType ;
+    ns1:browseName "general" ;
+    ns1:browseNameNamespace <http://opcfoundation.org/UA/IEC61850-7-4#> ;
+    ns1:description "" ;
+    ns1:displayName "general" ;
+    ns1:nodeClass "UAVariable" ;
+    ns1:nodeId "ns=1;s=7.PTUC.Op.general" ;
+    ns1:value <http://prediktor.com/sparql_testcase#s_7.PTUC.Op.general_Value> .
+
+<http://prediktor.com/sparql_testcase#s_7.PTUC.Op.q> a ns1:BaseDataVariableType,
+        ns1:BaseVariableType ;
+    ns1:browseName "q" ;
+    ns1:browseNameNamespace <http://opcfoundation.org/UA/IEC61850-7-4#> ;
+    ns1:description "" ;
+    ns1:displayName "q" ;
+    ns1:nodeClass "UAVariable" ;
+    ns1:nodeId "ns=1;s=7.PTUC.Op.q" ;
+    ns1:value <http://prediktor.com/sparql_testcase#s_7.PTUC.Op.q_Value> .
+
+<http://prediktor.com/sparql_testcase#s_7.PTUC.Str> a ns1:BaseObjectType,
+        ns2:ACD,
+        ns2:IEC61850DOBaseObjectType ;
+    ns1:aggregates <http://prediktor.com/sparql_testcase#s_7.PTUC.Str.dirGeneral>,
+        <http://prediktor.com/sparql_testcase#s_7.PTUC.Str.general>,
+        <http://prediktor.com/sparql_testcase#s_7.PTUC.Str.q> ;
+    ns1:browseName "Str" ;
+    ns1:browseNameNamespace <http://opcfoundation.org/UA/IEC61850-7-4#> ;
+    ns1:description "" ;
+    ns1:displayName "Str" ;
+    ns1:hasChild <http://prediktor.com/sparql_testcase#s_7.PTUC.Str.dirGeneral>,
+        <http://prediktor.com/sparql_testcase#s_7.PTUC.Str.general>,
+        <http://prediktor.com/sparql_testcase#s_7.PTUC.Str.q> ;
+    ns1:hasComponent <http://prediktor.com/sparql_testcase#s_7.PTUC.Str.dirGeneral>,
+        <http://prediktor.com/sparql_testcase#s_7.PTUC.Str.general>,
+        <http://prediktor.com/sparql_testcase#s_7.PTUC.Str.q> ;
+    ns1:hierarchicalReferences <http://prediktor.com/sparql_testcase#s_7.PTUC.Str.dirGeneral>,
+        <http://prediktor.com/sparql_testcase#s_7.PTUC.Str.general>,
+        <http://prediktor.com/sparql_testcase#s_7.PTUC.Str.q> ;
+    ns1:nodeClass "UAObject" ;
+    ns1:nodeId "ns=1;s=7.PTUC.Str" ;
+    ns1:references <http://prediktor.com/sparql_testcase#s_7.PTUC.Str.dirGeneral>,
+        <http://prediktor.com/sparql_testcase#s_7.PTUC.Str.general>,
+        <http://prediktor.com/sparql_testcase#s_7.PTUC.Str.q> ;
+    ns2:hasDataAttribute <http://prediktor.com/sparql_testcase#s_7.PTUC.Str.dirGeneral>,
+        <http://prediktor.com/sparql_testcase#s_7.PTUC.Str.general>,
+        <http://prediktor.com/sparql_testcase#s_7.PTUC.Str.q> .
+
+<http://prediktor.com/sparql_testcase#s_7.PTUC.Str.dirGeneral> a ns1:BaseDataVariableType,
+        ns1:BaseVariableType ;
+    ns1:browseName "dirGeneral" ;
+    ns1:browseNameNamespace <http://opcfoundation.org/UA/IEC61850-7-4#> ;
+    ns1:description "" ;
+    ns1:displayName "dirGeneral" ;
+    ns1:nodeClass "UAVariable" ;
+    ns1:nodeId "ns=1;s=7.PTUC.Str.dirGeneral" ;
+    ns1:value <http://prediktor.com/sparql_testcase#s_7.PTUC.Str.dirGeneral_Value> .
+
+<http://prediktor.com/sparql_testcase#s_7.PTUC.Str.general> a ns1:BaseDataVariableType,
+        ns1:BaseVariableType ;
+    ns1:browseName "general" ;
+    ns1:browseNameNamespace <http://opcfoundation.org/UA/IEC61850-7-4#> ;
+    ns1:description "" ;
+    ns1:displayName "general" ;
+    ns1:nodeClass "UAVariable" ;
+    ns1:nodeId "ns=1;s=7.PTUC.Str.general" ;
+    ns1:value <http://prediktor.com/sparql_testcase#s_7.PTUC.Str.general_Value> .
+
+<http://prediktor.com/sparql_testcase#s_7.PTUC.Str.q> a ns1:BaseDataVariableType,
+        ns1:BaseVariableType ;
+    ns1:browseName "q" ;
+    ns1:browseNameNamespace <http://opcfoundation.org/UA/IEC61850-7-4#> ;
+    ns1:description "" ;
+    ns1:displayName "q" ;
+    ns1:nodeClass "UAVariable" ;
+    ns1:nodeId "ns=1;s=7.PTUC.Str.q" ;
+    ns1:value <http://prediktor.com/sparql_testcase#s_7.PTUC.Str.q_Value> .
+
+<http://prediktor.com/sparql_testcase#s_8> a ns1:BaseObjectType,
+        ns4:FirstTopLevelSystemType,
+        ns4:GeneralSystemType,
+        ns4:TopSystemType ;
+    ns1:aggregates <http://prediktor.com/sparql_testcase#s_8.FunctionalAspectName>,
+        <http://prediktor.com/sparql_testcase#s_8.SVBR>,
+        <http://prediktor.com/sparql_testcase#s_9> ;
+    ns1:browseName "System8" ;
+    ns1:browseNameNamespace <http://prediktor.com/sparql_testcase#> ;
+    ns1:description "Sunt in culpa qui officia deserunt mollit anim id est laborum" ;
+    ns1:displayName "System8" ;
+    ns1:hasChild <http://prediktor.com/sparql_testcase#s_8.FunctionalAspectName>,
+        <http://prediktor.com/sparql_testcase#s_8.SVBR>,
+        <http://prediktor.com/sparql_testcase#s_9> ;
+    ns1:hasComponent <http://prediktor.com/sparql_testcase#s_8.SVBR>,
+        <http://prediktor.com/sparql_testcase#s_9> ;
+    ns1:hasProperty <http://prediktor.com/sparql_testcase#s_8.FunctionalAspectName> ;
+    ns1:hierarchicalReferences <http://prediktor.com/sparql_testcase#s_8.FunctionalAspectName>,
+        <http://prediktor.com/sparql_testcase#s_8.SVBR>,
+        <http://prediktor.com/sparql_testcase#s_9> ;
+    ns1:nodeClass "UAObject" ;
+    ns1:nodeId "ns=1;s=8" ;
+    ns1:references <http://prediktor.com/sparql_testcase#s_8.FunctionalAspectName>,
+        <http://prediktor.com/sparql_testcase#s_8.SVBR>,
+        <http://prediktor.com/sparql_testcase#s_9> ;
+    ns4:functionalAspect <http://prediktor.com/sparql_testcase#s_9> ;
+    ns4:hasLogicalNode <http://prediktor.com/sparql_testcase#s_8.SVBR> .
+
+<http://prediktor.com/sparql_testcase#s_8.SVBR> a ns1:BaseObjectType,
+        ns2:IEC61850LNodeBaseObjectType,
+        <http://opcfoundation.org/UA/IEC61850-7-4#CommonLN>,
+        <http://opcfoundation.org/UA/IEC61850-7-4#SVBR> ;
+    ns1:aggregates <http://prediktor.com/sparql_testcase#s_8.SVBR.Beh> ;
+    ns1:browseName "SVBR" ;
+    ns1:browseNameNamespace <http://prediktor.com/sparql_testcase#> ;
+    ns1:description "" ;
+    ns1:displayName "SVBR" ;
+    ns1:hasChild <http://prediktor.com/sparql_testcase#s_8.SVBR.Beh> ;
+    ns1:hasComponent <http://prediktor.com/sparql_testcase#s_8.SVBR.Beh> ;
+    ns1:hierarchicalReferences <http://prediktor.com/sparql_testcase#s_8.SVBR.Beh> ;
+    ns1:nodeClass "UAObject" ;
+    ns1:nodeId "ns=1;s=8.SVBR" ;
+    ns1:references <http://prediktor.com/sparql_testcase#s_8.SVBR.Beh> ;
+    ns2:hasDataObject <http://prediktor.com/sparql_testcase#s_8.SVBR.Beh> .
+
+<http://prediktor.com/sparql_testcase#s_8.SVBR.Beh> a ns1:BaseObjectType,
+        ns2:ENS,
+        ns2:IEC61850DOBaseObjectType,
+        <http://opcfoundation.org/UA/IEC61850-7-4#ENSBehaviourModeKind> ;
+    ns1:aggregates <http://prediktor.com/sparql_testcase#s_8.SVBR.Beh.q>,
+        <http://prediktor.com/sparql_testcase#s_8.SVBR.Beh.stVal> ;
+    ns1:browseName "Beh" ;
+    ns1:browseNameNamespace <http://opcfoundation.org/UA/IEC61850-7-4#> ;
+    ns1:description "" ;
+    ns1:displayName "Beh" ;
+    ns1:hasChild <http://prediktor.com/sparql_testcase#s_8.SVBR.Beh.q>,
+        <http://prediktor.com/sparql_testcase#s_8.SVBR.Beh.stVal> ;
+    ns1:hasComponent <http://prediktor.com/sparql_testcase#s_8.SVBR.Beh.q>,
+        <http://prediktor.com/sparql_testcase#s_8.SVBR.Beh.stVal> ;
+    ns1:hierarchicalReferences <http://prediktor.com/sparql_testcase#s_8.SVBR.Beh.q>,
+        <http://prediktor.com/sparql_testcase#s_8.SVBR.Beh.stVal> ;
+    ns1:nodeClass "UAObject" ;
+    ns1:nodeId "ns=1;s=8.SVBR.Beh" ;
+    ns1:references <http://prediktor.com/sparql_testcase#s_8.SVBR.Beh.q>,
+        <http://prediktor.com/sparql_testcase#s_8.SVBR.Beh.stVal> ;
+    ns2:hasDataAttribute <http://prediktor.com/sparql_testcase#s_8.SVBR.Beh.q>,
+        <http://prediktor.com/sparql_testcase#s_8.SVBR.Beh.stVal> .
+
+<http://prediktor.com/sparql_testcase#s_8.SVBR.Beh.q> a ns1:BaseDataVariableType,
+        ns1:BaseVariableType ;
+    ns1:browseName "q" ;
+    ns1:browseNameNamespace <http://opcfoundation.org/UA/IEC61850-7-4#> ;
+    ns1:description "" ;
+    ns1:displayName "q" ;
+    ns1:nodeClass "UAVariable" ;
+    ns1:nodeId "ns=1;s=8.SVBR.Beh.q" ;
+    ns1:value <http://prediktor.com/sparql_testcase#s_8.SVBR.Beh.q_Value> .
+
+<http://prediktor.com/sparql_testcase#s_8.SVBR.Beh.stVal> a ns1:BaseDataVariableType,
+        ns1:BaseVariableType ;
+    ns1:browseName "stVal" ;
+    ns1:browseNameNamespace <http://opcfoundation.org/UA/IEC61850-7-4#> ;
+    ns1:description "" ;
+    ns1:displayName "stVal" ;
+    ns1:nodeClass "UAVariable" ;
+    ns1:nodeId "ns=1;s=8.SVBR.Beh.stVal" ;
+    ns1:value <http://prediktor.com/sparql_testcase#s_8.SVBR.Beh.stVal_Value> .
+
+<http://prediktor.com/sparql_testcase#s_9> a ns1:BaseObjectType,
+        ns4:FirstMiddleLevelSuperType,
+        ns4:FirstMiddleLevelType,
+        ns4:GeneralSystemType,
+        ns4:MiddleSystemType ;
+    ns1:aggregates <http://prediktor.com/sparql_testcase#s_10>,
+        <http://prediktor.com/sparql_testcase#s_9.FunctionalAspectName>,
+        <http://prediktor.com/sparql_testcase#s_9.PTUC> ;
+    ns1:browseName "System9" ;
+    ns1:browseNameNamespace <http://prediktor.com/sparql_testcase#> ;
+    ns1:description "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium" ;
+    ns1:displayName "System9" ;
+    ns1:hasChild <http://prediktor.com/sparql_testcase#s_10>,
+        <http://prediktor.com/sparql_testcase#s_9.FunctionalAspectName>,
+        <http://prediktor.com/sparql_testcase#s_9.PTUC> ;
+    ns1:hasComponent <http://prediktor.com/sparql_testcase#s_10>,
+        <http://prediktor.com/sparql_testcase#s_9.PTUC> ;
+    ns1:hasProperty <http://prediktor.com/sparql_testcase#s_9.FunctionalAspectName> ;
+    ns1:hierarchicalReferences <http://prediktor.com/sparql_testcase#s_10>,
+        <http://prediktor.com/sparql_testcase#s_9.FunctionalAspectName>,
+        <http://prediktor.com/sparql_testcase#s_9.PTUC> ;
+    ns1:nodeClass "UAObject" ;
+    ns1:nodeId "ns=1;s=9" ;
+    ns1:references <http://prediktor.com/sparql_testcase#s_10>,
+        <http://prediktor.com/sparql_testcase#s_9.FunctionalAspectName>,
+        <http://prediktor.com/sparql_testcase#s_9.PTUC> ;
+    ns4:functionalAspect <http://prediktor.com/sparql_testcase#s_10> ;
+    ns4:hasLogicalNode <http://prediktor.com/sparql_testcase#s_9.PTUC> .
+
+<http://prediktor.com/sparql_testcase#s_9.PTUC> a ns1:BaseObjectType,
+        ns2:IEC61850LNodeBaseObjectType,
+        <http://opcfoundation.org/UA/IEC61850-7-4#CommonLN>,
+        <http://opcfoundation.org/UA/IEC61850-7-4#PTUC> ;
+    ns1:aggregates <http://prediktor.com/sparql_testcase#s_9.PTUC.Beh>,
+        <http://prediktor.com/sparql_testcase#s_9.PTUC.Op>,
+        <http://prediktor.com/sparql_testcase#s_9.PTUC.Str> ;
+    ns1:browseName "PTUC" ;
+    ns1:browseNameNamespace <http://prediktor.com/sparql_testcase#> ;
+    ns1:description "" ;
+    ns1:displayName "PTUC" ;
+    ns1:hasChild <http://prediktor.com/sparql_testcase#s_9.PTUC.Beh>,
+        <http://prediktor.com/sparql_testcase#s_9.PTUC.Op>,
+        <http://prediktor.com/sparql_testcase#s_9.PTUC.Str> ;
+    ns1:hasComponent <http://prediktor.com/sparql_testcase#s_9.PTUC.Beh>,
+        <http://prediktor.com/sparql_testcase#s_9.PTUC.Op>,
+        <http://prediktor.com/sparql_testcase#s_9.PTUC.Str> ;
+    ns1:hierarchicalReferences <http://prediktor.com/sparql_testcase#s_9.PTUC.Beh>,
+        <http://prediktor.com/sparql_testcase#s_9.PTUC.Op>,
+        <http://prediktor.com/sparql_testcase#s_9.PTUC.Str> ;
+    ns1:nodeClass "UAObject" ;
+    ns1:nodeId "ns=1;s=9.PTUC" ;
+    ns1:references <http://prediktor.com/sparql_testcase#s_9.PTUC.Beh>,
+        <http://prediktor.com/sparql_testcase#s_9.PTUC.Op>,
+        <http://prediktor.com/sparql_testcase#s_9.PTUC.Str> ;
+    ns2:hasDataObject <http://prediktor.com/sparql_testcase#s_9.PTUC.Beh>,
+        <http://prediktor.com/sparql_testcase#s_9.PTUC.Op>,
+        <http://prediktor.com/sparql_testcase#s_9.PTUC.Str> .
+
+<http://prediktor.com/sparql_testcase#s_9.PTUC.Beh> a ns1:BaseObjectType,
+        ns2:ENS,
+        ns2:IEC61850DOBaseObjectType,
+        <http://opcfoundation.org/UA/IEC61850-7-4#ENSBehaviourModeKind> ;
+    ns1:aggregates <http://prediktor.com/sparql_testcase#s_9.PTUC.Beh.q>,
+        <http://prediktor.com/sparql_testcase#s_9.PTUC.Beh.stVal> ;
+    ns1:browseName "Beh" ;
+    ns1:browseNameNamespace <http://opcfoundation.org/UA/IEC61850-7-4#> ;
+    ns1:description "" ;
+    ns1:displayName "Beh" ;
+    ns1:hasChild <http://prediktor.com/sparql_testcase#s_9.PTUC.Beh.q>,
+        <http://prediktor.com/sparql_testcase#s_9.PTUC.Beh.stVal> ;
+    ns1:hasComponent <http://prediktor.com/sparql_testcase#s_9.PTUC.Beh.q>,
+        <http://prediktor.com/sparql_testcase#s_9.PTUC.Beh.stVal> ;
+    ns1:hierarchicalReferences <http://prediktor.com/sparql_testcase#s_9.PTUC.Beh.q>,
+        <http://prediktor.com/sparql_testcase#s_9.PTUC.Beh.stVal> ;
+    ns1:nodeClass "UAObject" ;
+    ns1:nodeId "ns=1;s=9.PTUC.Beh" ;
+    ns1:references <http://prediktor.com/sparql_testcase#s_9.PTUC.Beh.q>,
+        <http://prediktor.com/sparql_testcase#s_9.PTUC.Beh.stVal> ;
+    ns2:hasDataAttribute <http://prediktor.com/sparql_testcase#s_9.PTUC.Beh.q>,
+        <http://prediktor.com/sparql_testcase#s_9.PTUC.Beh.stVal> .
+
+<http://prediktor.com/sparql_testcase#s_9.PTUC.Beh.q> a ns1:BaseDataVariableType,
+        ns1:BaseVariableType ;
+    ns1:browseName "q" ;
+    ns1:browseNameNamespace <http://opcfoundation.org/UA/IEC61850-7-4#> ;
+    ns1:description "" ;
+    ns1:displayName "q" ;
+    ns1:nodeClass "UAVariable" ;
+    ns1:nodeId "ns=1;s=9.PTUC.Beh.q" ;
+    ns1:value <http://prediktor.com/sparql_testcase#s_9.PTUC.Beh.q_Value> .
+
+<http://prediktor.com/sparql_testcase#s_9.PTUC.Beh.stVal> a ns1:BaseDataVariableType,
+        ns1:BaseVariableType ;
+    ns1:browseName "stVal" ;
+    ns1:browseNameNamespace <http://opcfoundation.org/UA/IEC61850-7-4#> ;
+    ns1:description "" ;
+    ns1:displayName "stVal" ;
+    ns1:nodeClass "UAVariable" ;
+    ns1:nodeId "ns=1;s=9.PTUC.Beh.stVal" ;
+    ns1:value <http://prediktor.com/sparql_testcase#s_9.PTUC.Beh.stVal_Value> .
+
+<http://prediktor.com/sparql_testcase#s_9.PTUC.Op> a ns1:BaseObjectType,
+        ns2:ACT,
+        ns2:IEC61850DOBaseObjectType ;
+    ns1:aggregates <http://prediktor.com/sparql_testcase#s_9.PTUC.Op.general>,
+        <http://prediktor.com/sparql_testcase#s_9.PTUC.Op.q> ;
+    ns1:browseName "Op" ;
+    ns1:browseNameNamespace <http://opcfoundation.org/UA/IEC61850-7-4#> ;
+    ns1:description "" ;
+    ns1:displayName "Op" ;
+    ns1:hasChild <http://prediktor.com/sparql_testcase#s_9.PTUC.Op.general>,
+        <http://prediktor.com/sparql_testcase#s_9.PTUC.Op.q> ;
+    ns1:hasComponent <http://prediktor.com/sparql_testcase#s_9.PTUC.Op.general>,
+        <http://prediktor.com/sparql_testcase#s_9.PTUC.Op.q> ;
+    ns1:hierarchicalReferences <http://prediktor.com/sparql_testcase#s_9.PTUC.Op.general>,
+        <http://prediktor.com/sparql_testcase#s_9.PTUC.Op.q> ;
+    ns1:nodeClass "UAObject" ;
+    ns1:nodeId "ns=1;s=9.PTUC.Op" ;
+    ns1:references <http://prediktor.com/sparql_testcase#s_9.PTUC.Op.general>,
+        <http://prediktor.com/sparql_testcase#s_9.PTUC.Op.q> ;
+    ns2:hasDataAttribute <http://prediktor.com/sparql_testcase#s_9.PTUC.Op.general>,
+        <http://prediktor.com/sparql_testcase#s_9.PTUC.Op.q> .
+
+<http://prediktor.com/sparql_testcase#s_9.PTUC.Op.general> a ns1:BaseDataVariableType,
+        ns1:BaseVariableType ;
+    ns1:browseName "general" ;
+    ns1:browseNameNamespace <http://opcfoundation.org/UA/IEC61850-7-4#> ;
+    ns1:description "" ;
+    ns1:displayName "general" ;
+    ns1:nodeClass "UAVariable" ;
+    ns1:nodeId "ns=1;s=9.PTUC.Op.general" ;
+    ns1:value <http://prediktor.com/sparql_testcase#s_9.PTUC.Op.general_Value> .
+
+<http://prediktor.com/sparql_testcase#s_9.PTUC.Op.q> a ns1:BaseDataVariableType,
+        ns1:BaseVariableType ;
+    ns1:browseName "q" ;
+    ns1:browseNameNamespace <http://opcfoundation.org/UA/IEC61850-7-4#> ;
+    ns1:description "" ;
+    ns1:displayName "q" ;
+    ns1:nodeClass "UAVariable" ;
+    ns1:nodeId "ns=1;s=9.PTUC.Op.q" ;
+    ns1:value <http://prediktor.com/sparql_testcase#s_9.PTUC.Op.q_Value> .
+
+<http://prediktor.com/sparql_testcase#s_9.PTUC.Str> a ns1:BaseObjectType,
+        ns2:ACD,
+        ns2:IEC61850DOBaseObjectType ;
+    ns1:aggregates <http://prediktor.com/sparql_testcase#s_9.PTUC.Str.dirGeneral>,
+        <http://prediktor.com/sparql_testcase#s_9.PTUC.Str.general>,
+        <http://prediktor.com/sparql_testcase#s_9.PTUC.Str.q> ;
+    ns1:browseName "Str" ;
+    ns1:browseNameNamespace <http://opcfoundation.org/UA/IEC61850-7-4#> ;
+    ns1:description "" ;
+    ns1:displayName "Str" ;
+    ns1:hasChild <http://prediktor.com/sparql_testcase#s_9.PTUC.Str.dirGeneral>,
+        <http://prediktor.com/sparql_testcase#s_9.PTUC.Str.general>,
+        <http://prediktor.com/sparql_testcase#s_9.PTUC.Str.q> ;
+    ns1:hasComponent <http://prediktor.com/sparql_testcase#s_9.PTUC.Str.dirGeneral>,
+        <http://prediktor.com/sparql_testcase#s_9.PTUC.Str.general>,
+        <http://prediktor.com/sparql_testcase#s_9.PTUC.Str.q> ;
+    ns1:hierarchicalReferences <http://prediktor.com/sparql_testcase#s_9.PTUC.Str.dirGeneral>,
+        <http://prediktor.com/sparql_testcase#s_9.PTUC.Str.general>,
+        <http://prediktor.com/sparql_testcase#s_9.PTUC.Str.q> ;
+    ns1:nodeClass "UAObject" ;
+    ns1:nodeId "ns=1;s=9.PTUC.Str" ;
+    ns1:references <http://prediktor.com/sparql_testcase#s_9.PTUC.Str.dirGeneral>,
+        <http://prediktor.com/sparql_testcase#s_9.PTUC.Str.general>,
+        <http://prediktor.com/sparql_testcase#s_9.PTUC.Str.q> ;
+    ns2:hasDataAttribute <http://prediktor.com/sparql_testcase#s_9.PTUC.Str.dirGeneral>,
+        <http://prediktor.com/sparql_testcase#s_9.PTUC.Str.general>,
+        <http://prediktor.com/sparql_testcase#s_9.PTUC.Str.q> .
+
+<http://prediktor.com/sparql_testcase#s_9.PTUC.Str.dirGeneral> a ns1:BaseDataVariableType,
+        ns1:BaseVariableType ;
+    ns1:browseName "dirGeneral" ;
+    ns1:browseNameNamespace <http://opcfoundation.org/UA/IEC61850-7-4#> ;
+    ns1:description "" ;
+    ns1:displayName "dirGeneral" ;
+    ns1:nodeClass "UAVariable" ;
+    ns1:nodeId "ns=1;s=9.PTUC.Str.dirGeneral" ;
+    ns1:value <http://prediktor.com/sparql_testcase#s_9.PTUC.Str.dirGeneral_Value> .
+
+<http://prediktor.com/sparql_testcase#s_9.PTUC.Str.general> a ns1:BaseDataVariableType,
+        ns1:BaseVariableType ;
+    ns1:browseName "general" ;
+    ns1:browseNameNamespace <http://opcfoundation.org/UA/IEC61850-7-4#> ;
+    ns1:description "" ;
+    ns1:displayName "general" ;
+    ns1:nodeClass "UAVariable" ;
+    ns1:nodeId "ns=1;s=9.PTUC.Str.general" ;
+    ns1:value <http://prediktor.com/sparql_testcase#s_9.PTUC.Str.general_Value> .
+
+<http://prediktor.com/sparql_testcase#s_9.PTUC.Str.q> a ns1:BaseDataVariableType,
+        ns1:BaseVariableType ;
+    ns1:browseName "q" ;
+    ns1:browseNameNamespace <http://opcfoundation.org/UA/IEC61850-7-4#> ;
+    ns1:description "" ;
+    ns1:displayName "q" ;
+    ns1:nodeClass "UAVariable" ;
+    ns1:nodeId "ns=1;s=9.PTUC.Str.q" ;
+    ns1:value <http://prediktor.com/sparql_testcase#s_9.PTUC.Str.q_Value> .
+

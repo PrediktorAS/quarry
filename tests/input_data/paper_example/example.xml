@@ -1,0 +1,524 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UANodeSet xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd">
+    <NamespaceUris>
+        <Uri>http://prediktor.com/paper_example</Uri>
+        <Uri>http://prediktor.com/RDS-OG-Fragment</Uri>
+        <Uri>http://prediktor.com/iec68131_fragment</Uri>
+    </NamespaceUris>
+    <Models>
+        <Model ModelUri="http://prediktor.com/paper_example" PublicationDate="2020-04-06T08:03:52Z" Version="1.0.0">
+        </Model>
+    </Models>
+    <Aliases>
+    </Aliases>
+    <UAObject NodeId="ns=1;i=1" BrowseName="1:Site1">
+        <DisplayName>Site1</DisplayName>
+        <Description>Lorem ipsum dolor sit amet</Description>
+        <References>
+            <Reference ReferenceType="ns=0;i=40">ns=2;s=SiteType</Reference>
+        </References>
+    </UAObject>
+    <UAObject NodeId="ns=1;i=2" BrowseName="1:Site1.WaterInjectionSystem">
+        <DisplayName>WaterInjectionSystem</DisplayName>
+        <Description>Lorem ipsum dolor sit amet</Description>
+        <References>
+            <Reference ReferenceType="ns=2;s=FunctionalAspect" IsForward="false">ns=1;i=1</Reference>
+            <Reference ReferenceType="ns=0;i=40">ns=2;s=E</Reference>
+        </References>
+    </UAObject>
+    <UAVariable NodeId="ns=1;i=3" BrowseName="2:FunctionalAspectName">
+        <DisplayName>FunctionalAspectName</DisplayName>
+        <Description>Lorem ipsum dolor sit amet</Description>
+        <References>
+            <Reference ReferenceType="ns=0;i=40">ns=0;i=68</Reference>
+            <Reference ReferenceType="ns=0;i=46" IsForward="false">ns=1;i=2</Reference>
+        </References>
+        <Value>
+            <String xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">E1</String>
+        </Value>
+    </UAVariable>
+    <UAObject NodeId="ns=1;i=4" BrowseName="1:Site1.InjectionSystem">
+        <DisplayName>WaterInjectionSystem</DisplayName>
+        <Description>Lorem ipsum dolor sit amet</Description>
+        <References>
+            <Reference ReferenceType="ns=2;s=FunctionalAspect" IsForward="false">ns=1;i=2</Reference>
+            <Reference ReferenceType="ns=0;i=40">ns=2;s=KA</Reference>
+        </References>
+    </UAObject>
+    <UAVariable NodeId="ns=1;i=5" BrowseName="2:FunctionalAspectName">
+        <DisplayName>FunctionalAspectName</DisplayName>
+        <Description>Lorem ipsum dolor sit amet</Description>
+        <References>
+            <Reference ReferenceType="ns=0;i=40">ns=0;i=68</Reference>
+            <Reference ReferenceType="ns=0;i=46" IsForward="false">ns=1;i=4</Reference>
+        </References>
+        <Value>
+            <String xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">KA1</String>
+        </Value>
+    </UAVariable>
+    <UAObject NodeId="ns=1;i=6" BrowseName="1:Site1.ControlValveInCC">
+        <DisplayName>ControlValveInCC</DisplayName>
+        <Description>Lorem ipsum dolor sit amet</Description>
+        <References>
+            <Reference ReferenceType="ns=2;s=FunctionalAspect" IsForward="false">ns=1;i=4</Reference>
+            <Reference ReferenceType="ns=2;s=ProductAspect" IsForward="false">ns=1;i=18</Reference>
+            <Reference ReferenceType="ns=0;i=40">ns=2;s=QNA</Reference>
+        </References>
+    </UAObject>
+    <UAVariable NodeId="ns=1;i=39" BrowseName="3:CA_YR" DataType="i=11" AccessLevel="3">
+        <DisplayName>CA_YR</DisplayName>
+        <Description>Reference setpoint value</Description>
+        <References>
+            <Reference ReferenceType="i=40">i=2368</Reference>
+            <Reference ReferenceType="i=47" IsForward="false">ns=1;i=6</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable NodeId="ns=1;i=40" BrowseName="EURange" DataType="i=884" AccessLevel="3">
+        <DisplayName>EURange</DisplayName>
+        <References>
+            <Reference ReferenceType="i=40">i=68</Reference>
+            <Reference ReferenceType="i=46" IsForward="false">ns=1;i=39</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable NodeId="ns=1;i=41" BrowseName="EngineeringUnits" DataType="i=887" AccessLevel="3">
+        <DisplayName>EngineeringUnits</DisplayName>
+        <References>
+            <Reference ReferenceType="i=40">i=68</Reference>
+            <Reference ReferenceType="i=46" IsForward="false">ns=1;i=39</Reference>
+        </References>
+        <Value>
+            <ExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+                <TypeId>
+                    <Identifier>i=888</Identifier>
+                </TypeId>
+                <Body>
+                    <EUInformation>
+                        <NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</NamespaceUri>
+                        <UnitId>20529</UnitId>
+                        <DisplayName>
+                            <Locale>en</Locale>
+                            <Text>%</Text>
+                        </DisplayName>
+                        <Description>
+                            <Locale>en</Locale>
+                            <Text>percent</Text>
+                        </Description>
+                    </EUInformation>
+                </Body>
+            </ExtensionObject>
+        </Value>
+    </UAVariable>
+    <UAVariable NodeId="ns=1;i=42" BrowseName="3:CA_Y" DataType="i=11" AccessLevel="3">
+        <DisplayName>CA_Y</DisplayName>
+        <Description>Normal function output</Description>
+        <References>
+            <Reference ReferenceType="i=40">i=2368</Reference>
+            <Reference ReferenceType="i=47" IsForward="false">ns=1;i=6</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable NodeId="ns=1;i=43" BrowseName="EURange" DataType="i=884" AccessLevel="3">
+        <DisplayName>EURange</DisplayName>
+        <References>
+            <Reference ReferenceType="i=40">i=68</Reference>
+            <Reference ReferenceType="i=46" IsForward="false">ns=1;i=42</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable NodeId="ns=1;i=44" BrowseName="EngineeringUnits" DataType="i=887" AccessLevel="3">
+        <DisplayName>EngineeringUnits</DisplayName>
+        <References>
+            <Reference ReferenceType="i=40">i=68</Reference>
+            <Reference ReferenceType="i=46" IsForward="false">ns=1;i=42</Reference>
+        </References>
+        <Value>
+            <ExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+                <TypeId>
+                    <Identifier>i=888</Identifier>
+                </TypeId>
+                <Body>
+                    <EUInformation>
+                        <NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</NamespaceUri>
+                        <UnitId>20529</UnitId>
+                        <DisplayName>
+                            <Locale>en</Locale>
+                            <Text>%</Text>
+                        </DisplayName>
+                        <Description>
+                            <Locale>en</Locale>
+                            <Text>percent</Text>
+                        </Description>
+                    </EUInformation>
+                </Body>
+            </ExtensionObject>
+        </Value>
+    </UAVariable>
+    <UAVariable NodeId="ns=1;i=7" BrowseName="2:FunctionalAspectName">
+        <DisplayName>FunctionalAspectName</DisplayName>
+        <Description>Lorem ipsum dolor sit amet</Description>
+        <References>
+            <Reference ReferenceType="ns=0;i=40">ns=0;i=68</Reference>
+            <Reference ReferenceType="ns=0;i=46" IsForward="false">ns=1;i=6</Reference>
+        </References>
+        <Value>
+            <String xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">QNA1</String>
+        </Value>
+    </UAVariable>
+    <UAVariable NodeId="ns=1;i=24" BrowseName="2:ProductAspectName">
+        <DisplayName>ProductAspectName</DisplayName>
+        <Description>Lorem ipsum dolor sit amet</Description>
+        <References>
+            <Reference ReferenceType="ns=0;i=40">ns=0;i=68</Reference>
+            <Reference ReferenceType="ns=0;i=46" IsForward="false">ns=1;i=6</Reference>
+        </References>
+        <Value>
+            <String xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">QNA1</String>
+        </Value>
+    </UAVariable>
+    <UAObject NodeId="ns=1;i=8" BrowseName="1:Site1.ControlValveInZB">
+        <DisplayName>ControlValveInZB</DisplayName>
+        <Description>Lorem ipsum dolor sit amet</Description>
+        <References>
+            <Reference ReferenceType="ns=2;s=FunctionalAspect" IsForward="false">ns=1;i=4</Reference>
+            <Reference ReferenceType="ns=2;s=ProductAspect" IsForward="false">ns=1;i=20</Reference>
+            <Reference ReferenceType="ns=0;i=40">ns=2;s=QNA</Reference>
+        </References>
+    </UAObject>
+    <UAVariable NodeId="ns=1;i=33" BrowseName="3:CA_YR" DataType="i=11" AccessLevel="3">
+        <DisplayName>CA_YR</DisplayName>
+        <Description>Reference setpoint value</Description>
+        <References>
+            <Reference ReferenceType="i=40">i=2368</Reference>
+            <Reference ReferenceType="i=47" IsForward="false">ns=1;i=8</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable NodeId="ns=1;i=34" BrowseName="EURange" DataType="i=884" AccessLevel="3">
+        <DisplayName>EURange</DisplayName>
+        <References>
+            <Reference ReferenceType="i=40">i=68</Reference>
+            <Reference ReferenceType="i=46" IsForward="false">ns=1;i=33</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable NodeId="ns=1;i=35" BrowseName="EngineeringUnits" DataType="i=887" AccessLevel="3">
+        <DisplayName>EngineeringUnits</DisplayName>
+        <References>
+            <Reference ReferenceType="i=40">i=68</Reference>
+            <Reference ReferenceType="i=46" IsForward="false">ns=1;i=33</Reference>
+        </References>
+        <Value>
+            <ExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+                <TypeId>
+                    <Identifier>i=888</Identifier>
+                </TypeId>
+                <Body>
+                    <EUInformation>
+                        <NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</NamespaceUri>
+                        <UnitId>20529</UnitId>
+                        <DisplayName>
+                            <Locale>en</Locale>
+                            <Text>%</Text>
+                        </DisplayName>
+                        <Description>
+                            <Locale>en</Locale>
+                            <Text>percent</Text>
+                        </Description>
+                    </EUInformation>
+                </Body>
+            </ExtensionObject>
+        </Value>
+    </UAVariable>
+    <UAVariable NodeId="ns=1;i=36" BrowseName="3:CA_Y" DataType="i=11" AccessLevel="3">
+        <DisplayName>CA_Y</DisplayName>
+        <Description>Normal function output</Description>
+        <References>
+            <Reference ReferenceType="i=40">i=2368</Reference>
+            <Reference ReferenceType="i=47" IsForward="false">ns=1;i=8</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable NodeId="ns=1;i=37" BrowseName="EURange" DataType="i=884" AccessLevel="3">
+        <DisplayName>EURange</DisplayName>
+        <References>
+            <Reference ReferenceType="i=40">i=68</Reference>
+            <Reference ReferenceType="i=46" IsForward="false">ns=1;i=36</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable NodeId="ns=1;i=38" BrowseName="EngineeringUnits" DataType="i=887" AccessLevel="3">
+        <DisplayName>EngineeringUnits</DisplayName>
+        <References>
+            <Reference ReferenceType="i=40">i=68</Reference>
+            <Reference ReferenceType="i=46" IsForward="false">ns=1;i=36</Reference>
+        </References>
+        <Value>
+            <ExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+                <TypeId>
+                    <Identifier>i=888</Identifier>
+                </TypeId>
+                <Body>
+                    <EUInformation>
+                        <NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</NamespaceUri>
+                        <UnitId>20529</UnitId>
+                        <DisplayName>
+                            <Locale>en</Locale>
+                            <Text>%</Text>
+                        </DisplayName>
+                        <Description>
+                            <Locale>en</Locale>
+                            <Text>percent</Text>
+                        </Description>
+                    </EUInformation>
+                </Body>
+            </ExtensionObject>
+        </Value>
+    </UAVariable>
+    <UAVariable NodeId="ns=1;i=9" BrowseName="2:FunctionalAspectName">
+        <DisplayName>FunctionalAspectName</DisplayName>
+        <Description>Lorem ipsum dolor sit amet</Description>
+        <References>
+            <Reference ReferenceType="ns=0;i=40">ns=0;i=68</Reference>
+            <Reference ReferenceType="ns=0;i=46" IsForward="false">ns=1;i=8</Reference>
+        </References>
+        <Value>
+            <String xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">QNA2</String>
+        </Value>
+    </UAVariable>
+    <UAVariable NodeId="ns=1;i=25" BrowseName="2:ProductAspectName">
+        <DisplayName>ProductAspectName</DisplayName>
+        <Description>Lorem ipsum dolor sit amet</Description>
+        <References>
+            <Reference ReferenceType="ns=0;i=40">ns=0;i=68</Reference>
+            <Reference ReferenceType="ns=0;i=46" IsForward="false">ns=1;i=8</Reference>
+        </References>
+        <Value>
+            <String xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">QNA1</String>
+        </Value>
+    </UAVariable>
+    <UAObject NodeId="ns=1;i=10" BrowseName="1:Site1.ControlValveInZA">
+        <DisplayName>ControlValveInZA</DisplayName>
+        <Description>Lorem ipsum dolor sit amet</Description>
+        <References>
+            <Reference ReferenceType="ns=2;s=FunctionalAspect" IsForward="false">ns=1;i=4</Reference>
+            <Reference ReferenceType="ns=2;s=ProductAspect" IsForward="false">ns=1;i=22</Reference>
+            <Reference ReferenceType="ns=0;i=40">ns=2;s=QNA</Reference>
+        </References>
+    </UAObject>
+    <UAVariable NodeId="ns=1;i=11" BrowseName="2:FunctionalAspectName">
+        <DisplayName>FunctionalAspectName</DisplayName>
+        <Description>Lorem ipsum dolor sit amet</Description>
+        <References>
+            <Reference ReferenceType="ns=0;i=40">ns=0;i=68</Reference>
+            <Reference ReferenceType="ns=0;i=46" IsForward="false">ns=1;i=10</Reference>
+        </References>
+        <Value>
+            <String xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">QNA3</String>
+        </Value>
+    </UAVariable>
+    <UAVariable NodeId="ns=1;i=26" BrowseName="2:ProductAspectName">
+        <DisplayName>ProductAspectName</DisplayName>
+        <Description>Lorem ipsum dolor sit amet</Description>
+        <References>
+            <Reference ReferenceType="ns=0;i=40">ns=0;i=68</Reference>
+            <Reference ReferenceType="ns=0;i=46" IsForward="false">ns=1;i=10</Reference>
+        </References>
+        <Value>
+            <String xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">QNA1</String>
+        </Value>
+    </UAVariable>
+    <UAVariable NodeId="ns=1;i=27" BrowseName="3:CA_YR" DataType="i=11" AccessLevel="3">
+        <DisplayName>CA_YR</DisplayName>
+        <Description>Reference setpoint value</Description>
+        <References>
+            <Reference ReferenceType="i=40">i=2368</Reference>
+            <Reference ReferenceType="i=47" IsForward="false">ns=1;i=10</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable NodeId="ns=1;i=28" BrowseName="EURange" DataType="i=884" AccessLevel="3">
+        <DisplayName>EURange</DisplayName>
+        <References>
+            <Reference ReferenceType="i=40">i=68</Reference>
+            <Reference ReferenceType="i=46" IsForward="false">ns=1;i=27</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable NodeId="ns=1;i=29" BrowseName="EngineeringUnits" DataType="i=887" AccessLevel="3">
+        <DisplayName>EngineeringUnits</DisplayName>
+        <References>
+            <Reference ReferenceType="i=40">i=68</Reference>
+            <Reference ReferenceType="i=46" IsForward="false">ns=1;i=27</Reference>
+        </References>
+        <Value>
+            <ExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+                <TypeId>
+                    <Identifier>i=888</Identifier>
+                </TypeId>
+                <Body>
+                    <EUInformation>
+                        <NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</NamespaceUri>
+                        <UnitId>20529</UnitId>
+                        <DisplayName>
+                            <Locale>en</Locale>
+                            <Text>%</Text>
+                        </DisplayName>
+                        <Description>
+                            <Locale>en</Locale>
+                            <Text>percent</Text>
+                        </Description>
+                    </EUInformation>
+                </Body>
+            </ExtensionObject>
+        </Value>
+    </UAVariable>
+    <UAVariable NodeId="ns=1;i=30" BrowseName="3:CA_Y" DataType="i=11" AccessLevel="3">
+        <DisplayName>CA_Y</DisplayName>
+        <Description>Normal function output</Description>
+        <References>
+            <Reference ReferenceType="i=40">i=2368</Reference>
+            <Reference ReferenceType="i=47" IsForward="false">ns=1;i=10</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable NodeId="ns=1;i=31" BrowseName="EURange" DataType="i=884" AccessLevel="3">
+        <DisplayName>EURange</DisplayName>
+        <References>
+            <Reference ReferenceType="i=40">i=68</Reference>
+            <Reference ReferenceType="i=46" IsForward="false">ns=1;i=30</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable NodeId="ns=1;i=32" BrowseName="EngineeringUnits" DataType="i=887" AccessLevel="3">
+        <DisplayName>EngineeringUnits</DisplayName>
+        <References>
+            <Reference ReferenceType="i=40">i=68</Reference>
+            <Reference ReferenceType="i=46" IsForward="false">ns=1;i=30</Reference>
+        </References>
+        <Value>
+            <ExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+                <TypeId>
+                    <Identifier>i=888</Identifier>
+                </TypeId>
+                <Body>
+                    <EUInformation>
+                        <NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</NamespaceUri>
+                        <UnitId>20529</UnitId>
+                        <DisplayName>
+                            <Locale>en</Locale>
+                            <Text>%</Text>
+                        </DisplayName>
+                        <Description>
+                            <Locale>en</Locale>
+                            <Text>percent</Text>
+                        </Description>
+                    </EUInformation>
+                </Body>
+            </ExtensionObject>
+        </Value>
+    </UAVariable>
+    <UAObject NodeId="ns=1;i=12" BrowseName="1:Site1.WaterInjectionTemplateCC">
+        <DisplayName>WaterInjectionTemplateCC</DisplayName>
+        <Description>Lorem ipsum dolor sit amet</Description>
+        <References>
+            <Reference ReferenceType="ns=2;s=ProductAspect" IsForward="false">ns=1;i=1</Reference>
+            <Reference ReferenceType="ns=0;i=40">ns=2;s=E</Reference>
+        </References>
+    </UAObject>
+    <UAVariable NodeId="ns=1;i=13" BrowseName="2:ProductAspectName">
+        <DisplayName>ProductAspectName</DisplayName>
+        <Description>Lorem ipsum dolor sit amet</Description>
+        <References>
+            <Reference ReferenceType="ns=0;i=40">ns=0;i=68</Reference>
+            <Reference ReferenceType="ns=0;i=46" IsForward="false">ns=1;i=12</Reference>
+        </References>
+        <Value>
+            <String xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">E1</String>
+        </Value>
+    </UAVariable>
+    <UAObject NodeId="ns=1;i=14" BrowseName="1:Site1.WaterInjectionTemplateZB">
+        <DisplayName>WaterInjectionTemplateZB</DisplayName>
+        <Description>Lorem ipsum dolor sit amet</Description>
+        <References>
+            <Reference ReferenceType="ns=2;s=ProductAspect" IsForward="false">ns=1;i=1</Reference>
+            <Reference ReferenceType="ns=0;i=40">ns=2;s=E</Reference>
+        </References>
+    </UAObject>
+    <UAVariable NodeId="ns=1;i=15" BrowseName="2:ProductAspectName">
+        <DisplayName>ProductAspectName</DisplayName>
+        <Description>Lorem ipsum dolor sit amet</Description>
+        <References>
+            <Reference ReferenceType="ns=0;i=40">ns=0;i=68</Reference>
+            <Reference ReferenceType="ns=0;i=46" IsForward="false">ns=1;i=14</Reference>
+        </References>
+        <Value>
+            <String xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">E2</String>
+        </Value>
+    </UAVariable>
+    <UAObject NodeId="ns=1;i=16" BrowseName="1:Site1.WaterInjectionTemplateZA">
+        <DisplayName>WaterInjectionTemplateZA</DisplayName>
+        <Description>Lorem ipsum dolor sit amet</Description>
+        <References>
+            <Reference ReferenceType="ns=2;s=ProductAspect" IsForward="false">ns=1;i=1</Reference>
+            <Reference ReferenceType="ns=0;i=40">ns=2;s=E</Reference>
+        </References>
+    </UAObject>
+    <UAVariable NodeId="ns=1;i=17" BrowseName="2:ProductAspectName">
+        <DisplayName>ProductAspectName</DisplayName>
+        <Description>Lorem ipsum dolor sit amet</Description>
+        <References>
+            <Reference ReferenceType="ns=0;i=40">ns=0;i=68</Reference>
+            <Reference ReferenceType="ns=0;i=46" IsForward="false">ns=1;i=16</Reference>
+        </References>
+        <Value>
+            <String xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">E3</String>
+        </Value>
+    </UAVariable>
+    <UAObject NodeId="ns=1;i=18" BrowseName="1:Site1.WaterInjectionChokeModuleInCC">
+        <DisplayName>WaterInjectionChokeModuleInCC</DisplayName>
+        <Description>Lorem ipsum dolor sit amet</Description>
+        <References>
+            <Reference ReferenceType="ns=2;s=ProductAspect" IsForward="false">ns=1;i=12</Reference>
+            <Reference ReferenceType="ns=0;i=40">ns=2;s=KA</Reference>
+        </References>
+    </UAObject>
+    <UAVariable NodeId="ns=1;i=19" BrowseName="2:ProductAspectName">
+        <DisplayName>ProductAspectName</DisplayName>
+        <Description>Lorem ipsum dolor sit amet</Description>
+        <References>
+            <Reference ReferenceType="ns=0;i=40">ns=0;i=68</Reference>
+            <Reference ReferenceType="ns=0;i=46" IsForward="false">ns=1;i=18</Reference>
+        </References>
+        <Value>
+            <String xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">KA1</String>
+        </Value>
+    </UAVariable>
+    <UAObject NodeId="ns=1;i=20" BrowseName="1:Site1.WaterInjectionChokeModuleInZB">
+        <DisplayName>WaterInjectionChokeModuleInZB</DisplayName>
+        <Description>Lorem ipsum dolor sit amet</Description>
+        <References>
+            <Reference ReferenceType="ns=2;s=ProductAspect" IsForward="false">ns=1;i=14</Reference>
+            <Reference ReferenceType="ns=0;i=40">ns=2;s=KA</Reference>
+        </References>
+    </UAObject>
+    <UAVariable NodeId="ns=1;i=21" BrowseName="2:ProductAspectName">
+        <DisplayName>ProductAspectName</DisplayName>
+        <Description>Lorem ipsum dolor sit amet</Description>
+        <References>
+            <Reference ReferenceType="ns=0;i=40">ns=0;i=68</Reference>
+            <Reference ReferenceType="ns=0;i=46" IsForward="false">ns=1;i=20</Reference>
+        </References>
+        <Value>
+            <String xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">KA1</String>
+        </Value>
+    </UAVariable>
+    <UAObject NodeId="ns=1;i=22" BrowseName="1:Site1.WaterInjectionChokeModuleInZA">
+        <DisplayName>WaterInjectionChokeModuleInZA</DisplayName>
+        <Description>Lorem ipsum dolor sit amet</Description>
+        <References>
+            <Reference ReferenceType="ns=2;s=ProductAspect" IsForward="false">ns=1;i=16</Reference>
+            <Reference ReferenceType="ns=0;i=40">ns=2;s=KA</Reference>
+        </References>
+    </UAObject>
+    <UAVariable NodeId="ns=1;i=23" BrowseName="2:ProductAspectName">
+        <DisplayName>ProductAspectName</DisplayName>
+        <Description>Lorem ipsum dolor sit amet</Description>
+        <References>
+            <Reference ReferenceType="ns=0;i=40">ns=0;i=68</Reference>
+            <Reference ReferenceType="ns=0;i=46" IsForward="false">ns=1;i=22</Reference>
+        </References>
+        <Value>
+            <String xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">KA1</String>
+        </Value>
+    </UAVariable>
+</UANodeSet>

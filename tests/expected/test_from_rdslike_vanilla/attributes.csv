@@ -1,0 +1,168 @@
+node,browseName,browseNameNamespace,displayName,description,nodeId,nodeClass
+http://prediktor.com/sparql_testcase#s_5.PTUC.Beh.q,q,http://opcfoundation.org/UA/IEC61850-7-4#,q,,ns=1;s=5.PTUC.Beh.q,UAVariable
+http://prediktor.com/sparql_testcase#s_7.PTUC.Op.general,general,http://opcfoundation.org/UA/IEC61850-7-4#,general,,ns=1;s=7.PTUC.Op.general,UAVariable
+http://prediktor.com/sparql_testcase#s_5.FunctionalAspectName,FunctionalAspectName,http://prediktor.com/RDS-like-typelib/#,FunctionalAspectName,Functional aspect name,ns=1;s=5.FunctionalAspectName,UAVariable
+http://prediktor.com/sparql_testcase#s_16.SVBR.Beh.stVal,stVal,http://opcfoundation.org/UA/IEC61850-7-4#,stVal,,ns=1;s=16.SVBR.Beh.stVal,UAVariable
+http://prediktor.com/sparql_testcase#s_20.PTUC.Op.q,q,http://opcfoundation.org/UA/IEC61850-7-4#,q,,ns=1;s=20.PTUC.Op.q,UAVariable
+http://prediktor.com/sparql_testcase#s_2.SVBR,SVBR,http://prediktor.com/sparql_testcase#,SVBR,,ns=1;s=2.SVBR,UAObject
+http://prediktor.com/sparql_testcase#s_11,System11,http://prediktor.com/sparql_testcase#,System11,Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo,ns=1;s=11,UAObject
+http://prediktor.com/sparql_testcase#s_2.SVBR.Beh,Beh,http://opcfoundation.org/UA/IEC61850-7-4#,Beh,,ns=1;s=2.SVBR.Beh,UAObject
+http://prediktor.com/sparql_testcase#s_20.PTUC.Op,Op,http://opcfoundation.org/UA/IEC61850-7-4#,Op,,ns=1;s=20.PTUC.Op,UAObject
+http://prediktor.com/sparql_testcase#s_7.PTUC.Str.dirGeneral,dirGeneral,http://opcfoundation.org/UA/IEC61850-7-4#,dirGeneral,,ns=1;s=7.PTUC.Str.dirGeneral,UAVariable
+http://prediktor.com/sparql_testcase#s_3.PTUC.Beh,Beh,http://opcfoundation.org/UA/IEC61850-7-4#,Beh,,ns=1;s=3.PTUC.Beh,UAObject
+http://prediktor.com/sparql_testcase#s_14.PTUC.Str.q,q,http://opcfoundation.org/UA/IEC61850-7-4#,q,,ns=1;s=14.PTUC.Str.q,UAVariable
+http://prediktor.com/sparql_testcase#s_19.SVBR.Beh.stVal,stVal,http://opcfoundation.org/UA/IEC61850-7-4#,stVal,,ns=1;s=19.SVBR.Beh.stVal,UAVariable
+http://prediktor.com/sparql_testcase#s_3.PTUC.Beh.q,q,http://opcfoundation.org/UA/IEC61850-7-4#,q,,ns=1;s=3.PTUC.Beh.q,UAVariable
+http://prediktor.com/sparql_testcase#s_7.PTUC.Op.q,q,http://opcfoundation.org/UA/IEC61850-7-4#,q,,ns=1;s=7.PTUC.Op.q,UAVariable
+http://prediktor.com/sparql_testcase#s_13.SVBR,SVBR,http://prediktor.com/sparql_testcase#,SVBR,,ns=1;s=13.SVBR,UAObject
+http://prediktor.com/sparql_testcase#s_9.PTUC.Op,Op,http://opcfoundation.org/UA/IEC61850-7-4#,Op,,ns=1;s=9.PTUC.Op,UAObject
+http://prediktor.com/sparql_testcase#s_10.SVBR.Beh.stVal,stVal,http://opcfoundation.org/UA/IEC61850-7-4#,stVal,,ns=1;s=10.SVBR.Beh.stVal,UAVariable
+http://prediktor.com/sparql_testcase#s_18.PTUC.Str.q,q,http://opcfoundation.org/UA/IEC61850-7-4#,q,,ns=1;s=18.PTUC.Str.q,UAVariable
+http://prediktor.com/sparql_testcase#s_15.FunctionalAspectName,FunctionalAspectName,http://prediktor.com/RDS-like-typelib/#,FunctionalAspectName,Functional aspect name,ns=1;s=15.FunctionalAspectName,UAVariable
+http://prediktor.com/sparql_testcase#s_10.SVBR.Beh.q,q,http://opcfoundation.org/UA/IEC61850-7-4#,q,,ns=1;s=10.SVBR.Beh.q,UAVariable
+http://prediktor.com/sparql_testcase#s_9.PTUC,PTUC,http://prediktor.com/sparql_testcase#,PTUC,,ns=1;s=9.PTUC,UAObject
+http://prediktor.com/sparql_testcase#s_19.SVBR.Beh,Beh,http://opcfoundation.org/UA/IEC61850-7-4#,Beh,,ns=1;s=19.SVBR.Beh,UAObject
+http://prediktor.com/sparql_testcase#s_5.PTUC.Str.general,general,http://opcfoundation.org/UA/IEC61850-7-4#,general,,ns=1;s=5.PTUC.Str.general,UAVariable
+http://prediktor.com/sparql_testcase#s_16.SVBR,SVBR,http://prediktor.com/sparql_testcase#,SVBR,,ns=1;s=16.SVBR,UAObject
+http://prediktor.com/sparql_testcase#s_6.SVBR.Beh,Beh,http://opcfoundation.org/UA/IEC61850-7-4#,Beh,,ns=1;s=6.SVBR.Beh,UAObject
+http://prediktor.com/sparql_testcase#s_20,System20,http://prediktor.com/sparql_testcase#,System20,Nisi ut aliquid ex ea commodi consequatur,ns=1;s=20,UAObject
+http://prediktor.com/sparql_testcase#s_3.PTUC.Op,Op,http://opcfoundation.org/UA/IEC61850-7-4#,Op,,ns=1;s=3.PTUC.Op,UAObject
+http://prediktor.com/sparql_testcase#s_7.PTUC.Beh,Beh,http://opcfoundation.org/UA/IEC61850-7-4#,Beh,,ns=1;s=7.PTUC.Beh,UAObject
+http://prediktor.com/sparql_testcase#s_11.PTUC.Str.general,general,http://opcfoundation.org/UA/IEC61850-7-4#,general,,ns=1;s=11.PTUC.Str.general,UAVariable
+http://prediktor.com/sparql_testcase#s_7.PTUC.Str,Str,http://opcfoundation.org/UA/IEC61850-7-4#,Str,,ns=1;s=7.PTUC.Str,UAObject
+http://prediktor.com/sparql_testcase#s_7.PTUC.Str.q,q,http://opcfoundation.org/UA/IEC61850-7-4#,q,,ns=1;s=7.PTUC.Str.q,UAVariable
+http://prediktor.com/sparql_testcase#s_14.PTUC.Op,Op,http://opcfoundation.org/UA/IEC61850-7-4#,Op,,ns=1;s=14.PTUC.Op,UAObject
+http://prediktor.com/sparql_testcase#s_4.FunctionalAspectName,FunctionalAspectName,http://prediktor.com/RDS-like-typelib/#,FunctionalAspectName,Functional aspect name,ns=1;s=4.FunctionalAspectName,UAVariable
+http://prediktor.com/sparql_testcase#s_16.FunctionalAspectName,FunctionalAspectName,http://prediktor.com/RDS-like-typelib/#,FunctionalAspectName,Functional aspect name,ns=1;s=16.FunctionalAspectName,UAVariable
+http://prediktor.com/sparql_testcase#s_18.PTUC.Str.general,general,http://opcfoundation.org/UA/IEC61850-7-4#,general,,ns=1;s=18.PTUC.Str.general,UAVariable
+http://prediktor.com/sparql_testcase#s_14.PTUC.Str,Str,http://opcfoundation.org/UA/IEC61850-7-4#,Str,,ns=1;s=14.PTUC.Str,UAObject
+http://prediktor.com/sparql_testcase#s_14.PTUC.Str.general,general,http://opcfoundation.org/UA/IEC61850-7-4#,general,,ns=1;s=14.PTUC.Str.general,UAVariable
+http://prediktor.com/sparql_testcase#s_11.PTUC.Beh.stVal,stVal,http://opcfoundation.org/UA/IEC61850-7-4#,stVal,,ns=1;s=11.PTUC.Beh.stVal,UAVariable
+http://prediktor.com/sparql_testcase#s_3.PTUC.Str,Str,http://opcfoundation.org/UA/IEC61850-7-4#,Str,,ns=1;s=3.PTUC.Str,UAObject
+http://prediktor.com/sparql_testcase#s_17.FunctionalAspectName,FunctionalAspectName,http://prediktor.com/RDS-like-typelib/#,FunctionalAspectName,Functional aspect name,ns=1;s=17.FunctionalAspectName,UAVariable
+http://prediktor.com/sparql_testcase#s_1,System1,http://prediktor.com/sparql_testcase#,System1,Lorem ipsum dolor sit amet,ns=1;s=1,UAObject
+http://prediktor.com/sparql_testcase#s_14.PTUC.Beh.q,q,http://opcfoundation.org/UA/IEC61850-7-4#,q,,ns=1;s=14.PTUC.Beh.q,UAVariable
+http://prediktor.com/sparql_testcase#s_19.SVBR,SVBR,http://prediktor.com/sparql_testcase#,SVBR,,ns=1;s=19.SVBR,UAObject
+http://prediktor.com/sparql_testcase#s_10.FunctionalAspectName,FunctionalAspectName,http://prediktor.com/RDS-like-typelib/#,FunctionalAspectName,Functional aspect name,ns=1;s=10.FunctionalAspectName,UAVariable
+http://prediktor.com/sparql_testcase#s_5.PTUC.Str,Str,http://opcfoundation.org/UA/IEC61850-7-4#,Str,,ns=1;s=5.PTUC.Str,UAObject
+http://prediktor.com/sparql_testcase#s_21.SVBR.Beh.stVal,stVal,http://opcfoundation.org/UA/IEC61850-7-4#,stVal,,ns=1;s=21.SVBR.Beh.stVal,UAVariable
+http://prediktor.com/sparql_testcase#s_11.PTUC.Op,Op,http://opcfoundation.org/UA/IEC61850-7-4#,Op,,ns=1;s=11.PTUC.Op,UAObject
+http://prediktor.com/sparql_testcase#s_6.FunctionalAspectName,FunctionalAspectName,http://prediktor.com/RDS-like-typelib/#,FunctionalAspectName,Functional aspect name,ns=1;s=6.FunctionalAspectName,UAVariable
+http://prediktor.com/sparql_testcase#s_19,System19,http://prediktor.com/sparql_testcase#,System19,Quis nostrum exercitationem ullam corporis suscipit laboriosam,ns=1;s=19,UAObject
+http://prediktor.com/sparql_testcase#s_3.FunctionalAspectName,FunctionalAspectName,http://prediktor.com/RDS-like-typelib/#,FunctionalAspectName,Functional aspect name,ns=1;s=3.FunctionalAspectName,UAVariable
+http://prediktor.com/sparql_testcase#s_16,System16,http://prediktor.com/sparql_testcase#,System16,Adipisci velit,ns=1;s=16,UAObject
+http://prediktor.com/sparql_testcase#s_21.SVBR.Beh,Beh,http://opcfoundation.org/UA/IEC61850-7-4#,Beh,,ns=1;s=21.SVBR.Beh,UAObject
+http://prediktor.com/sparql_testcase#s_3,System3,http://prediktor.com/sparql_testcase#,System3,Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua,ns=1;s=3,UAObject
+http://prediktor.com/sparql_testcase#s_9.FunctionalAspectName,FunctionalAspectName,http://prediktor.com/RDS-like-typelib/#,FunctionalAspectName,Functional aspect name,ns=1;s=9.FunctionalAspectName,UAVariable
+http://prediktor.com/sparql_testcase#s_1.FunctionalAspectName,FunctionalAspectName,http://prediktor.com/RDS-like-typelib/#,FunctionalAspectName,Functional aspect name,ns=1;s=1.FunctionalAspectName,UAVariable
+http://prediktor.com/sparql_testcase#s_18.PTUC.Op.q,q,http://opcfoundation.org/UA/IEC61850-7-4#,q,,ns=1;s=18.PTUC.Op.q,UAVariable
+http://prediktor.com/sparql_testcase#s_5.PTUC.Beh,Beh,http://opcfoundation.org/UA/IEC61850-7-4#,Beh,,ns=1;s=5.PTUC.Beh,UAObject
+http://prediktor.com/sparql_testcase#s_7.PTUC,PTUC,http://prediktor.com/sparql_testcase#,PTUC,,ns=1;s=7.PTUC,UAObject
+http://prediktor.com/sparql_testcase#s_13.FunctionalAspectName,FunctionalAspectName,http://prediktor.com/RDS-like-typelib/#,FunctionalAspectName,Functional aspect name,ns=1;s=13.FunctionalAspectName,UAVariable
+http://prediktor.com/sparql_testcase#s_7.PTUC.Beh.q,q,http://opcfoundation.org/UA/IEC61850-7-4#,q,,ns=1;s=7.PTUC.Beh.q,UAVariable
+http://prediktor.com/sparql_testcase#s_6.SVBR.Beh.stVal,stVal,http://opcfoundation.org/UA/IEC61850-7-4#,stVal,,ns=1;s=6.SVBR.Beh.stVal,UAVariable
+http://prediktor.com/sparql_testcase#s_4.SVBR.Beh.q,q,http://opcfoundation.org/UA/IEC61850-7-4#,q,,ns=1;s=4.SVBR.Beh.q,UAVariable
+http://prediktor.com/sparql_testcase#s_11.PTUC.Beh.q,q,http://opcfoundation.org/UA/IEC61850-7-4#,q,,ns=1;s=11.PTUC.Beh.q,UAVariable
+http://prediktor.com/sparql_testcase#s_5.PTUC.Op,Op,http://opcfoundation.org/UA/IEC61850-7-4#,Op,,ns=1;s=5.PTUC.Op,UAObject
+http://prediktor.com/sparql_testcase#s_11.PTUC.Beh,Beh,http://opcfoundation.org/UA/IEC61850-7-4#,Beh,,ns=1;s=11.PTUC.Beh,UAObject
+http://prediktor.com/sparql_testcase#s_9.PTUC.Beh,Beh,http://opcfoundation.org/UA/IEC61850-7-4#,Beh,,ns=1;s=9.PTUC.Beh,UAObject
+http://prediktor.com/sparql_testcase#s_9.PTUC.Beh.q,q,http://opcfoundation.org/UA/IEC61850-7-4#,q,,ns=1;s=9.PTUC.Beh.q,UAVariable
+http://prediktor.com/sparql_testcase#s_8.SVBR,SVBR,http://prediktor.com/sparql_testcase#,SVBR,,ns=1;s=8.SVBR,UAObject
+http://prediktor.com/sparql_testcase#s__MySiteName_,<MySiteName>,http://prediktor.com/sparql_testcase#,<MySiteName>,,ns=1;s=<MySiteName>,UAObject
+http://prediktor.com/sparql_testcase#s_20.PTUC.Str.general,general,http://opcfoundation.org/UA/IEC61850-7-4#,general,,ns=1;s=20.PTUC.Str.general,UAVariable
+http://prediktor.com/sparql_testcase#s_11.PTUC.Str,Str,http://opcfoundation.org/UA/IEC61850-7-4#,Str,,ns=1;s=11.PTUC.Str,UAObject
+http://prediktor.com/sparql_testcase#s_20.FunctionalAspectName,FunctionalAspectName,http://prediktor.com/RDS-like-typelib/#,FunctionalAspectName,Functional aspect name,ns=1;s=20.FunctionalAspectName,UAVariable
+http://prediktor.com/sparql_testcase#s_9,System9,http://prediktor.com/sparql_testcase#,System9,Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,ns=1;s=9,UAObject
+http://prediktor.com/sparql_testcase#s_5.PTUC.Str.dirGeneral,dirGeneral,http://opcfoundation.org/UA/IEC61850-7-4#,dirGeneral,,ns=1;s=5.PTUC.Str.dirGeneral,UAVariable
+http://prediktor.com/sparql_testcase#s_2.FunctionalAspectName,FunctionalAspectName,http://prediktor.com/RDS-like-typelib/#,FunctionalAspectName,Functional aspect name,ns=1;s=2.FunctionalAspectName,UAVariable
+http://prediktor.com/sparql_testcase#s_7.PTUC.Op,Op,http://opcfoundation.org/UA/IEC61850-7-4#,Op,,ns=1;s=7.PTUC.Op,UAObject
+http://prediktor.com/sparql_testcase#s_14,System14,http://prediktor.com/sparql_testcase#,System14,Neque porro quisquam est,ns=1;s=14,UAObject
+http://prediktor.com/sparql_testcase#s_21.SVBR,SVBR,http://prediktor.com/sparql_testcase#,SVBR,,ns=1;s=21.SVBR,UAObject
+http://prediktor.com/sparql_testcase#s_19.SVBR.Beh.q,q,http://opcfoundation.org/UA/IEC61850-7-4#,q,,ns=1;s=19.SVBR.Beh.q,UAVariable
+http://prediktor.com/sparql_testcase#s_8.SVBR.Beh.q,q,http://opcfoundation.org/UA/IEC61850-7-4#,q,,ns=1;s=8.SVBR.Beh.q,UAVariable
+http://prediktor.com/sparql_testcase#s_18.PTUC.Beh,Beh,http://opcfoundation.org/UA/IEC61850-7-4#,Beh,,ns=1;s=18.PTUC.Beh,UAObject
+http://prediktor.com/sparql_testcase#s_4,System4,http://prediktor.com/sparql_testcase#,System4,Ut enim ad minim veniam,ns=1;s=4,UAObject
+http://prediktor.com/sparql_testcase#s_9.PTUC.Str,Str,http://opcfoundation.org/UA/IEC61850-7-4#,Str,,ns=1;s=9.PTUC.Str,UAObject
+http://prediktor.com/sparql_testcase#s_6.SVBR.Beh.q,q,http://opcfoundation.org/UA/IEC61850-7-4#,q,,ns=1;s=6.SVBR.Beh.q,UAVariable
+http://prediktor.com/sparql_testcase#s_3.PTUC.Str.dirGeneral,dirGeneral,http://opcfoundation.org/UA/IEC61850-7-4#,dirGeneral,,ns=1;s=3.PTUC.Str.dirGeneral,UAVariable
+http://prediktor.com/sparql_testcase#s_14.PTUC.Beh.stVal,stVal,http://opcfoundation.org/UA/IEC61850-7-4#,stVal,,ns=1;s=14.PTUC.Beh.stVal,UAVariable
+http://prediktor.com/sparql_testcase#s_12.FunctionalAspectName,FunctionalAspectName,http://prediktor.com/RDS-like-typelib/#,FunctionalAspectName,Functional aspect name,ns=1;s=12.FunctionalAspectName,UAVariable
+http://prediktor.com/sparql_testcase#s_3.PTUC.Op.q,q,http://opcfoundation.org/UA/IEC61850-7-4#,q,,ns=1;s=3.PTUC.Op.q,UAVariable
+http://prediktor.com/sparql_testcase#s_20.PTUC.Str,Str,http://opcfoundation.org/UA/IEC61850-7-4#,Str,,ns=1;s=20.PTUC.Str,UAObject
+http://prediktor.com/sparql_testcase#s_16.SVBR.Beh,Beh,http://opcfoundation.org/UA/IEC61850-7-4#,Beh,,ns=1;s=16.SVBR.Beh,UAObject
+http://prediktor.com/sparql_testcase#s_18.PTUC.Op.general,general,http://opcfoundation.org/UA/IEC61850-7-4#,general,,ns=1;s=18.PTUC.Op.general,UAVariable
+http://prediktor.com/sparql_testcase#s_14.PTUC.Op.general,general,http://opcfoundation.org/UA/IEC61850-7-4#,general,,ns=1;s=14.PTUC.Op.general,UAVariable
+http://prediktor.com/sparql_testcase#s_21.FunctionalAspectName,FunctionalAspectName,http://prediktor.com/RDS-like-typelib/#,FunctionalAspectName,Functional aspect name,ns=1;s=21.FunctionalAspectName,UAVariable
+http://prediktor.com/sparql_testcase#s_5.PTUC,PTUC,http://prediktor.com/sparql_testcase#,PTUC,,ns=1;s=5.PTUC,UAObject
+http://prediktor.com/sparql_testcase#s_18,System18,http://prediktor.com/sparql_testcase#,System18,Ut enim ad minima veniam,ns=1;s=18,UAObject
+http://prediktor.com/sparql_testcase#s_3.PTUC,PTUC,http://prediktor.com/sparql_testcase#,PTUC,,ns=1;s=3.PTUC,UAObject
+http://prediktor.com/sparql_testcase#s_11.PTUC.Op.general,general,http://opcfoundation.org/UA/IEC61850-7-4#,general,,ns=1;s=11.PTUC.Op.general,UAVariable
+http://prediktor.com/sparql_testcase#s_20.PTUC.Beh,Beh,http://opcfoundation.org/UA/IEC61850-7-4#,Beh,,ns=1;s=20.PTUC.Beh,UAObject
+http://prediktor.com/sparql_testcase#s_2.SVBR.Beh.q,q,http://opcfoundation.org/UA/IEC61850-7-4#,q,,ns=1;s=2.SVBR.Beh.q,UAVariable
+http://prediktor.com/sparql_testcase#s_11.FunctionalAspectName,FunctionalAspectName,http://prediktor.com/RDS-like-typelib/#,FunctionalAspectName,Functional aspect name,ns=1;s=11.FunctionalAspectName,UAVariable
+http://prediktor.com/sparql_testcase#s_7.PTUC.Str.general,general,http://opcfoundation.org/UA/IEC61850-7-4#,general,,ns=1;s=7.PTUC.Str.general,UAVariable
+http://prediktor.com/sparql_testcase#s_17,System17,http://prediktor.com/sparql_testcase#,System17,Sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem,ns=1;s=17,UAObject
+http://prediktor.com/sparql_testcase#s_13.SVBR.Beh,Beh,http://opcfoundation.org/UA/IEC61850-7-4#,Beh,,ns=1;s=13.SVBR.Beh,UAObject
+http://prediktor.com/sparql_testcase#s_21.SVBR.Beh.q,q,http://opcfoundation.org/UA/IEC61850-7-4#,q,,ns=1;s=21.SVBR.Beh.q,UAVariable
+http://prediktor.com/sparql_testcase#s_5.PTUC.Op.q,q,http://opcfoundation.org/UA/IEC61850-7-4#,q,,ns=1;s=5.PTUC.Op.q,UAVariable
+http://prediktor.com/sparql_testcase#s_18.PTUC.Beh.q,q,http://opcfoundation.org/UA/IEC61850-7-4#,q,,ns=1;s=18.PTUC.Beh.q,UAVariable
+http://prediktor.com/sparql_testcase#s_10,System10,http://prediktor.com/sparql_testcase#,System10,Totam rem aperiam,ns=1;s=10,UAObject
+http://prediktor.com/sparql_testcase#s_4.SVBR,SVBR,http://prediktor.com/sparql_testcase#,SVBR,,ns=1;s=4.SVBR,UAObject
+http://prediktor.com/sparql_testcase#s_2.SVBR.Beh.stVal,stVal,http://opcfoundation.org/UA/IEC61850-7-4#,stVal,,ns=1;s=2.SVBR.Beh.stVal,UAVariable
+http://prediktor.com/sparql_testcase#s_3.PTUC.Str.general,general,http://opcfoundation.org/UA/IEC61850-7-4#,general,,ns=1;s=3.PTUC.Str.general,UAVariable
+http://prediktor.com/sparql_testcase#s_2,System2,http://prediktor.com/sparql_testcase#,System2,Consectetur adipiscing elit,ns=1;s=2,UAObject
+http://prediktor.com/sparql_testcase#s_9.PTUC.Beh.stVal,stVal,http://opcfoundation.org/UA/IEC61850-7-4#,stVal,,ns=1;s=9.PTUC.Beh.stVal,UAVariable
+http://prediktor.com/sparql_testcase#s_10.SVBR.Beh,Beh,http://opcfoundation.org/UA/IEC61850-7-4#,Beh,,ns=1;s=10.SVBR.Beh,UAObject
+http://prediktor.com/sparql_testcase#s_5.PTUC.Beh.stVal,stVal,http://opcfoundation.org/UA/IEC61850-7-4#,stVal,,ns=1;s=5.PTUC.Beh.stVal,UAVariable
+http://prediktor.com/sparql_testcase#s_5.PTUC.Str.q,q,http://opcfoundation.org/UA/IEC61850-7-4#,q,,ns=1;s=5.PTUC.Str.q,UAVariable
+http://prediktor.com/sparql_testcase#s_13,System13,http://prediktor.com/sparql_testcase#,System13,Sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt,ns=1;s=13,UAObject
+http://prediktor.com/sparql_testcase#s_11.PTUC.Str.q,q,http://opcfoundation.org/UA/IEC61850-7-4#,q,,ns=1;s=11.PTUC.Str.q,UAVariable
+http://prediktor.com/sparql_testcase#s_3.PTUC.Str.q,q,http://opcfoundation.org/UA/IEC61850-7-4#,q,,ns=1;s=3.PTUC.Str.q,UAVariable
+http://prediktor.com/sparql_testcase#s_4.SVBR.Beh.stVal,stVal,http://opcfoundation.org/UA/IEC61850-7-4#,stVal,,ns=1;s=4.SVBR.Beh.stVal,UAVariable
+http://prediktor.com/sparql_testcase#s_6.SVBR,SVBR,http://prediktor.com/sparql_testcase#,SVBR,,ns=1;s=6.SVBR,UAObject
+http://prediktor.com/sparql_testcase#s_5.PTUC.Op.general,general,http://opcfoundation.org/UA/IEC61850-7-4#,general,,ns=1;s=5.PTUC.Op.general,UAVariable
+http://prediktor.com/sparql_testcase#s_12,System12,http://prediktor.com/sparql_testcase#,System12,Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,ns=1;s=12,UAObject
+http://prediktor.com/sparql_testcase#s_14.PTUC,PTUC,http://prediktor.com/sparql_testcase#,PTUC,,ns=1;s=14.PTUC,UAObject
+http://prediktor.com/sparql_testcase#s_20.PTUC.Op.general,general,http://opcfoundation.org/UA/IEC61850-7-4#,general,,ns=1;s=20.PTUC.Op.general,UAVariable
+http://prediktor.com/sparql_testcase#s_14.PTUC.Op.q,q,http://opcfoundation.org/UA/IEC61850-7-4#,q,,ns=1;s=14.PTUC.Op.q,UAVariable
+http://prediktor.com/sparql_testcase#s_4.SVBR.Beh,Beh,http://opcfoundation.org/UA/IEC61850-7-4#,Beh,,ns=1;s=4.SVBR.Beh,UAObject
+http://prediktor.com/sparql_testcase#s_16.SVBR.Beh.q,q,http://opcfoundation.org/UA/IEC61850-7-4#,q,,ns=1;s=16.SVBR.Beh.q,UAVariable
+http://prediktor.com/sparql_testcase#s_15,System15,http://prediktor.com/sparql_testcase#,System15,Qui dolorem ipsum quia dolor sit amet,ns=1;s=15,UAObject
+http://prediktor.com/sparql_testcase#s_5,System5,http://prediktor.com/sparql_testcase#,System5,Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat,ns=1;s=5,UAObject
+http://prediktor.com/sparql_testcase#s_18.PTUC,PTUC,http://prediktor.com/sparql_testcase#,PTUC,,ns=1;s=18.PTUC,UAObject
+http://prediktor.com/sparql_testcase#s_11.PTUC,PTUC,http://prediktor.com/sparql_testcase#,PTUC,,ns=1;s=11.PTUC,UAObject
+http://prediktor.com/sparql_testcase#s_20.PTUC.Str.dirGeneral,dirGeneral,http://opcfoundation.org/UA/IEC61850-7-4#,dirGeneral,,ns=1;s=20.PTUC.Str.dirGeneral,UAVariable
+http://prediktor.com/sparql_testcase#s_11.PTUC.Str.dirGeneral,dirGeneral,http://opcfoundation.org/UA/IEC61850-7-4#,dirGeneral,,ns=1;s=11.PTUC.Str.dirGeneral,UAVariable
+http://prediktor.com/sparql_testcase#s_18.PTUC.Op,Op,http://opcfoundation.org/UA/IEC61850-7-4#,Op,,ns=1;s=18.PTUC.Op,UAObject
+http://prediktor.com/sparql_testcase#s_19.FunctionalAspectName,FunctionalAspectName,http://prediktor.com/RDS-like-typelib/#,FunctionalAspectName,Functional aspect name,ns=1;s=19.FunctionalAspectName,UAVariable
+http://prediktor.com/sparql_testcase#s_18.PTUC.Str,Str,http://opcfoundation.org/UA/IEC61850-7-4#,Str,,ns=1;s=18.PTUC.Str,UAObject
+http://prediktor.com/sparql_testcase#s_9.PTUC.Str.q,q,http://opcfoundation.org/UA/IEC61850-7-4#,q,,ns=1;s=9.PTUC.Str.q,UAVariable
+http://prediktor.com/sparql_testcase#s_21,System21,http://prediktor.com/sparql_testcase#,System21,Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur,ns=1;s=21,UAObject
+http://prediktor.com/sparql_testcase#s_14.PTUC.Beh,Beh,http://opcfoundation.org/UA/IEC61850-7-4#,Beh,,ns=1;s=14.PTUC.Beh,UAObject
+http://prediktor.com/sparql_testcase#s_10.SVBR,SVBR,http://prediktor.com/sparql_testcase#,SVBR,,ns=1;s=10.SVBR,UAObject
+http://prediktor.com/sparql_testcase#s_18.FunctionalAspectName,FunctionalAspectName,http://prediktor.com/RDS-like-typelib/#,FunctionalAspectName,Functional aspect name,ns=1;s=18.FunctionalAspectName,UAVariable
+http://prediktor.com/sparql_testcase#s_20.PTUC.Beh.stVal,stVal,http://opcfoundation.org/UA/IEC61850-7-4#,stVal,,ns=1;s=20.PTUC.Beh.stVal,UAVariable
+http://prediktor.com/sparql_testcase#s_13.SVBR.Beh.q,q,http://opcfoundation.org/UA/IEC61850-7-4#,q,,ns=1;s=13.SVBR.Beh.q,UAVariable
+http://prediktor.com/sparql_testcase#s_20.PTUC.Str.q,q,http://opcfoundation.org/UA/IEC61850-7-4#,q,,ns=1;s=20.PTUC.Str.q,UAVariable
+http://prediktor.com/sparql_testcase#s_7.PTUC.Beh.stVal,stVal,http://opcfoundation.org/UA/IEC61850-7-4#,stVal,,ns=1;s=7.PTUC.Beh.stVal,UAVariable
+http://prediktor.com/sparql_testcase#s_9.PTUC.Op.general,general,http://opcfoundation.org/UA/IEC61850-7-4#,general,,ns=1;s=9.PTUC.Op.general,UAVariable
+http://prediktor.com/sparql_testcase#s_8.SVBR.Beh,Beh,http://opcfoundation.org/UA/IEC61850-7-4#,Beh,,ns=1;s=8.SVBR.Beh,UAObject
+http://prediktor.com/sparql_testcase#s_9.PTUC.Op.q,q,http://opcfoundation.org/UA/IEC61850-7-4#,q,,ns=1;s=9.PTUC.Op.q,UAVariable
+http://prediktor.com/sparql_testcase#s_20.PTUC,PTUC,http://prediktor.com/sparql_testcase#,PTUC,,ns=1;s=20.PTUC,UAObject
+http://prediktor.com/sparql_testcase#s_11.PTUC.Op.q,q,http://opcfoundation.org/UA/IEC61850-7-4#,q,,ns=1;s=11.PTUC.Op.q,UAVariable
+http://prediktor.com/sparql_testcase#s_7.FunctionalAspectName,FunctionalAspectName,http://prediktor.com/RDS-like-typelib/#,FunctionalAspectName,Functional aspect name,ns=1;s=7.FunctionalAspectName,UAVariable
+http://prediktor.com/sparql_testcase#s_3.PTUC.Beh.stVal,stVal,http://opcfoundation.org/UA/IEC61850-7-4#,stVal,,ns=1;s=3.PTUC.Beh.stVal,UAVariable
+http://prediktor.com/sparql_testcase#s_13.SVBR.Beh.stVal,stVal,http://opcfoundation.org/UA/IEC61850-7-4#,stVal,,ns=1;s=13.SVBR.Beh.stVal,UAVariable
+http://prediktor.com/sparql_testcase#s_14.PTUC.Str.dirGeneral,dirGeneral,http://opcfoundation.org/UA/IEC61850-7-4#,dirGeneral,,ns=1;s=14.PTUC.Str.dirGeneral,UAVariable
+http://prediktor.com/sparql_testcase#s_7,System7,http://prediktor.com/sparql_testcase#,System7,Excepteur sint occaecat cupidatat non proident,ns=1;s=7,UAObject
+http://prediktor.com/sparql_testcase#s_6,System6,http://prediktor.com/sparql_testcase#,System6,Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur,ns=1;s=6,UAObject
+http://prediktor.com/sparql_testcase#s_8,System8,http://prediktor.com/sparql_testcase#,System8,Sunt in culpa qui officia deserunt mollit anim id est laborum,ns=1;s=8,UAObject
+http://prediktor.com/sparql_testcase#s_8.SVBR.Beh.stVal,stVal,http://opcfoundation.org/UA/IEC61850-7-4#,stVal,,ns=1;s=8.SVBR.Beh.stVal,UAVariable
+http://prediktor.com/sparql_testcase#s_3.PTUC.Op.general,general,http://opcfoundation.org/UA/IEC61850-7-4#,general,,ns=1;s=3.PTUC.Op.general,UAVariable
+http://prediktor.com/sparql_testcase#s_8.FunctionalAspectName,FunctionalAspectName,http://prediktor.com/RDS-like-typelib/#,FunctionalAspectName,Functional aspect name,ns=1;s=8.FunctionalAspectName,UAVariable
+http://prediktor.com/sparql_testcase#s_18.PTUC.Str.dirGeneral,dirGeneral,http://opcfoundation.org/UA/IEC61850-7-4#,dirGeneral,,ns=1;s=18.PTUC.Str.dirGeneral,UAVariable
+http://prediktor.com/sparql_testcase#s_20.PTUC.Beh.q,q,http://opcfoundation.org/UA/IEC61850-7-4#,q,,ns=1;s=20.PTUC.Beh.q,UAVariable
+http://prediktor.com/sparql_testcase#s_18.PTUC.Beh.stVal,stVal,http://opcfoundation.org/UA/IEC61850-7-4#,stVal,,ns=1;s=18.PTUC.Beh.stVal,UAVariable
+http://prediktor.com/sparql_testcase#s_9.PTUC.Str.dirGeneral,dirGeneral,http://opcfoundation.org/UA/IEC61850-7-4#,dirGeneral,,ns=1;s=9.PTUC.Str.dirGeneral,UAVariable
+http://prediktor.com/sparql_testcase#s_14.FunctionalAspectName,FunctionalAspectName,http://prediktor.com/RDS-like-typelib/#,FunctionalAspectName,Functional aspect name,ns=1;s=14.FunctionalAspectName,UAVariable
+http://prediktor.com/sparql_testcase#s_9.PTUC.Str.general,general,http://opcfoundation.org/UA/IEC61850-7-4#,general,,ns=1;s=9.PTUC.Str.general,UAVariable

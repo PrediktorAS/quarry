@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UANodeSet xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd">
+    <NamespaceUris>
+        <Uri>http://prediktor.com/RDS-like-typelib/</Uri>
+    </NamespaceUris>
+    <Models>
+        <Model ModelUri="http://prediktor.com/RDS-like-typelib/" PublicationDate="2020-04-06T08:03:52Z" Version="1.0.0">
+        </Model>
+    </Models>
+    <Aliases>
+    </Aliases>
+    <UAObjectType NodeId="ns=1;s=A" BrowseName="A">
+        <DisplayName>FirstTopLevelSystemType</DisplayName>
+        <Description>First top level system type</Description>
+        <References>
+            <Reference ReferenceType="ns=0;i=45" IsForward="false">ns=1;s=TOP</Reference>
+        </References>
+    </UAObjectType>
+    <UAObjectType NodeId="ns=1;s=B" BrowseName="B">
+        <DisplayName>SecondTopLevelSystemType</DisplayName>
+        <Description>Second top level system type</Description>
+        <References>
+            <Reference ReferenceType="ns=0;i=45" IsForward="false">ns=1;s=TOP</Reference>
+        </References>
+    </UAObjectType>
+    <UAObjectType NodeId="ns=1;s=J_" BrowseName="J_">
+        <DisplayName>FirstMiddleLevelSuperType</DisplayName>
+        <Description>First middle level system super type</Description>
+        <References>
+            <Reference ReferenceType="ns=0;i=45" IsForward="false">ns=1;s=MID</Reference>
+        </References>
+    </UAObjectType>
+    <UAObjectType NodeId="ns=1;s=JA" BrowseName="JA">
+        <DisplayName>FirstMiddleLevelType</DisplayName>
+        <Description>First middle level system type</Description>
+        <References>
+            <Reference ReferenceType="ns=0;i=45" IsForward="false">ns=1;s=J_</Reference>
+        </References>
+    </UAObjectType>
+    <UAObjectType NodeId="ns=1;s=JB" BrowseName="JB">
+        <DisplayName>SecondMiddleLevelType</DisplayName>
+        <Description>Second middle level system type</Description>
+        <References>
+            <Reference ReferenceType="ns=0;i=45" IsForward="false">ns=1;s=J_</Reference>
+        </References>
+    </UAObjectType>
+    <UAObjectType NodeId="ns=1;s=K_" BrowseName="K_">
+        <DisplayName>SecondMiddleLevelSuperType</DisplayName>
+        <Description>Second middle level system super type</Description>
+        <References>
+            <Reference ReferenceType="ns=0;i=45" IsForward="false">ns=1;s=MID</Reference>
+        </References>
+    </UAObjectType>
+    <UAObjectType NodeId="ns=1;s=KA" BrowseName="KA">
+        <DisplayName>ThirdMiddleLevelType</DisplayName>
+        <Description>Third middle level system type</Description>
+        <References>
+            <Reference ReferenceType="ns=0;i=45" IsForward="false">ns=1;s=J_</Reference>
+        </References>
+    </UAObjectType>
+    <UAObjectType NodeId="ns=1;s=KB" BrowseName="KB">
+        <DisplayName>FourthMiddleLevelType</DisplayName>
+        <Description>Fourth middle level system type</Description>
+        <References>
+            <Reference ReferenceType="ns=0;i=45" IsForward="false">ns=1;s=J_</Reference>
+        </References>
+    </UAObjectType>
+    <UAObjectType NodeId="ns=1;s=C__" BrowseName="C__">
+        <DisplayName>FirstBottomLevelSuperSuperType</DisplayName>
+        <Description>First bottom level super super type</Description>
+        <References>
+            <Reference ReferenceType="ns=0;i=45" IsForward="false">ns=1;s=BOT</Reference>
+        </References>
+    </UAObjectType>
+    <UAObjectType NodeId="ns=1;s=CA_" BrowseName="CA_">
+        <DisplayName>FirstBottomLevelSuperType</DisplayName>
+        <Description>First bottom level super type</Description>
+        <References>
+            <Reference ReferenceType="ns=0;i=45" IsForward="false">ns=1;s=C__</Reference>
+        </References>
+    </UAObjectType>
+    <UAObjectType NodeId="ns=1;s=CB_" BrowseName="CB_">
+        <DisplayName>SecondBottomLevelSuperType</DisplayName>
+        <Description>Second bottom level super type</Description>
+        <References>
+            <Reference ReferenceType="ns=0;i=45" IsForward="false">ns=1;s=C__</Reference>
+        </References>
+    </UAObjectType>
+    <UAObjectType NodeId="ns=1;s=CAA" BrowseName="CAA">
+        <DisplayName>FirstBottomLevelType</DisplayName>
+        <Description>First bottom level type</Description>
+        <References>
+            <Reference ReferenceType="ns=0;i=45" IsForward="false">ns=1;s=CA_</Reference>
+        </References>
+    </UAObjectType>
+    <UAObjectType NodeId="ns=1;s=CBA" BrowseName="CBA">
+        <DisplayName>SecondBottomLevelType</DisplayName>
+        <Description>Second bottom level type</Description>
+        <References>
+            <Reference ReferenceType="ns=0;i=45" IsForward="false">ns=1;s=CB_</Reference>
+        </References>
+    </UAObjectType>
+    <UAObjectType NodeId="ns=1;s=SYS" BrowseName="SYS">
+        <DisplayName>GeneralSystemType</DisplayName>
+        <Description>Base system type</Description>
+        <References>
+            <Reference ReferenceType="ns=0;i=45" IsForward="false">ns=0;i=58</Reference>
+        </References>
+    </UAObjectType>
+    <UAObjectType NodeId="ns=1;s=TOP" BrowseName="TOP">
+        <DisplayName>TopSystemType</DisplayName>
+        <Description>Top level systems</Description>
+        <References>
+            <Reference ReferenceType="ns=0;i=45" IsForward="false">ns=1;s=SYS</Reference>
+        </References>
+    </UAObjectType>
+    <UAObjectType NodeId="ns=1;s=MID" BrowseName="MID">
+        <DisplayName>MiddleSystemType</DisplayName>
+        <Description>Middle level systems</Description>
+        <References>
+            <Reference ReferenceType="ns=0;i=45" IsForward="false">ns=1;s=SYS</Reference>
+        </References>
+    </UAObjectType>
+    <UAObjectType NodeId="ns=1;s=BOT" BrowseName="BOT">
+        <DisplayName>ComponentSystemType</DisplayName>
+        <Description>Bottom level systems</Description>
+        <References>
+            <Reference ReferenceType="ns=0;i=45" IsForward="false">ns=1;s=SYS</Reference>
+        </References>
+    </UAObjectType>
+    <UAObjectType NodeId="ns=1;s=SiteType" BrowseName="SiteType">
+        <DisplayName>SiteType</DisplayName>
+        <Description>A type for sites</Description>
+        <References>
+            <Reference ReferenceType="ns=0;i=45" IsForward="false">ns=0;i=58</Reference>
+        </References>
+    </UAObjectType>
+    <UAObject NodeId="ns=1;s=SYS.&lt;FunctionalAspectChild&gt;" BrowseName="&lt;FunctionalAspectChild&gt;">
+        <DisplayName>&lt;FunctionalAspectChild&gt;</DisplayName>
+        <Description>Placeholder for navigation with functional aspect</Description>
+        <References>
+            <Reference ReferenceType="ns=0;i=37">ns=0;i=11508</Reference>
+            <Reference ReferenceType="ns=1;s=FunctionalAspect" IsForward="false">ns=1;s=SYS</Reference>
+        </References>
+    </UAObject>
+    <UAObject NodeId="ns=1;s=SYS.&lt;ProductAspectChild&gt;" BrowseName="&lt;ProductAspectChild&gt;">
+        <DisplayName>&lt;ProductAspectChild&gt;</DisplayName>
+        <Description>Placeholder for navigation with product aspect</Description>
+        <References>
+            <Reference ReferenceType="ns=0;i=37">ns=0;i=11508</Reference>
+            <Reference ReferenceType="ns=1;s=ProductAspect" IsForward="false">ns=1;s=SYS</Reference>
+        </References>
+    </UAObject>
+    <UAVariable NodeId="ns=1;s=SYS.FunctionalAspectName" BrowseName="FunctionalAspectName" DataType="ns=0;i=12">
+        <DisplayName>FunctionalAspectName</DisplayName>
+        <Description>Functional aspect name</Description>
+        <References>
+            <Reference ReferenceType="ns=0;i=40">ns=0;i=68</Reference>
+            <Reference ReferenceType="ns=0;i=37">ns=0;i=80</Reference>
+            <Reference ReferenceType="ns=0;i=46" IsForward="false">ns=1;s=SYS</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable NodeId="ns=1;s=SYS.ProductAspectName" BrowseName="ProductAspectName" DataType="ns=0;i=12">
+        <DisplayName>ProductAspectName</DisplayName>
+        <Description>Product aspect name</Description>
+        <References>
+            <Reference ReferenceType="ns=0;i=40">ns=0;i=68</Reference>
+            <Reference ReferenceType="ns=0;i=37">ns=0;i=80</Reference>
+            <Reference ReferenceType="ns=0;i=46" IsForward="false">ns=1;s=SYS</Reference>
+        </References>
+    </UAVariable>
+    <UAReferenceType NodeId="ns=1;s=FunctionalAspect" BrowseName="FunctionalAspect">
+        <DisplayName>FunctionalAspect</DisplayName>
+        <Description>Functional aspect reference</Description>
+        <References>
+            <Reference ReferenceType="ns=0;i=45" IsForward="false">ns=0;i=47</Reference>
+        </References>
+    </UAReferenceType>
+    <UAReferenceType NodeId="ns=1;s=ProductAspect" BrowseName="ProductAspect">
+        <DisplayName>ProductAspect</DisplayName>
+        <Description>Product aspect reference</Description>
+        <References>
+            <Reference ReferenceType="ns=0;i=45" IsForward="false">ns=0;i=47</Reference>
+        </References>
+    </UAReferenceType>
+    <UAReferenceType NodeId="ns=1;s=HasLogicalNode" BrowseName="HasLogicalNode">
+        <DisplayName>HasLogicalNode</DisplayName>
+        <Description>Has IEC 61850 Logical Node</Description>
+        <References>
+            <Reference ReferenceType="ns=0;i=45" IsForward="false">ns=0;i=47</Reference>
+        </References>
+    </UAReferenceType>
+</UANodeSet>

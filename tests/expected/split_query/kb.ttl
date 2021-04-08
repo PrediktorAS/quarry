@@ -1,0 +1,817 @@
+@prefix ns1: <http://opcfoundation.org/UA/#> .
+@prefix ns2: <http://prediktor.com/RDS-OG-Fragment#> .
+@prefix ns3: <http://prediktor.com/UA-helpers/#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://prediktor.com/paper_example#i_1> a ns1:BaseObjectType,
+        ns2:SiteType ;
+    ns1:aggregates <http://prediktor.com/paper_example#i_12>,
+        <http://prediktor.com/paper_example#i_14>,
+        <http://prediktor.com/paper_example#i_16>,
+        <http://prediktor.com/paper_example#i_2> ;
+    ns1:browseName "Site1" ;
+    ns1:browseNameNamespace <http://prediktor.com/paper_example#> ;
+    ns1:description "Lorem ipsum dolor sit amet" ;
+    ns1:displayName "Site1" ;
+    ns1:hasChild <http://prediktor.com/paper_example#i_12>,
+        <http://prediktor.com/paper_example#i_14>,
+        <http://prediktor.com/paper_example#i_16>,
+        <http://prediktor.com/paper_example#i_2> ;
+    ns1:hasComponent <http://prediktor.com/paper_example#i_12>,
+        <http://prediktor.com/paper_example#i_14>,
+        <http://prediktor.com/paper_example#i_16>,
+        <http://prediktor.com/paper_example#i_2> ;
+    ns1:hierarchicalReferences <http://prediktor.com/paper_example#i_12>,
+        <http://prediktor.com/paper_example#i_14>,
+        <http://prediktor.com/paper_example#i_16>,
+        <http://prediktor.com/paper_example#i_2> ;
+    ns1:nodeClass "UAObject" ;
+    ns1:nodeId "ns=1;i=1" ;
+    ns1:references <http://prediktor.com/paper_example#i_12>,
+        <http://prediktor.com/paper_example#i_14>,
+        <http://prediktor.com/paper_example#i_16>,
+        <http://prediktor.com/paper_example#i_2> ;
+    ns2:functionalAspect <http://prediktor.com/paper_example#i_2> ;
+    ns2:productAspect <http://prediktor.com/paper_example#i_12>,
+        <http://prediktor.com/paper_example#i_14>,
+        <http://prediktor.com/paper_example#i_16> .
+
+<http://prediktor.com/paper_example#i_11_Value> ns1:hasStringValue "QNA3" ;
+    ns3:isExternalValue false .
+
+<http://prediktor.com/paper_example#i_13_Value> ns1:hasStringValue "E1" ;
+    ns3:isExternalValue false .
+
+<http://prediktor.com/paper_example#i_15_Value> ns1:hasStringValue "E2" ;
+    ns3:isExternalValue false .
+
+<http://prediktor.com/paper_example#i_17_Value> ns1:hasStringValue "E3" ;
+    ns3:isExternalValue false .
+
+<http://prediktor.com/paper_example#i_19_Value> ns1:hasStringValue "KA1" ;
+    ns3:isExternalValue false .
+
+<http://prediktor.com/paper_example#i_21_Value> ns1:hasStringValue "KA1" ;
+    ns3:isExternalValue false .
+
+<http://prediktor.com/paper_example#i_23_Value> ns1:hasStringValue "KA1" ;
+    ns3:isExternalValue false .
+
+<http://prediktor.com/paper_example#i_24_Value> ns1:hasStringValue "QNA1" ;
+    ns3:isExternalValue false .
+
+<http://prediktor.com/paper_example#i_25_Value> ns1:hasStringValue "QNA1" ;
+    ns3:isExternalValue false .
+
+<http://prediktor.com/paper_example#i_26_Value> ns1:hasStringValue "QNA1" ;
+    ns3:isExternalValue false .
+
+<http://prediktor.com/paper_example#i_27_Value> ns1:hasEngineeringUnit "%" ;
+    ns3:isExternalValue true ;
+    ns3:signalId 1 .
+
+<http://prediktor.com/paper_example#i_28_Value> ns3:isExternalValue false .
+
+<http://prediktor.com/paper_example#i_29_Value> ns3:isExternalValue false .
+
+<http://prediktor.com/paper_example#i_30_Value> ns1:hasEngineeringUnit "%" ;
+    ns3:isExternalValue true ;
+    ns3:signalId 2 .
+
+<http://prediktor.com/paper_example#i_31_Value> ns3:isExternalValue false .
+
+<http://prediktor.com/paper_example#i_32_Value> ns3:isExternalValue false .
+
+<http://prediktor.com/paper_example#i_33_Value> ns1:hasEngineeringUnit "%" ;
+    ns3:isExternalValue true ;
+    ns3:signalId 3 .
+
+<http://prediktor.com/paper_example#i_34_Value> ns3:isExternalValue false .
+
+<http://prediktor.com/paper_example#i_35_Value> ns3:isExternalValue false .
+
+<http://prediktor.com/paper_example#i_36_Value> ns1:hasEngineeringUnit "%" ;
+    ns3:isExternalValue true ;
+    ns3:signalId 4 .
+
+<http://prediktor.com/paper_example#i_37_Value> ns3:isExternalValue false .
+
+<http://prediktor.com/paper_example#i_38_Value> ns3:isExternalValue false .
+
+<http://prediktor.com/paper_example#i_39_Value> ns1:hasEngineeringUnit "%" ;
+    ns3:isExternalValue true ;
+    ns3:signalId 5 .
+
+<http://prediktor.com/paper_example#i_3_Value> ns1:hasStringValue "E1" ;
+    ns3:isExternalValue false .
+
+<http://prediktor.com/paper_example#i_40_Value> ns3:isExternalValue false .
+
+<http://prediktor.com/paper_example#i_41_Value> ns3:isExternalValue false .
+
+<http://prediktor.com/paper_example#i_42_Value> ns1:hasEngineeringUnit "%" ;
+    ns3:isExternalValue true ;
+    ns3:signalId 6 .
+
+<http://prediktor.com/paper_example#i_43_Value> ns3:isExternalValue false .
+
+<http://prediktor.com/paper_example#i_44_Value> ns3:isExternalValue false .
+
+<http://prediktor.com/paper_example#i_5_Value> ns1:hasStringValue "KA1" ;
+    ns3:isExternalValue false .
+
+<http://prediktor.com/paper_example#i_7_Value> ns1:hasStringValue "QNA1" ;
+    ns3:isExternalValue false .
+
+<http://prediktor.com/paper_example#i_9_Value> ns1:hasStringValue "QNA2" ;
+    ns3:isExternalValue false .
+
+<http://prediktor.com/paper_example#i_11> a ns1:BaseVariableType,
+        ns1:PropertyType ;
+    ns1:browseName "FunctionalAspectName" ;
+    ns1:browseNameNamespace ns2: ;
+    ns1:description "Lorem ipsum dolor sit amet" ;
+    ns1:displayName "FunctionalAspectName" ;
+    ns1:nodeClass "UAVariable" ;
+    ns1:nodeId "ns=1;i=11" ;
+    ns1:value <http://prediktor.com/paper_example#i_11_Value> .
+
+<http://prediktor.com/paper_example#i_13> a ns1:BaseVariableType,
+        ns1:PropertyType ;
+    ns1:browseName "ProductAspectName" ;
+    ns1:browseNameNamespace ns2: ;
+    ns1:description "Lorem ipsum dolor sit amet" ;
+    ns1:displayName "ProductAspectName" ;
+    ns1:nodeClass "UAVariable" ;
+    ns1:nodeId "ns=1;i=13" ;
+    ns1:value <http://prediktor.com/paper_example#i_13_Value> .
+
+<http://prediktor.com/paper_example#i_15> a ns1:BaseVariableType,
+        ns1:PropertyType ;
+    ns1:browseName "ProductAspectName" ;
+    ns1:browseNameNamespace ns2: ;
+    ns1:description "Lorem ipsum dolor sit amet" ;
+    ns1:displayName "ProductAspectName" ;
+    ns1:nodeClass "UAVariable" ;
+    ns1:nodeId "ns=1;i=15" ;
+    ns1:value <http://prediktor.com/paper_example#i_15_Value> .
+
+<http://prediktor.com/paper_example#i_17> a ns1:BaseVariableType,
+        ns1:PropertyType ;
+    ns1:browseName "ProductAspectName" ;
+    ns1:browseNameNamespace ns2: ;
+    ns1:description "Lorem ipsum dolor sit amet" ;
+    ns1:displayName "ProductAspectName" ;
+    ns1:nodeClass "UAVariable" ;
+    ns1:nodeId "ns=1;i=17" ;
+    ns1:value <http://prediktor.com/paper_example#i_17_Value> .
+
+<http://prediktor.com/paper_example#i_19> a ns1:BaseVariableType,
+        ns1:PropertyType ;
+    ns1:browseName "ProductAspectName" ;
+    ns1:browseNameNamespace ns2: ;
+    ns1:description "Lorem ipsum dolor sit amet" ;
+    ns1:displayName "ProductAspectName" ;
+    ns1:nodeClass "UAVariable" ;
+    ns1:nodeId "ns=1;i=19" ;
+    ns1:value <http://prediktor.com/paper_example#i_19_Value> .
+
+<http://prediktor.com/paper_example#i_21> a ns1:BaseVariableType,
+        ns1:PropertyType ;
+    ns1:browseName "ProductAspectName" ;
+    ns1:browseNameNamespace ns2: ;
+    ns1:description "Lorem ipsum dolor sit amet" ;
+    ns1:displayName "ProductAspectName" ;
+    ns1:nodeClass "UAVariable" ;
+    ns1:nodeId "ns=1;i=21" ;
+    ns1:value <http://prediktor.com/paper_example#i_21_Value> .
+
+<http://prediktor.com/paper_example#i_23> a ns1:BaseVariableType,
+        ns1:PropertyType ;
+    ns1:browseName "ProductAspectName" ;
+    ns1:browseNameNamespace ns2: ;
+    ns1:description "Lorem ipsum dolor sit amet" ;
+    ns1:displayName "ProductAspectName" ;
+    ns1:nodeClass "UAVariable" ;
+    ns1:nodeId "ns=1;i=23" ;
+    ns1:value <http://prediktor.com/paper_example#i_23_Value> .
+
+<http://prediktor.com/paper_example#i_24> a ns1:BaseVariableType,
+        ns1:PropertyType ;
+    ns1:browseName "ProductAspectName" ;
+    ns1:browseNameNamespace ns2: ;
+    ns1:description "Lorem ipsum dolor sit amet" ;
+    ns1:displayName "ProductAspectName" ;
+    ns1:nodeClass "UAVariable" ;
+    ns1:nodeId "ns=1;i=24" ;
+    ns1:value <http://prediktor.com/paper_example#i_24_Value> .
+
+<http://prediktor.com/paper_example#i_25> a ns1:BaseVariableType,
+        ns1:PropertyType ;
+    ns1:browseName "ProductAspectName" ;
+    ns1:browseNameNamespace ns2: ;
+    ns1:description "Lorem ipsum dolor sit amet" ;
+    ns1:displayName "ProductAspectName" ;
+    ns1:nodeClass "UAVariable" ;
+    ns1:nodeId "ns=1;i=25" ;
+    ns1:value <http://prediktor.com/paper_example#i_25_Value> .
+
+<http://prediktor.com/paper_example#i_26> a ns1:BaseVariableType,
+        ns1:PropertyType ;
+    ns1:browseName "ProductAspectName" ;
+    ns1:browseNameNamespace ns2: ;
+    ns1:description "Lorem ipsum dolor sit amet" ;
+    ns1:displayName "ProductAspectName" ;
+    ns1:nodeClass "UAVariable" ;
+    ns1:nodeId "ns=1;i=26" ;
+    ns1:value <http://prediktor.com/paper_example#i_26_Value> .
+
+<http://prediktor.com/paper_example#i_27> a ns1:AnalogItemType,
+        ns1:BaseAnalogType,
+        ns1:BaseDataVariableType,
+        ns1:BaseVariableType,
+        ns1:DataItemType ;
+    ns1:aggregates <http://prediktor.com/paper_example#i_28>,
+        <http://prediktor.com/paper_example#i_29> ;
+    ns1:browseName "CA_YR" ;
+    ns1:browseNameNamespace <http://prediktor.com/iec68131_fragment#> ;
+    ns1:description "Reference setpoint value" ;
+    ns1:displayName "CA_YR" ;
+    ns1:hasChild <http://prediktor.com/paper_example#i_28>,
+        <http://prediktor.com/paper_example#i_29> ;
+    ns1:hasProperty <http://prediktor.com/paper_example#i_28>,
+        <http://prediktor.com/paper_example#i_29> ;
+    ns1:hierarchicalReferences <http://prediktor.com/paper_example#i_28>,
+        <http://prediktor.com/paper_example#i_29> ;
+    ns1:nodeClass "UAVariable" ;
+    ns1:nodeId "ns=1;i=27" ;
+    ns1:references <http://prediktor.com/paper_example#i_28>,
+        <http://prediktor.com/paper_example#i_29> ;
+    ns1:value <http://prediktor.com/paper_example#i_27_Value> .
+
+<http://prediktor.com/paper_example#i_28> a ns1:BaseVariableType,
+        ns1:PropertyType ;
+    ns1:browseName "EURange" ;
+    ns1:browseNameNamespace ns1: ;
+    ns1:description "None" ;
+    ns1:displayName "EURange" ;
+    ns1:nodeClass "UAVariable" ;
+    ns1:nodeId "ns=1;i=28" ;
+    ns1:value <http://prediktor.com/paper_example#i_28_Value> .
+
+<http://prediktor.com/paper_example#i_29> a ns1:BaseVariableType,
+        ns1:PropertyType ;
+    ns1:browseName "EngineeringUnits" ;
+    ns1:browseNameNamespace ns1: ;
+    ns1:description "None" ;
+    ns1:displayName "EngineeringUnits" ;
+    ns1:nodeClass "UAVariable" ;
+    ns1:nodeId "ns=1;i=29" ;
+    ns1:value <http://prediktor.com/paper_example#i_29_Value> .
+
+<http://prediktor.com/paper_example#i_3> a ns1:BaseVariableType,
+        ns1:PropertyType ;
+    ns1:browseName "FunctionalAspectName" ;
+    ns1:browseNameNamespace ns2: ;
+    ns1:description "Lorem ipsum dolor sit amet" ;
+    ns1:displayName "FunctionalAspectName" ;
+    ns1:nodeClass "UAVariable" ;
+    ns1:nodeId "ns=1;i=3" ;
+    ns1:value <http://prediktor.com/paper_example#i_3_Value> .
+
+<http://prediktor.com/paper_example#i_30> a ns1:AnalogItemType,
+        ns1:BaseAnalogType,
+        ns1:BaseDataVariableType,
+        ns1:BaseVariableType,
+        ns1:DataItemType ;
+    ns1:aggregates <http://prediktor.com/paper_example#i_31>,
+        <http://prediktor.com/paper_example#i_32> ;
+    ns1:browseName "CA_Y" ;
+    ns1:browseNameNamespace <http://prediktor.com/iec68131_fragment#> ;
+    ns1:description "Normal function output" ;
+    ns1:displayName "CA_Y" ;
+    ns1:hasChild <http://prediktor.com/paper_example#i_31>,
+        <http://prediktor.com/paper_example#i_32> ;
+    ns1:hasProperty <http://prediktor.com/paper_example#i_31>,
+        <http://prediktor.com/paper_example#i_32> ;
+    ns1:hierarchicalReferences <http://prediktor.com/paper_example#i_31>,
+        <http://prediktor.com/paper_example#i_32> ;
+    ns1:nodeClass "UAVariable" ;
+    ns1:nodeId "ns=1;i=30" ;
+    ns1:references <http://prediktor.com/paper_example#i_31>,
+        <http://prediktor.com/paper_example#i_32> ;
+    ns1:value <http://prediktor.com/paper_example#i_30_Value> .
+
+<http://prediktor.com/paper_example#i_31> a ns1:BaseVariableType,
+        ns1:PropertyType ;
+    ns1:browseName "EURange" ;
+    ns1:browseNameNamespace ns1: ;
+    ns1:description "None" ;
+    ns1:displayName "EURange" ;
+    ns1:nodeClass "UAVariable" ;
+    ns1:nodeId "ns=1;i=31" ;
+    ns1:value <http://prediktor.com/paper_example#i_31_Value> .
+
+<http://prediktor.com/paper_example#i_32> a ns1:BaseVariableType,
+        ns1:PropertyType ;
+    ns1:browseName "EngineeringUnits" ;
+    ns1:browseNameNamespace ns1: ;
+    ns1:description "None" ;
+    ns1:displayName "EngineeringUnits" ;
+    ns1:nodeClass "UAVariable" ;
+    ns1:nodeId "ns=1;i=32" ;
+    ns1:value <http://prediktor.com/paper_example#i_32_Value> .
+
+<http://prediktor.com/paper_example#i_33> a ns1:AnalogItemType,
+        ns1:BaseAnalogType,
+        ns1:BaseDataVariableType,
+        ns1:BaseVariableType,
+        ns1:DataItemType ;
+    ns1:aggregates <http://prediktor.com/paper_example#i_34>,
+        <http://prediktor.com/paper_example#i_35> ;
+    ns1:browseName "CA_YR" ;
+    ns1:browseNameNamespace <http://prediktor.com/iec68131_fragment#> ;
+    ns1:description "Reference setpoint value" ;
+    ns1:displayName "CA_YR" ;
+    ns1:hasChild <http://prediktor.com/paper_example#i_34>,
+        <http://prediktor.com/paper_example#i_35> ;
+    ns1:hasProperty <http://prediktor.com/paper_example#i_34>,
+        <http://prediktor.com/paper_example#i_35> ;
+    ns1:hierarchicalReferences <http://prediktor.com/paper_example#i_34>,
+        <http://prediktor.com/paper_example#i_35> ;
+    ns1:nodeClass "UAVariable" ;
+    ns1:nodeId "ns=1;i=33" ;
+    ns1:references <http://prediktor.com/paper_example#i_34>,
+        <http://prediktor.com/paper_example#i_35> ;
+    ns1:value <http://prediktor.com/paper_example#i_33_Value> .
+
+<http://prediktor.com/paper_example#i_34> a ns1:BaseVariableType,
+        ns1:PropertyType ;
+    ns1:browseName "EURange" ;
+    ns1:browseNameNamespace ns1: ;
+    ns1:description "None" ;
+    ns1:displayName "EURange" ;
+    ns1:nodeClass "UAVariable" ;
+    ns1:nodeId "ns=1;i=34" ;
+    ns1:value <http://prediktor.com/paper_example#i_34_Value> .
+
+<http://prediktor.com/paper_example#i_35> a ns1:BaseVariableType,
+        ns1:PropertyType ;
+    ns1:browseName "EngineeringUnits" ;
+    ns1:browseNameNamespace ns1: ;
+    ns1:description "None" ;
+    ns1:displayName "EngineeringUnits" ;
+    ns1:nodeClass "UAVariable" ;
+    ns1:nodeId "ns=1;i=35" ;
+    ns1:value <http://prediktor.com/paper_example#i_35_Value> .
+
+<http://prediktor.com/paper_example#i_36> a ns1:AnalogItemType,
+        ns1:BaseAnalogType,
+        ns1:BaseDataVariableType,
+        ns1:BaseVariableType,
+        ns1:DataItemType ;
+    ns1:aggregates <http://prediktor.com/paper_example#i_37>,
+        <http://prediktor.com/paper_example#i_38> ;
+    ns1:browseName "CA_Y" ;
+    ns1:browseNameNamespace <http://prediktor.com/iec68131_fragment#> ;
+    ns1:description "Normal function output" ;
+    ns1:displayName "CA_Y" ;
+    ns1:hasChild <http://prediktor.com/paper_example#i_37>,
+        <http://prediktor.com/paper_example#i_38> ;
+    ns1:hasProperty <http://prediktor.com/paper_example#i_37>,
+        <http://prediktor.com/paper_example#i_38> ;
+    ns1:hierarchicalReferences <http://prediktor.com/paper_example#i_37>,
+        <http://prediktor.com/paper_example#i_38> ;
+    ns1:nodeClass "UAVariable" ;
+    ns1:nodeId "ns=1;i=36" ;
+    ns1:references <http://prediktor.com/paper_example#i_37>,
+        <http://prediktor.com/paper_example#i_38> ;
+    ns1:value <http://prediktor.com/paper_example#i_36_Value> .
+
+<http://prediktor.com/paper_example#i_37> a ns1:BaseVariableType,
+        ns1:PropertyType ;
+    ns1:browseName "EURange" ;
+    ns1:browseNameNamespace ns1: ;
+    ns1:description "None" ;
+    ns1:displayName "EURange" ;
+    ns1:nodeClass "UAVariable" ;
+    ns1:nodeId "ns=1;i=37" ;
+    ns1:value <http://prediktor.com/paper_example#i_37_Value> .
+
+<http://prediktor.com/paper_example#i_38> a ns1:BaseVariableType,
+        ns1:PropertyType ;
+    ns1:browseName "EngineeringUnits" ;
+    ns1:browseNameNamespace ns1: ;
+    ns1:description "None" ;
+    ns1:displayName "EngineeringUnits" ;
+    ns1:nodeClass "UAVariable" ;
+    ns1:nodeId "ns=1;i=38" ;
+    ns1:value <http://prediktor.com/paper_example#i_38_Value> .
+
+<http://prediktor.com/paper_example#i_39> a ns1:AnalogItemType,
+        ns1:BaseAnalogType,
+        ns1:BaseDataVariableType,
+        ns1:BaseVariableType,
+        ns1:DataItemType ;
+    ns1:aggregates <http://prediktor.com/paper_example#i_40>,
+        <http://prediktor.com/paper_example#i_41> ;
+    ns1:browseName "CA_YR" ;
+    ns1:browseNameNamespace <http://prediktor.com/iec68131_fragment#> ;
+    ns1:description "Reference setpoint value" ;
+    ns1:displayName "CA_YR" ;
+    ns1:hasChild <http://prediktor.com/paper_example#i_40>,
+        <http://prediktor.com/paper_example#i_41> ;
+    ns1:hasProperty <http://prediktor.com/paper_example#i_40>,
+        <http://prediktor.com/paper_example#i_41> ;
+    ns1:hierarchicalReferences <http://prediktor.com/paper_example#i_40>,
+        <http://prediktor.com/paper_example#i_41> ;
+    ns1:nodeClass "UAVariable" ;
+    ns1:nodeId "ns=1;i=39" ;
+    ns1:references <http://prediktor.com/paper_example#i_40>,
+        <http://prediktor.com/paper_example#i_41> ;
+    ns1:value <http://prediktor.com/paper_example#i_39_Value> .
+
+<http://prediktor.com/paper_example#i_40> a ns1:BaseVariableType,
+        ns1:PropertyType ;
+    ns1:browseName "EURange" ;
+    ns1:browseNameNamespace ns1: ;
+    ns1:description "None" ;
+    ns1:displayName "EURange" ;
+    ns1:nodeClass "UAVariable" ;
+    ns1:nodeId "ns=1;i=40" ;
+    ns1:value <http://prediktor.com/paper_example#i_40_Value> .
+
+<http://prediktor.com/paper_example#i_41> a ns1:BaseVariableType,
+        ns1:PropertyType ;
+    ns1:browseName "EngineeringUnits" ;
+    ns1:browseNameNamespace ns1: ;
+    ns1:description "None" ;
+    ns1:displayName "EngineeringUnits" ;
+    ns1:nodeClass "UAVariable" ;
+    ns1:nodeId "ns=1;i=41" ;
+    ns1:value <http://prediktor.com/paper_example#i_41_Value> .
+
+<http://prediktor.com/paper_example#i_42> a ns1:AnalogItemType,
+        ns1:BaseAnalogType,
+        ns1:BaseDataVariableType,
+        ns1:BaseVariableType,
+        ns1:DataItemType ;
+    ns1:aggregates <http://prediktor.com/paper_example#i_43>,
+        <http://prediktor.com/paper_example#i_44> ;
+    ns1:browseName "CA_Y" ;
+    ns1:browseNameNamespace <http://prediktor.com/iec68131_fragment#> ;
+    ns1:description "Normal function output" ;
+    ns1:displayName "CA_Y" ;
+    ns1:hasChild <http://prediktor.com/paper_example#i_43>,
+        <http://prediktor.com/paper_example#i_44> ;
+    ns1:hasProperty <http://prediktor.com/paper_example#i_43>,
+        <http://prediktor.com/paper_example#i_44> ;
+    ns1:hierarchicalReferences <http://prediktor.com/paper_example#i_43>,
+        <http://prediktor.com/paper_example#i_44> ;
+    ns1:nodeClass "UAVariable" ;
+    ns1:nodeId "ns=1;i=42" ;
+    ns1:references <http://prediktor.com/paper_example#i_43>,
+        <http://prediktor.com/paper_example#i_44> ;
+    ns1:value <http://prediktor.com/paper_example#i_42_Value> .
+
+<http://prediktor.com/paper_example#i_43> a ns1:BaseVariableType,
+        ns1:PropertyType ;
+    ns1:browseName "EURange" ;
+    ns1:browseNameNamespace ns1: ;
+    ns1:description "None" ;
+    ns1:displayName "EURange" ;
+    ns1:nodeClass "UAVariable" ;
+    ns1:nodeId "ns=1;i=43" ;
+    ns1:value <http://prediktor.com/paper_example#i_43_Value> .
+
+<http://prediktor.com/paper_example#i_44> a ns1:BaseVariableType,
+        ns1:PropertyType ;
+    ns1:browseName "EngineeringUnits" ;
+    ns1:browseNameNamespace ns1: ;
+    ns1:description "None" ;
+    ns1:displayName "EngineeringUnits" ;
+    ns1:nodeClass "UAVariable" ;
+    ns1:nodeId "ns=1;i=44" ;
+    ns1:value <http://prediktor.com/paper_example#i_44_Value> .
+
+<http://prediktor.com/paper_example#i_5> a ns1:BaseVariableType,
+        ns1:PropertyType ;
+    ns1:browseName "FunctionalAspectName" ;
+    ns1:browseNameNamespace ns2: ;
+    ns1:description "Lorem ipsum dolor sit amet" ;
+    ns1:displayName "FunctionalAspectName" ;
+    ns1:nodeClass "UAVariable" ;
+    ns1:nodeId "ns=1;i=5" ;
+    ns1:value <http://prediktor.com/paper_example#i_5_Value> .
+
+<http://prediktor.com/paper_example#i_7> a ns1:BaseVariableType,
+        ns1:PropertyType ;
+    ns1:browseName "FunctionalAspectName" ;
+    ns1:browseNameNamespace ns2: ;
+    ns1:description "Lorem ipsum dolor sit amet" ;
+    ns1:displayName "FunctionalAspectName" ;
+    ns1:nodeClass "UAVariable" ;
+    ns1:nodeId "ns=1;i=7" ;
+    ns1:value <http://prediktor.com/paper_example#i_7_Value> .
+
+<http://prediktor.com/paper_example#i_9> a ns1:BaseVariableType,
+        ns1:PropertyType ;
+    ns1:browseName "FunctionalAspectName" ;
+    ns1:browseNameNamespace ns2: ;
+    ns1:description "Lorem ipsum dolor sit amet" ;
+    ns1:displayName "FunctionalAspectName" ;
+    ns1:nodeClass "UAVariable" ;
+    ns1:nodeId "ns=1;i=9" ;
+    ns1:value <http://prediktor.com/paper_example#i_9_Value> .
+
+<http://prediktor.com/paper_example#i_12> a ns1:BaseObjectType,
+        ns2:GeneralSystemType,
+        ns2:InjectionSystemType,
+        ns2:OilAndGasSystemType ;
+    ns1:aggregates <http://prediktor.com/paper_example#i_13>,
+        <http://prediktor.com/paper_example#i_18> ;
+    ns1:browseName "Site1.WaterInjectionTemplateCC" ;
+    ns1:browseNameNamespace <http://prediktor.com/paper_example#> ;
+    ns1:description "Lorem ipsum dolor sit amet" ;
+    ns1:displayName "WaterInjectionTemplateCC" ;
+    ns1:hasChild <http://prediktor.com/paper_example#i_13>,
+        <http://prediktor.com/paper_example#i_18> ;
+    ns1:hasComponent <http://prediktor.com/paper_example#i_18> ;
+    ns1:hasProperty <http://prediktor.com/paper_example#i_13> ;
+    ns1:hierarchicalReferences <http://prediktor.com/paper_example#i_13>,
+        <http://prediktor.com/paper_example#i_18> ;
+    ns1:nodeClass "UAObject" ;
+    ns1:nodeId "ns=1;i=12" ;
+    ns1:references <http://prediktor.com/paper_example#i_13>,
+        <http://prediktor.com/paper_example#i_18> ;
+    ns2:productAspect <http://prediktor.com/paper_example#i_18> .
+
+<http://prediktor.com/paper_example#i_14> a ns1:BaseObjectType,
+        ns2:GeneralSystemType,
+        ns2:InjectionSystemType,
+        ns2:OilAndGasSystemType ;
+    ns1:aggregates <http://prediktor.com/paper_example#i_15>,
+        <http://prediktor.com/paper_example#i_20> ;
+    ns1:browseName "Site1.WaterInjectionTemplateZB" ;
+    ns1:browseNameNamespace <http://prediktor.com/paper_example#> ;
+    ns1:description "Lorem ipsum dolor sit amet" ;
+    ns1:displayName "WaterInjectionTemplateZB" ;
+    ns1:hasChild <http://prediktor.com/paper_example#i_15>,
+        <http://prediktor.com/paper_example#i_20> ;
+    ns1:hasComponent <http://prediktor.com/paper_example#i_20> ;
+    ns1:hasProperty <http://prediktor.com/paper_example#i_15> ;
+    ns1:hierarchicalReferences <http://prediktor.com/paper_example#i_15>,
+        <http://prediktor.com/paper_example#i_20> ;
+    ns1:nodeClass "UAObject" ;
+    ns1:nodeId "ns=1;i=14" ;
+    ns1:references <http://prediktor.com/paper_example#i_15>,
+        <http://prediktor.com/paper_example#i_20> ;
+    ns2:productAspect <http://prediktor.com/paper_example#i_20> .
+
+<http://prediktor.com/paper_example#i_16> a ns1:BaseObjectType,
+        ns2:GeneralSystemType,
+        ns2:InjectionSystemType,
+        ns2:OilAndGasSystemType ;
+    ns1:aggregates <http://prediktor.com/paper_example#i_17>,
+        <http://prediktor.com/paper_example#i_22> ;
+    ns1:browseName "Site1.WaterInjectionTemplateZA" ;
+    ns1:browseNameNamespace <http://prediktor.com/paper_example#> ;
+    ns1:description "Lorem ipsum dolor sit amet" ;
+    ns1:displayName "WaterInjectionTemplateZA" ;
+    ns1:hasChild <http://prediktor.com/paper_example#i_17>,
+        <http://prediktor.com/paper_example#i_22> ;
+    ns1:hasComponent <http://prediktor.com/paper_example#i_22> ;
+    ns1:hasProperty <http://prediktor.com/paper_example#i_17> ;
+    ns1:hierarchicalReferences <http://prediktor.com/paper_example#i_17>,
+        <http://prediktor.com/paper_example#i_22> ;
+    ns1:nodeClass "UAObject" ;
+    ns1:nodeId "ns=1;i=16" ;
+    ns1:references <http://prediktor.com/paper_example#i_17>,
+        <http://prediktor.com/paper_example#i_22> ;
+    ns2:productAspect <http://prediktor.com/paper_example#i_22> .
+
+<http://prediktor.com/paper_example#i_18> a ns1:BaseObjectType,
+        ns2:FlowControllingSystemType,
+        ns2:GeneralSystemType,
+        ns2:ModificationSystemType,
+        ns2:OilAndGasTechnicalSystemType ;
+    ns1:aggregates <http://prediktor.com/paper_example#i_19>,
+        <http://prediktor.com/paper_example#i_6> ;
+    ns1:browseName "Site1.WaterInjectionChokeModuleInCC" ;
+    ns1:browseNameNamespace <http://prediktor.com/paper_example#> ;
+    ns1:description "Lorem ipsum dolor sit amet" ;
+    ns1:displayName "WaterInjectionChokeModuleInCC" ;
+    ns1:hasChild <http://prediktor.com/paper_example#i_19>,
+        <http://prediktor.com/paper_example#i_6> ;
+    ns1:hasComponent <http://prediktor.com/paper_example#i_6> ;
+    ns1:hasProperty <http://prediktor.com/paper_example#i_19> ;
+    ns1:hierarchicalReferences <http://prediktor.com/paper_example#i_19>,
+        <http://prediktor.com/paper_example#i_6> ;
+    ns1:nodeClass "UAObject" ;
+    ns1:nodeId "ns=1;i=18" ;
+    ns1:references <http://prediktor.com/paper_example#i_19>,
+        <http://prediktor.com/paper_example#i_6> ;
+    ns2:productAspect <http://prediktor.com/paper_example#i_6> .
+
+<http://prediktor.com/paper_example#i_2> a ns1:BaseObjectType,
+        ns2:GeneralSystemType,
+        ns2:InjectionSystemType,
+        ns2:OilAndGasSystemType ;
+    ns1:aggregates <http://prediktor.com/paper_example#i_3>,
+        <http://prediktor.com/paper_example#i_4> ;
+    ns1:browseName "Site1.WaterInjectionSystem" ;
+    ns1:browseNameNamespace <http://prediktor.com/paper_example#> ;
+    ns1:description "Lorem ipsum dolor sit amet" ;
+    ns1:displayName "WaterInjectionSystem" ;
+    ns1:hasChild <http://prediktor.com/paper_example#i_3>,
+        <http://prediktor.com/paper_example#i_4> ;
+    ns1:hasComponent <http://prediktor.com/paper_example#i_4> ;
+    ns1:hasProperty <http://prediktor.com/paper_example#i_3> ;
+    ns1:hierarchicalReferences <http://prediktor.com/paper_example#i_3>,
+        <http://prediktor.com/paper_example#i_4> ;
+    ns1:nodeClass "UAObject" ;
+    ns1:nodeId "ns=1;i=2" ;
+    ns1:references <http://prediktor.com/paper_example#i_3>,
+        <http://prediktor.com/paper_example#i_4> ;
+    ns2:functionalAspect <http://prediktor.com/paper_example#i_4> .
+
+<http://prediktor.com/paper_example#i_20> a ns1:BaseObjectType,
+        ns2:FlowControllingSystemType,
+        ns2:GeneralSystemType,
+        ns2:ModificationSystemType,
+        ns2:OilAndGasTechnicalSystemType ;
+    ns1:aggregates <http://prediktor.com/paper_example#i_21>,
+        <http://prediktor.com/paper_example#i_8> ;
+    ns1:browseName "Site1.WaterInjectionChokeModuleInZB" ;
+    ns1:browseNameNamespace <http://prediktor.com/paper_example#> ;
+    ns1:description "Lorem ipsum dolor sit amet" ;
+    ns1:displayName "WaterInjectionChokeModuleInZB" ;
+    ns1:hasChild <http://prediktor.com/paper_example#i_21>,
+        <http://prediktor.com/paper_example#i_8> ;
+    ns1:hasComponent <http://prediktor.com/paper_example#i_8> ;
+    ns1:hasProperty <http://prediktor.com/paper_example#i_21> ;
+    ns1:hierarchicalReferences <http://prediktor.com/paper_example#i_21>,
+        <http://prediktor.com/paper_example#i_8> ;
+    ns1:nodeClass "UAObject" ;
+    ns1:nodeId "ns=1;i=20" ;
+    ns1:references <http://prediktor.com/paper_example#i_21>,
+        <http://prediktor.com/paper_example#i_8> ;
+    ns2:productAspect <http://prediktor.com/paper_example#i_8> .
+
+<http://prediktor.com/paper_example#i_22> a ns1:BaseObjectType,
+        ns2:FlowControllingSystemType,
+        ns2:GeneralSystemType,
+        ns2:ModificationSystemType,
+        ns2:OilAndGasTechnicalSystemType ;
+    ns1:aggregates <http://prediktor.com/paper_example#i_10>,
+        <http://prediktor.com/paper_example#i_23> ;
+    ns1:browseName "Site1.WaterInjectionChokeModuleInZA" ;
+    ns1:browseNameNamespace <http://prediktor.com/paper_example#> ;
+    ns1:description "Lorem ipsum dolor sit amet" ;
+    ns1:displayName "WaterInjectionChokeModuleInZA" ;
+    ns1:hasChild <http://prediktor.com/paper_example#i_10>,
+        <http://prediktor.com/paper_example#i_23> ;
+    ns1:hasComponent <http://prediktor.com/paper_example#i_10> ;
+    ns1:hasProperty <http://prediktor.com/paper_example#i_23> ;
+    ns1:hierarchicalReferences <http://prediktor.com/paper_example#i_10>,
+        <http://prediktor.com/paper_example#i_23> ;
+    ns1:nodeClass "UAObject" ;
+    ns1:nodeId "ns=1;i=22" ;
+    ns1:references <http://prediktor.com/paper_example#i_10>,
+        <http://prediktor.com/paper_example#i_23> ;
+    ns2:productAspect <http://prediktor.com/paper_example#i_10> .
+
+<http://prediktor.com/paper_example#i_4> a ns1:BaseObjectType,
+        ns2:FlowControllingSystemType,
+        ns2:GeneralSystemType,
+        ns2:ModificationSystemType,
+        ns2:OilAndGasTechnicalSystemType ;
+    ns1:aggregates <http://prediktor.com/paper_example#i_10>,
+        <http://prediktor.com/paper_example#i_5>,
+        <http://prediktor.com/paper_example#i_6>,
+        <http://prediktor.com/paper_example#i_8> ;
+    ns1:browseName "Site1.InjectionSystem" ;
+    ns1:browseNameNamespace <http://prediktor.com/paper_example#> ;
+    ns1:description "Lorem ipsum dolor sit amet" ;
+    ns1:displayName "WaterInjectionSystem" ;
+    ns1:hasChild <http://prediktor.com/paper_example#i_10>,
+        <http://prediktor.com/paper_example#i_5>,
+        <http://prediktor.com/paper_example#i_6>,
+        <http://prediktor.com/paper_example#i_8> ;
+    ns1:hasComponent <http://prediktor.com/paper_example#i_10>,
+        <http://prediktor.com/paper_example#i_6>,
+        <http://prediktor.com/paper_example#i_8> ;
+    ns1:hasProperty <http://prediktor.com/paper_example#i_5> ;
+    ns1:hierarchicalReferences <http://prediktor.com/paper_example#i_10>,
+        <http://prediktor.com/paper_example#i_5>,
+        <http://prediktor.com/paper_example#i_6>,
+        <http://prediktor.com/paper_example#i_8> ;
+    ns1:nodeClass "UAObject" ;
+    ns1:nodeId "ns=1;i=4" ;
+    ns1:references <http://prediktor.com/paper_example#i_10>,
+        <http://prediktor.com/paper_example#i_5>,
+        <http://prediktor.com/paper_example#i_6>,
+        <http://prediktor.com/paper_example#i_8> ;
+    ns2:functionalAspect <http://prediktor.com/paper_example#i_10>,
+        <http://prediktor.com/paper_example#i_6>,
+        <http://prediktor.com/paper_example#i_8> .
+
+<http://prediktor.com/paper_example#i_10> a ns1:BaseObjectType,
+        ns2:ControllingObjectType,
+        ns2:GeneralSystemType,
+        ns2:LiquidControlValveType,
+        ns2:RDSComponentSystemType,
+        ns2:SealedFluidVaryingObjectType ;
+    ns1:aggregates <http://prediktor.com/paper_example#i_11>,
+        <http://prediktor.com/paper_example#i_26>,
+        <http://prediktor.com/paper_example#i_27>,
+        <http://prediktor.com/paper_example#i_30> ;
+    ns1:browseName "Site1.ControlValveInZA" ;
+    ns1:browseNameNamespace <http://prediktor.com/paper_example#> ;
+    ns1:description "Lorem ipsum dolor sit amet" ;
+    ns1:displayName "ControlValveInZA" ;
+    ns1:hasChild <http://prediktor.com/paper_example#i_11>,
+        <http://prediktor.com/paper_example#i_26>,
+        <http://prediktor.com/paper_example#i_27>,
+        <http://prediktor.com/paper_example#i_30> ;
+    ns1:hasComponent <http://prediktor.com/paper_example#i_27>,
+        <http://prediktor.com/paper_example#i_30> ;
+    ns1:hasProperty <http://prediktor.com/paper_example#i_11>,
+        <http://prediktor.com/paper_example#i_26> ;
+    ns1:hierarchicalReferences <http://prediktor.com/paper_example#i_11>,
+        <http://prediktor.com/paper_example#i_26>,
+        <http://prediktor.com/paper_example#i_27>,
+        <http://prediktor.com/paper_example#i_30> ;
+    ns1:nodeClass "UAObject" ;
+    ns1:nodeId "ns=1;i=10" ;
+    ns1:references <http://prediktor.com/paper_example#i_11>,
+        <http://prediktor.com/paper_example#i_26>,
+        <http://prediktor.com/paper_example#i_27>,
+        <http://prediktor.com/paper_example#i_30> .
+
+<http://prediktor.com/paper_example#i_6> a ns1:BaseObjectType,
+        ns2:ControllingObjectType,
+        ns2:GeneralSystemType,
+        ns2:LiquidControlValveType,
+        ns2:RDSComponentSystemType,
+        ns2:SealedFluidVaryingObjectType ;
+    ns1:aggregates <http://prediktor.com/paper_example#i_24>,
+        <http://prediktor.com/paper_example#i_39>,
+        <http://prediktor.com/paper_example#i_42>,
+        <http://prediktor.com/paper_example#i_7> ;
+    ns1:browseName "Site1.ControlValveInCC" ;
+    ns1:browseNameNamespace <http://prediktor.com/paper_example#> ;
+    ns1:description "Lorem ipsum dolor sit amet" ;
+    ns1:displayName "ControlValveInCC" ;
+    ns1:hasChild <http://prediktor.com/paper_example#i_24>,
+        <http://prediktor.com/paper_example#i_39>,
+        <http://prediktor.com/paper_example#i_42>,
+        <http://prediktor.com/paper_example#i_7> ;
+    ns1:hasComponent <http://prediktor.com/paper_example#i_39>,
+        <http://prediktor.com/paper_example#i_42> ;
+    ns1:hasProperty <http://prediktor.com/paper_example#i_24>,
+        <http://prediktor.com/paper_example#i_7> ;
+    ns1:hierarchicalReferences <http://prediktor.com/paper_example#i_24>,
+        <http://prediktor.com/paper_example#i_39>,
+        <http://prediktor.com/paper_example#i_42>,
+        <http://prediktor.com/paper_example#i_7> ;
+    ns1:nodeClass "UAObject" ;
+    ns1:nodeId "ns=1;i=6" ;
+    ns1:references <http://prediktor.com/paper_example#i_24>,
+        <http://prediktor.com/paper_example#i_39>,
+        <http://prediktor.com/paper_example#i_42>,
+        <http://prediktor.com/paper_example#i_7> .
+
+<http://prediktor.com/paper_example#i_8> a ns1:BaseObjectType,
+        ns2:ControllingObjectType,
+        ns2:GeneralSystemType,
+        ns2:LiquidControlValveType,
+        ns2:RDSComponentSystemType,
+        ns2:SealedFluidVaryingObjectType ;
+    ns1:aggregates <http://prediktor.com/paper_example#i_25>,
+        <http://prediktor.com/paper_example#i_33>,
+        <http://prediktor.com/paper_example#i_36>,
+        <http://prediktor.com/paper_example#i_9> ;
+    ns1:browseName "Site1.ControlValveInZB" ;
+    ns1:browseNameNamespace <http://prediktor.com/paper_example#> ;
+    ns1:description "Lorem ipsum dolor sit amet" ;
+    ns1:displayName "ControlValveInZB" ;
+    ns1:hasChild <http://prediktor.com/paper_example#i_25>,
+        <http://prediktor.com/paper_example#i_33>,
+        <http://prediktor.com/paper_example#i_36>,
+        <http://prediktor.com/paper_example#i_9> ;
+    ns1:hasComponent <http://prediktor.com/paper_example#i_33>,
+        <http://prediktor.com/paper_example#i_36> ;
+    ns1:hasProperty <http://prediktor.com/paper_example#i_25>,
+        <http://prediktor.com/paper_example#i_9> ;
+    ns1:hierarchicalReferences <http://prediktor.com/paper_example#i_25>,
+        <http://prediktor.com/paper_example#i_33>,
+        <http://prediktor.com/paper_example#i_36>,
+        <http://prediktor.com/paper_example#i_9> ;
+    ns1:nodeClass "UAObject" ;
+    ns1:nodeId "ns=1;i=8" ;
+    ns1:references <http://prediktor.com/paper_example#i_25>,
+        <http://prediktor.com/paper_example#i_33>,
+        <http://prediktor.com/paper_example#i_36>,
+        <http://prediktor.com/paper_example#i_9> .
+

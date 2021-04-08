@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UANodeSet xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd">
+    <NamespaceUris>
+        <Uri>http://prediktor.com/RDS-OG-Fragment</Uri>
+    </NamespaceUris>
+    <Models>
+        <Model ModelUri="http://prediktor.com/RDS-OG-Fragment" PublicationDate="2021-03-16T08:03:52Z" Version="1.0.0">
+        </Model>
+    </Models>
+    <Aliases>
+    </Aliases>
+    <UAObjectType NodeId="ns=1;s=E" BrowseName="E">
+        <DisplayName>InjectionSystemType</DisplayName>
+        <Description>Injection system type</Description>
+        <References>
+            <Reference ReferenceType="ns=0;i=45" IsForward="false">ns=1;s=OGSys</Reference>
+        </References>
+    </UAObjectType>
+    <UAObjectType NodeId="ns=1;s=K_" BrowseName="K_">
+        <DisplayName>ModificationSystemType</DisplayName>
+        <Description>Modification system type</Description>
+        <References>
+            <Reference ReferenceType="ns=0;i=45" IsForward="false">ns=1;s=OGTechSys</Reference>
+        </References>
+    </UAObjectType>
+    <UAObjectType NodeId="ns=1;s=KA" BrowseName="KA">
+        <DisplayName>FlowControllingSystemType</DisplayName>
+        <Description>Flow controlling system type</Description>
+        <References>
+            <Reference ReferenceType="ns=0;i=45" IsForward="false">ns=1;s=K_</Reference>
+        </References>
+    </UAObjectType>
+    <UAObjectType NodeId="ns=1;s=Q__" BrowseName="Q__">
+        <DisplayName>ControllingObjectType</DisplayName>
+        <Description>Controlling object type</Description>
+        <References>
+            <Reference ReferenceType="ns=0;i=45" IsForward="false">ns=1;s=RDSCompSys</Reference>
+        </References>
+    </UAObjectType>
+    <UAObjectType NodeId="ns=1;s=QN_" BrowseName="QN_">
+        <DisplayName>SealedFluidVaryingObjectType</DisplayName>
+        <Description>Sealed fluid varying object type</Description>
+        <References>
+            <Reference ReferenceType="ns=0;i=45" IsForward="false">ns=1;s=Q__</Reference>
+        </References>
+    </UAObjectType>
+    <UAObjectType NodeId="ns=1;s=QNA" BrowseName="QNA">
+        <DisplayName>LiquidControlValveType</DisplayName>
+        <Description>Liquid control valve type</Description>
+        <References>
+            <Reference ReferenceType="ns=0;i=45" IsForward="false">ns=1;s=QN_</Reference>
+        </References>
+    </UAObjectType>
+    <UAObjectType NodeId="ns=1;s=SYS" BrowseName="SYS">
+        <DisplayName>GeneralSystemType</DisplayName>
+        <Description>Base system type</Description>
+        <References>
+            <Reference ReferenceType="ns=0;i=45" IsForward="false">ns=0;i=58</Reference>
+        </References>
+    </UAObjectType>
+    <UAObjectType NodeId="ns=1;s=OGSys" BrowseName="OGSys">
+        <DisplayName>OilAndGasSystemType</DisplayName>
+        <Description>Oil and gas system type</Description>
+        <References>
+            <Reference ReferenceType="ns=0;i=45" IsForward="false">ns=1;s=SYS</Reference>
+        </References>
+    </UAObjectType>
+    <UAObjectType NodeId="ns=1;s=OGTechSys" BrowseName="OGTechSys">
+        <DisplayName>OilAndGasTechnicalSystemType</DisplayName>
+        <Description>Oil and gas technical system type</Description>
+        <References>
+            <Reference ReferenceType="ns=0;i=45" IsForward="false">ns=1;s=SYS</Reference>
+        </References>
+    </UAObjectType>
+    <UAObjectType NodeId="ns=1;s=RDSCompSys" BrowseName="RDSCompSys">
+        <DisplayName>RDSComponentSystemType</DisplayName>
+        <Description>RDS component level system</Description>
+        <References>
+            <Reference ReferenceType="ns=0;i=45" IsForward="false">ns=1;s=SYS</Reference>
+        </References>
+    </UAObjectType>
+    <UAObjectType NodeId="ns=1;s=SiteType" BrowseName="SiteType">
+        <DisplayName>SiteType</DisplayName>
+        <Description>A type for sites</Description>
+        <References>
+            <Reference ReferenceType="ns=0;i=45" IsForward="false">ns=0;i=58</Reference>
+        </References>
+    </UAObjectType>
+    <UAObject NodeId="ns=1;s=SYS.&lt;FunctionalAspectChild&gt;" BrowseName="&lt;FunctionalAspectChild&gt;">
+        <DisplayName>&lt;FunctionalAspectChild&gt;</DisplayName>
+        <Description>Placeholder for navigation with functional aspect</Description>
+        <References>
+            <Reference ReferenceType="ns=0;i=37">ns=0;i=11508</Reference>
+            <Reference ReferenceType="ns=1;s=FunctionalAspect" IsForward="false">ns=1;s=SYS</Reference>
+        </References>
+    </UAObject>
+    <UAObject NodeId="ns=1;s=SYS.&lt;ProductAspectChild&gt;" BrowseName="&lt;ProductAspectChild&gt;">
+        <DisplayName>&lt;ProductAspectChild&gt;</DisplayName>
+        <Description>Placeholder for navigation with product aspect</Description>
+        <References>
+            <Reference ReferenceType="ns=0;i=37">ns=0;i=11508</Reference>
+            <Reference ReferenceType="ns=1;s=ProductAspect" IsForward="false">ns=1;s=SYS</Reference>
+        </References>
+    </UAObject>
+    <UAVariable NodeId="ns=1;s=SYS.FunctionalAspectName" BrowseName="FunctionalAspectName" DataType="ns=0;i=12">
+        <DisplayName>FunctionalAspectName</DisplayName>
+        <Description>Functional aspect name</Description>
+        <References>
+            <Reference ReferenceType="ns=0;i=40">ns=0;i=68</Reference>
+            <Reference ReferenceType="ns=0;i=37">ns=0;i=80</Reference>
+            <Reference ReferenceType="ns=0;i=46" IsForward="false">ns=1;s=SYS</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable NodeId="ns=1;s=SYS.ProductAspectName" BrowseName="ProductAspectName" DataType="ns=0;i=12">
+        <DisplayName>ProductAspectName</DisplayName>
+        <Description>Product aspect name</Description>
+        <References>
+            <Reference ReferenceType="ns=0;i=40">ns=0;i=68</Reference>
+            <Reference ReferenceType="ns=0;i=37">ns=0;i=80</Reference>
+            <Reference ReferenceType="ns=0;i=46" IsForward="false">ns=1;s=SYS</Reference>
+        </References>
+    </UAVariable>
+    <UAReferenceType NodeId="ns=1;s=FunctionalAspect" BrowseName="FunctionalAspect">
+        <DisplayName>FunctionalAspect</DisplayName>
+        <Description>Functional aspect reference</Description>
+        <References>
+            <Reference ReferenceType="ns=0;i=45" IsForward="false">ns=0;i=47</Reference>
+        </References>
+    </UAReferenceType>
+    <UAReferenceType NodeId="ns=1;s=ProductAspect" BrowseName="ProductAspect">
+        <DisplayName>ProductAspect</DisplayName>
+        <Description>Product aspect reference</Description>
+        <References>
+            <Reference ReferenceType="ns=0;i=45" IsForward="false">ns=0;i=47</Reference>
+        </References>
+    </UAReferenceType>
+</UANodeSet>

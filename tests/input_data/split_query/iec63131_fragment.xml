@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UANodeSet
+        xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd">
+    <NamespaceUris>
+        <Uri>http://prediktor.com/iec63131_fragment</Uri>
+    </NamespaceUris>
+    <Models>
+        <Model ModelUri="http://prediktor.com/iec63131_fragment" Version="1.0" PublicationDate="2021-03-16T08:03:52Z"/>
+    </Models>
+    <UAObjectType NodeId="ns=1;i=1035" BrowseName="1:I_SCD_CA">
+        <DisplayName>I_SCD_CA</DisplayName>
+        <Description>Continous control by means of analogue control action</Description>
+        <References>
+            <Reference ReferenceType="i=47">ns=1;i=6017</Reference>
+            <Reference ReferenceType="i=47">ns=1;i=6019</Reference>
+        </References>
+    </UAObjectType>
+    <UAVariable NodeId="ns=1;i=6019" BrowseName="1:CA_YR" DataType="i=11" AccessLevel="3">
+        <DisplayName>CA_YR</DisplayName>
+        <Description>Reference setpoint value</Description>
+        <References>
+            <Reference ReferenceType="i=37">i=78</Reference>
+            <Reference ReferenceType="i=40">i=2368</Reference>
+            <Reference ReferenceType="i=46">ns=1;i=6601</Reference>
+            <Reference ReferenceType="i=46">ns=1;i=6602</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable NodeId="ns=1;i=6601" BrowseName="EURange" DataType="i=884" AccessLevel="3">
+        <DisplayName>EURange</DisplayName>
+        <References>
+            <Reference ReferenceType="i=37">i=78</Reference>
+            <Reference ReferenceType="i=40">i=68</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable NodeId="ns=1;i=6602" BrowseName="EngineeringUnits" DataType="i=887" AccessLevel="3">
+        <DisplayName>EngineeringUnits</DisplayName>
+        <References>
+            <Reference ReferenceType="i=37">i=78</Reference>
+            <Reference ReferenceType="i=40">i=68</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable NodeId="ns=1;i=6017" BrowseName="1:CA_Y" DataType="i=11" AccessLevel="3">
+        <DisplayName>CA_Y</DisplayName>
+        <Description>Normal function output</Description>
+        <References>
+            <Reference ReferenceType="i=37">i=78</Reference>
+            <Reference ReferenceType="i=40">i=2368</Reference>
+            <Reference ReferenceType="i=46">ns=1;i=6603</Reference>
+            <Reference ReferenceType="i=46">ns=1;i=6604</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable NodeId="ns=1;i=6603" BrowseName="EURange" DataType="i=884" AccessLevel="3">
+        <DisplayName>EURange</DisplayName>
+        <References>
+            <Reference ReferenceType="i=37">i=78</Reference>
+            <Reference ReferenceType="i=40">i=68</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable NodeId="ns=1;i=6604" BrowseName="EngineeringUnits" DataType="i=887" AccessLevel="3">
+        <DisplayName>EngineeringUnits</DisplayName>
+        <References>
+            <Reference ReferenceType="i=37">i=78</Reference>
+            <Reference ReferenceType="i=40">i=68</Reference>
+        </References>
+    </UAVariable>
+</UANodeSet>
