@@ -111,7 +111,7 @@ def postgresql(params):
 
     cmd = f'docker run -d -v {volumename}:/var/lib/postgresql/data/ -e "POSTGRES_PASSWORD={params["password"]}" -p {params["port"]}:5432 --name {containername} postgres'
     subprocess.run(cmd, shell=True)
-    time.sleep(10)
+    time.sleep(20)
     yield
 
     subprocess.run('docker stop ' + containername, shell=True)
