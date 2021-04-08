@@ -1,7 +1,10 @@
-cvalveName,cayValue,rv,cayEU
-ControlValveInZA,http://prediktor.com/paper_example#i_30_Value,0.092,%
-ControlValveInZA,http://prediktor.com/paper_example#i_30_Value,0.082,%
-ControlValveInZA,http://prediktor.com/paper_example#i_30_Value,0.072,%
-ControlValveInZB,http://prediktor.com/paper_example#i_36_Value,0.1337,%
-ControlValveInZB,http://prediktor.com/paper_example#i_36_Value,0.1338,%
-ControlValveInZB,http://prediktor.com/paper_example#i_36_Value,0.1339,%
+cvalveName,ts,rv
+ControlValveInZA,2021-03-25 09:30:23.218498,0.092
+ControlValveInZA,2021-03-25 09:31:23.218498,0.082
+ControlValveInZA,2021-03-25 09:32:23.218498,0.072
+ControlValveInZB,2021-03-25 09:30:23.218498,0.1337
+ControlValveInZB,2021-03-25 09:31:23.218498,0.1338
+ControlValveInZB,2021-03-25 09:32:23.218498,0.1339
+ControlValveInCC,2021-03-25 09:30:23.218498,0.009
+ControlValveInCC,2021-03-25 09:31:23.218498,0.01
+ControlValveInCC,2021-03-25 09:32:23.218498,0.011

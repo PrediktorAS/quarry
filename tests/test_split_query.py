@@ -1,3 +1,17 @@
+# Copyright 2021 Prediktor AS
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
 import os
 import subprocess
 import time
@@ -142,10 +156,11 @@ SELECT  ?cvalveName ?ts ?rv WHERE {
 }
     """
     actual_df = quarry.execute_query(q, sparql_endpoint).reset_index(drop=True)
-    actual_df.to_csv(PATH_HERE + '/expected/split_query/basic2.csv', index=False)
+    #actual_df.to_csv(PATH_HERE + '/expected/split_query/basic2.csv', index=False)
     expected_df = pd.read_csv(PATH_HERE + '/expected/split_query/basic.csv')
-    ltx = actual_df.to_latex(index=False)
-    print(ltx)
+    expected_df['ts'] = pd.to_datetime(expected_df['ts'])
+    #ltx = actual_df.to_latex(index=False)
+    #print(ltx)
     pd.testing.assert_frame_equal(actual_df, expected_df)
 
 def test_basic_eu(sparql_endpoint, timeseriesdata):
@@ -170,7 +185,7 @@ FILTER (?rv >= 0.07)
 }
     """
     actual_df = quarry.execute_query(q, sparql_endpoint).reset_index(drop=True)
-    actual_df.to_csv(PATH_HERE + '/expected/split_query/basic_eu2.csv', index=False)
+    #actual_df.to_csv(PATH_HERE + '/expected/split_query/basic_eu2.csv', index=False)
     expected_df = pd.read_csv(PATH_HERE + '/expected/split_query/basic_eu.csv')
     pd.testing.assert_frame_equal(actual_df, expected_df)
 
