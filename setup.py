@@ -33,7 +33,7 @@ setup(
         "Programming Language :: Python :: 3",
         "Programming Language :: Python :: 3.7",
     ],
-    packages=["opcua_tools"],
+    packages=["quarry", "swt_translator"],
     include_package_data=True,
     install_requires=[
         "lxml>=4.6.2", "lxml<5.0",
