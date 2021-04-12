@@ -20,11 +20,11 @@ from io import StringIO
 import pandas as pd
 import psycopg2
 import pytest
-import opcua_tools
 from SPARQLWrapper import SPARQLWrapper
 
 import quarry
 import swt_translator as swtt
+from .postgresql_time_series_database import SQLTimeSeriesDatabase
 
 PATH_HERE = os.path.dirname(__file__)
 
@@ -64,11 +64,21 @@ def set_up_endpoint(create_ttl):
     subprocess.run('docker stop ' + containername, shell=True)
     subprocess.run('docker rm ' + containername, shell=True)
 
-
 @pytest.fixture(scope='module')
 def sparql_endpoint(set_up_endpoint) -> SPARQLWrapper:
     return SPARQLWrapper('http://localhost:3030/ds/sparql')
 
+@pytest.fixture(scope='module')
+def pg_time_series_database(set_up_endpoint):
+    params_dict = {
+        "host": 'localhost',
+        "database": 'postgres',
+        "user": 'postgres',
+        "port": '5445',
+        "password": 'hemelipasor'
+    }
+    sqltsd = SQLTimeSeriesDatabase(params_dict=params_dict)
+    return sqltsd
 
 @pytest.fixture(scope='module')
 def params():
@@ -123,7 +133,7 @@ def timeseriesdata(postgresql, params):
     conn.commit()
 
 
-def test_basic(sparql_endpoint, timeseriesdata):
+def test_basic(sparql_endpoint, timeseriesdata, pg_time_series_database):
     q = """
 PREFIX rdsog: 
 <http://prediktor.com/RDS-OG-Fragment#>
@@ -143,7 +153,7 @@ SELECT  ?cvalveName ?ts ?rv WHERE {
 ?cayValue opcua:realValue ?rv.
 }
     """
-    actual_df = quarry.execute_query(q, sparql_endpoint).reset_index(drop=True)
+    actual_df = quarry.execute_query(q, sparql_endpoint, pg_time_series_database).reset_index(drop=True)
     #actual_df.to_csv(PATH_HERE + '/expected/query_split/basic2.csv', index=False)
     expected_df = pd.read_csv(PATH_HERE + '/expected/query_split/basic.csv')
     expected_df['ts'] = pd.to_datetime(expected_df['ts'])
@@ -151,7 +161,7 @@ SELECT  ?cvalveName ?ts ?rv WHERE {
     #print(ltx)
     pd.testing.assert_frame_equal(actual_df, expected_df)
 
-def test_basic_eu(sparql_endpoint, timeseriesdata):
+def test_basic_eu(sparql_endpoint, timeseriesdata, pg_time_series_database):
     q = """
 PREFIX rdsog: 
 <http://prediktor.com/RDS-OG-Fragment#>
@@ -172,13 +182,13 @@ SELECT  ?cvalveName ?rv ?cayEU WHERE {
 FILTER (?rv >= 0.07)
 }
     """
-    actual_df = quarry.execute_query(q, sparql_endpoint).reset_index(drop=True)
+    actual_df = quarry.execute_query(q, sparql_endpoint, pg_time_series_database).reset_index(drop=True)
     #actual_df.to_csv(PATH_HERE + '/expected/query_split/basic_eu2.csv', index=False)
     expected_df = pd.read_csv(PATH_HERE + '/expected/query_split/basic_eu.csv')
     pd.testing.assert_frame_equal(actual_df, expected_df)
 
 
-def test_timestamp(sparql_endpoint, timeseriesdata):
+def test_timestamp(sparql_endpoint, pg_time_series_database):
     q = """
     PREFIX rdsog: 
     <http://prediktor.com/RDS-OG-Fragment#>
@@ -200,13 +210,13 @@ def test_timestamp(sparql_endpoint, timeseriesdata):
         FILTER (?rv < 0.06 && ?ts >= "2021-03-25T09:30:23.218499"^^xsd:dateTime)
         }
     """
-    actual_df = quarry.execute_query(q, sparql_endpoint).reset_index(drop=True)
+    actual_df = quarry.execute_query(q, sparql_endpoint, pg_time_series_database).reset_index(drop=True)
     #actual_df.to_csv(PATH_HERE + '/expected/query_split/timestamp2.csv', index=False)
     expected_df = pd.read_csv(PATH_HERE + '/expected/query_split/timestamp.csv')
     expected_df['ts'] = pd.to_datetime(expected_df['ts'])
     pd.testing.assert_frame_equal(actual_df, expected_df)
 
-def test_timestamp_sync(sparql_endpoint, timeseriesdata):
+def test_timestamp_sync(sparql_endpoint, timeseriesdata, pg_time_series_database):
     q = """
     PREFIX rdsog: 
     <http://prediktor.com/RDS-OG-Fragment#>
@@ -234,7 +244,7 @@ def test_timestamp_sync(sparql_endpoint, timeseriesdata):
         FILTER (?ts >= "2021-03-25T09:30:23.218499"^^xsd:dateTime)
         }
     """
-    actual_df = quarry.execute_query(q, sparql_endpoint).reset_index(drop=True)
+    actual_df = quarry.execute_query(q, sparql_endpoint, pg_time_series_database).reset_index(drop=True)
     #actual_df.to_csv(PATH_HERE + '/expected/query_split/timestamp_sync2.csv', index=False)
     expected_df = pd.read_csv(PATH_HERE + '/expected/query_split/timestamp_sync.csv')
     expected_df['ts'] = pd.to_datetime(expected_df['ts'])

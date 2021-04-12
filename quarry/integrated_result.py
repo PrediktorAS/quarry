@@ -17,7 +17,8 @@ from typing import List, Set, Tuple
 import pandas as pd
 from rdflib.term import Variable, Literal
 
-from .classes import Operator, Triple, TermConstraint, TimeSeriesQuery
+from .classes import Operator, Triple, TermConstraint
+from .time_series_database import TimeSeriesQuery
 
 join_ind = 0
 

@@ -20,14 +20,15 @@ from rdflib.plugins.sparql import prepareQuery
 from rdflib.term import Variable
 
 from .algebra_utils import from_rdflib_sparqlquery
-from .classes import Operator, Term, TermConstraint, TimeSeriesQuery, SQLTimeSeriesDatabase
+from .classes import Operator, Term, TermConstraint
+from .time_series_database import TimeSeriesDatabase, TimeSeriesQuery
 from .integrated_result import generate_select_result
 from .query_generator import op_to_query
 from .rewrite import rewrite_deepcopy_for_sparql_engine, generate_time_series_queries
 from .type_inference import infer_types
 
 
-def execute_query(sparql: str, sparql_endpoint: SPARQLWrapper) -> pd.DataFrame:
+def execute_query(sparql: str, sparql_endpoint: SPARQLWrapper, time_series_database:TimeSeriesDatabase) -> pd.DataFrame:
     query = prepareQuery(sparql)
     op = from_rdflib_sparqlquery(query)
     infer_types(op)
@@ -45,7 +46,7 @@ def execute_query(sparql: str, sparql_endpoint: SPARQLWrapper) -> pd.DataFrame:
     update_operator_with_result(op, is_ext)
     time_series_queries = {}
     generate_time_series_queries(op, static_df, time_series_queries, {}, {})
-    tsqs = execute_time_series_queries(time_series_queries)
+    tsqs = execute_time_series_queries(time_series_queries, time_series_database)
 
     dropmore = [c for c in static_df.columns.values if c.endswith('_is_ext_var')]
     dropvars = [str(tsq.data_variable.rdflib_term) for tsq in tsqs if tsq.data_variable is not None]
@@ -57,13 +58,13 @@ def execute_query(sparql: str, sparql_endpoint: SPARQLWrapper) -> pd.DataFrame:
     return result_df
 
 
-def execute_time_series_queries(time_series_queries: Dict[Term, TimeSeriesQuery]) -> List[TimeSeriesQuery]:
-    sqldb = SQLTimeSeriesDatabase()
+def execute_time_series_queries(time_series_queries: Dict[Term, TimeSeriesQuery],
+                                time_series_database: TimeSeriesDatabase) -> List[TimeSeriesQuery]:
     tsqs = []
 
     for trm in time_series_queries:
         tsq = time_series_queries[trm]
-        tsq_df = sqldb.execute_query(tsq)
+        tsq_df = time_series_database.execute_query(tsq)
         tsq.df = tsq_df
         tsqs.append(tsq)
 

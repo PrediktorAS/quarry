@@ -18,7 +18,8 @@ from typing import List
 import pandas as pd
 from rdflib.term import URIRef, Variable, Literal
 
-from .classes import Operator, TermConstraint, Triple, Term, TimeSeriesQuery
+from .classes import Operator, TermConstraint, Triple, Term
+from .time_series_database import TimeSeriesQuery
 from .type_inference import REAL_VALUE_VERB, BOOL_VALUE_VERB, INT_VALUE_VERB, STRING_VALUE_VERB, TIMESTAMP_VERB
 
 IS_EXTERNAL_VALUE_PROPERTY_URI = 'http://prediktor.com/UA-helpers/#isExternalValue'

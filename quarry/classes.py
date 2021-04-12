@@ -16,10 +16,8 @@ import copy
 import uuid
 from dataclasses import dataclass, field
 from enum import Enum
-from typing import List, Set, Union, Optional
+from typing import List, Set, Union
 
-import pandas as pd
-import psycopg2
 from rdflib.paths import MulPath
 from rdflib.term import Variable, URIRef, Literal
 
@@ -84,57 +82,3 @@ class Operator:
         return hash((self.guid))
 
 
-@dataclass
-class TimeSeriesQuery:
-    variable_term: Term
-    signal_ids: pd.Series
-    df: Optional[pd.DataFrame] = field(default=None)
-    timestamp_variable: Optional[Term] = field(default=None)
-    data_variable: Optional[Term] = field(default=None)
-    literal_expressions: List[Expression] = field(default_factory=list)
-    datatype: Optional[str] = field(default=None)
-
-
-class TimeSeriesDatabase:
-    def execute_query(self, tsq: TimeSeriesQuery) -> pd.DataFrame:
-        pass
-
-
-class SQLTimeSeriesDatabase(TimeSeriesDatabase):
-    def execute_query(self, tsq: TimeSeriesQuery) -> pd.DataFrame:
-        params_dict = {
-            "host": 'localhost',
-            "database": 'postgres',
-            "user": 'postgres',
-            "port": '5445',
-            "password": 'hemelipasor'
-        }
-        conn = psycopg2.connect(**params_dict)
-
-        cols = ['signal_id']
-        if tsq.timestamp_variable is not None:
-            cols.append('ts')
-        if tsq.datatype == 'str':
-            cols.append('str_value')
-        elif tsq.datatype == 'real':
-            cols.append('real_value')
-        elif tsq.datatype == 'int':
-            cols.append('int_value')
-        elif tsq.datatype == 'bool':
-            cols.append('bool_value')
-
-        query = f"""SELECT {', '.join(map(lambda x: 't.' + x, cols))} FROM TSDATA t WHERE t.signal_id in ({','.join(map(str, tsq.signal_ids.to_list()))});"""
-
-        print(query)
-
-        df = pd.read_sql(query, conn)
-        rename_dict = {}
-        rename_dict['signal_id'] = str(tsq.variable_term.rdflib_term) + '_signal_id'
-        if tsq.data_variable is not None:
-            rename_dict[tsq.datatype + '_value'] = str(tsq.data_variable.rdflib_term)
-
-        if tsq.timestamp_variable is not None:
-            rename_dict['ts'] = str(tsq.timestamp_variable.rdflib_term)
-
-        df = df.rename(columns=rename_dict, errors='raise')
-        return df
