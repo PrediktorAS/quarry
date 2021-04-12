@@ -35,7 +35,6 @@ setup(
     ],
     packages=["opcua_tools"],
     include_package_data=True,
-    dependency_links=['http://github.com/PrediktorAS/opcua-tools/tarball/main#egg=opcua-tools-0.0.26'],
     install_requires=[
         "lxml>=4.6.2", "lxml<5.0",
         "pandas>=1.2.2", "pandas<2.0",
@@ -43,7 +42,7 @@ setup(
         "SPARQLWrapper>=1.8.5", "SPARQLWrapper<2.0",
         "rdflib>=5.0.0", "rdflib<6.0",
         "requests>=2.25.1", "requests<3.0",
-        "opcua-tools>=0.0.26", "opcua-tools<1.0"
+        "git+https://github.com/PrediktorAS/opcua-tools"
     ],
     tests_require=[
         "pytest>=6.2.2", "pytest<7.0.0",
