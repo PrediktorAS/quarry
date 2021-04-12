@@ -54,7 +54,7 @@ Produces the following data set:
 | ControlValveInCC |http://prediktor.com/paper_example#i_42_Value | 2021-03-25 09:31:23.218498 | 0.01 | % |
 | ControlValveInCC |http://prediktor.com/paper_example#i_42_Value | 2021-03-25 09:32:23.218498 | 0.011 | % |
 
-See the following file for this and other testcases: [tests/test_split_query.py](https://github.com/PrediktorAS/quarry/blob/main/tests/test_split_query.py)
+See the following file for this and other testcases: [tests/test_query_split.py](https://github.com/PrediktorAS/quarry/blob/main/tests/test_query_split.py)
 
 ## Usage
 ### Translation
