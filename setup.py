@@ -43,10 +43,5 @@ setup(
         "rdflib>=5.0.0", "rdflib<6.0",
         "requests>=2.25.1", "requests<3.0",
         "opcua-tools @ https://github.com/PrediktorAS/opcua-tools/tarball/main#egg=opcua-tools-0.0.26"
-    ],
-    tests_require=[
-        "pytest>=6.2.2", "pytest<7.0.0",
-        "owlrl>=5.2.1", "owlrl<6.0",
-        "psycopg2-binary>=2.8.6", "psycopg2-binary<3.0"
     ]
 )
