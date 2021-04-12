@@ -42,7 +42,7 @@ setup(
         "SPARQLWrapper>=1.8.5", "SPARQLWrapper<2.0",
         "rdflib>=5.0.0", "rdflib<6.0",
         "requests>=2.25.1", "requests<3.0",
-        "git+https://github.com/PrediktorAS/opcua-tools"
+        "opcua-tools @ https://github.com/PrediktorAS/opcua-tools/tarball/main#egg=opcua-tools-0.0.26"
     ],
     tests_require=[
         "pytest>=6.2.2", "pytest<7.0.0",
