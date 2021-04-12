@@ -22,6 +22,9 @@ We combine the results of the SPARQL query and the responses from the time serie
 ## Example
 Example goes here, soon...\
 Look at tests/test_split_query.py for an example meanwhile. 
+
+## Usage
+Under construction..
 ## Time series database support
 In the tests, a PostgreSQL docker image is used to store time series data.
 Support can however be added for other time series databases in the following way. 
