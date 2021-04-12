@@ -35,7 +35,7 @@ setup(
     ],
     packages=["opcua_tools"],
     include_package_data=True,
-    dependency_links=['https://codeload.github.com/PrediktorAS/opcua-tools/legacy.tar.gz/main#egg=opcua-tools-0.0.26'],
+    dependency_links=['http://github.com/PrediktorAS/opcua-tools/tarball/main#egg=opcua-tools-0.0.26'],
     install_requires=[
         "lxml>=4.6.2", "lxml<5.0",
         "pandas>=1.2.2", "pandas<2.0",
