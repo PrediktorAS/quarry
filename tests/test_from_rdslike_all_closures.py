@@ -17,8 +17,7 @@ import os
 import pandas as pd
 import pytest
 from rdflib import Graph
-import opcua_tools
-import swt_translator as oswt
+import swt_translator as swtt
 
 PATH_HERE = os.path.dirname(__file__)
 
@@ -28,18 +27,11 @@ def create_ttl():
     namespaces = ['http://opcfoundation.org/UA/', 'http://prediktor.com/sparql_testcase',
                   'http://prediktor.com/RDS-like-typelib/',
                   'http://opcfoundation.org/UA/IEC61850-7-3', 'http://opcfoundation.org/UA/IEC61850-7-4']
-    parse_dict = opcua_tools.parse_xml_dir(PATH_HERE + '/input_data/test_from_rdslike', namespaces=namespaces)
 
-    params_dict = {'subclass_closure': True,
-                   'subproperty_closure': True}
+    output_file = PATH_HERE + '/expected/translate_from_rdslike_all_closures/kb.ttl'
 
-    triples_dfs = oswt.build_swt(nodes=parse_dict['nodes'], references=parse_dict['references'],
-                                 lookup_df=parse_dict['lookup_df'], params_dict=params_dict)
-
-    output_file = PATH_HERE + '/expected/test_from_rdslike_all_closures/kb.ttl'
-    g = oswt.build_instance_graph(triples_dfs=triples_dfs, namespaces=namespaces, params_dict=params_dict)
-    g.serialize(destination=output_file, format='ttl', encoding='utf-8')
-
+    swtt.translate(xml_dir=PATH_HERE + '/input_data/translate_from_rdslike', namespaces=namespaces,
+                   output_ttl_file=output_file, subproperty_closure=True, subclass_closure=True)
     return output_file
 
 
@@ -66,9 +58,9 @@ def test_basic_query(set_up_rdflib):
     results = [tuple(map(str, r)) for r in res]
     df_actual = pd.DataFrame(results, columns=list(map(str, res.vars)))
 
-    # df_actual.to_csv(PATH_HERE + '/expected/test_from_rdslike_all_closures/basic_query.csv', index=False)
+    # df_actual.to_csv(PATH_HERE + '/expected/translate_from_rdslike_all_closures/basic_query.csv', index=False)
 
-    df_expected = pd.read_csv(PATH_HERE + '/expected/test_from_rdslike_all_closures/basic_query.csv')
+    df_expected = pd.read_csv(PATH_HERE + '/expected/translate_from_rdslike_all_closures/basic_query.csv')
 
     df_actual = df_actual.sort_values(by=df_actual.columns.values.tolist()).reset_index(drop=True)
     df_expected = df_expected.sort_values(by=df_actual.columns.values.tolist()).reset_index(drop=True)
@@ -88,9 +80,9 @@ def test_subclass_within_rds(set_up_rdflib):
     results = [tuple(map(str, r)) for r in res]
     df_actual = pd.DataFrame(results, columns=list(map(str, res.vars)))
 
-    # df_actual.to_csv(PATH_HERE + '/expected/test_from_rdslike_all_closures/subclass_within_rds.csv', index=False)
+    # df_actual.to_csv(PATH_HERE + '/expected/translate_from_rdslike_all_closures/subclass_within_rds.csv', index=False)
 
-    df_expected = pd.read_csv(PATH_HERE + '/expected/test_from_rdslike_all_closures/subclass_within_rds.csv')
+    df_expected = pd.read_csv(PATH_HERE + '/expected/translate_from_rdslike_all_closures/subclass_within_rds.csv')
 
     df_actual = df_actual.sort_values(by=df_actual.columns.values.tolist()).reset_index(drop=True)
     df_expected = df_expected.sort_values(by=df_actual.columns.values.tolist()).reset_index(drop=True)
@@ -110,9 +102,9 @@ def test_subclass_from_opcua(set_up_rdflib):
     results = [tuple(map(str, r)) for r in res]
     df_actual = pd.DataFrame(results, columns=list(map(str, res.vars)))
 
-    # df_actual.to_csv(PATH_HERE + '/expected/test_from_rdslike_all_closures/subclass_from_opcua.csv', index=False)
+    # df_actual.to_csv(PATH_HERE + '/expected/translate_from_rdslike_all_closures/subclass_from_opcua.csv', index=False)
 
-    df_expected = pd.read_csv(PATH_HERE + '/expected/test_from_rdslike_all_closures/subclass_from_opcua.csv')
+    df_expected = pd.read_csv(PATH_HERE + '/expected/translate_from_rdslike_all_closures/subclass_from_opcua.csv')
 
     df_actual = df_actual.sort_values(by=df_actual.columns.values.tolist()).reset_index(drop=True)
     df_expected = df_expected.sort_values(by=df_actual.columns.values.tolist()).reset_index(drop=True)
@@ -132,9 +124,9 @@ def test_subproperty_from_opcua(set_up_rdflib):
     results = [tuple(map(str, r)) for r in res]
     df_actual = pd.DataFrame(results, columns=list(map(str, res.vars)))
 
-    # df_actual.to_csv(PATH_HERE + '/expected/test_from_rdslike_all_closures/subproperty_from_opcua.csv', index=False)
+    # df_actual.to_csv(PATH_HERE + '/expected/translate_from_rdslike_all_closures/subproperty_from_opcua.csv', index=False)
 
-    df_expected = pd.read_csv(PATH_HERE + '/expected/test_from_rdslike_all_closures/subproperty_from_opcua.csv')
+    df_expected = pd.read_csv(PATH_HERE + '/expected/translate_from_rdslike_all_closures/subproperty_from_opcua.csv')
 
     df_actual = df_actual.sort_values(by=df_actual.columns.values.tolist()).reset_index(drop=True)
     df_expected = df_expected.sort_values(by=df_actual.columns.values.tolist()).reset_index(drop=True)

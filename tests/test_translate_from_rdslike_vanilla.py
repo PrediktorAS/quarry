@@ -13,13 +13,11 @@
 # limitations under the License.
 
 import os
-import opcua_tools
+
 import pandas as pd
 import pytest
-from owlrl import DeductiveClosure, OWLRL_Semantics
 from rdflib import Graph
-
-import swt_translator as oswt
+import swt_translator as swtt
 
 PATH_HERE = os.path.dirname(__file__)
 
@@ -29,31 +27,17 @@ def create_ttl():
     namespaces = ['http://opcfoundation.org/UA/', 'http://prediktor.com/sparql_testcase',
                   'http://prediktor.com/RDS-like-typelib/',
                   'http://opcfoundation.org/UA/IEC61850-7-3', 'http://opcfoundation.org/UA/IEC61850-7-4']
-    parse_dict = opcua_tools.parse_xml_dir(PATH_HERE + '/input_data/test_from_rdslike', namespaces=namespaces)
+    output_file = PATH_HERE + '/expected/translate_from_rdslike_vanilla/kb.ttl'
 
-    params_dict = {'subclass_closure': False,
-                   'subproperty_closure': False}
-
-    triples_dfs = oswt.build_swt(nodes=parse_dict['nodes'], references=parse_dict['references'],
-                                 lookup_df=parse_dict['lookup_df'], params_dict=params_dict)
-
-    output_file_ttl = PATH_HERE + '/expected/test_from_rdslike_vanilla_with_owl/kb.ttl'
-    output_file_owl = PATH_HERE + '/expected/test_from_rdslike_vanilla_with_owl/ont.owl'
-
-    g = oswt.build_instance_graph(triples_dfs=triples_dfs, namespaces=namespaces, params_dict=params_dict)
-    g2 = oswt.build_type_graph(triples_dfs=triples_dfs, namespaces=namespaces)
-    g2.serialize(destination=output_file_owl, format='pretty-xml', encoding='utf-8')
-    g.serialize(destination=output_file_ttl, format='ttl', encoding='utf-8')
-    return output_file_ttl, output_file_owl
+    swtt.translate(xml_dir=PATH_HERE + '/input_data/translate_from_rdslike', namespaces=namespaces,
+                   output_ttl_file=output_file)
+    return output_file
 
 
 @pytest.fixture
 def set_up_rdflib(create_ttl):
-    output_file_ttl, output_file_owl = create_ttl
     g = Graph()
-    g.parse(source=output_file_ttl, format='turtle')
-    g.parse(source=output_file_owl, format='xml')
-    DeductiveClosure(OWLRL_Semantics).expand(g)
+    g.parse(source=create_ttl, format='turtle')
     return g
 
 
@@ -73,9 +57,9 @@ def test_basic_query(set_up_rdflib):
     results = [tuple(map(str, r)) for r in res]
     df_actual = pd.DataFrame(results, columns=list(map(str, res.vars)))
 
-    # df_actual.to_csv(PATH_HERE + '/expected/test_from_rdslike_vanilla_with_owl/basic_query.csv', index=False)
+    # df_actual.to_csv(PATH_HERE + '/expected/translate_from_rdslike/basic_query.csv', index=False)
 
-    df_expected = pd.read_csv(PATH_HERE + '/expected/test_from_rdslike_vanilla_with_owl/basic_query.csv')
+    df_expected = pd.read_csv(PATH_HERE + '/expected/translate_from_rdslike_vanilla/basic_query.csv')
 
     df_actual = df_actual.sort_values(by=df_actual.columns.values.tolist()).reset_index(drop=True)
     df_expected = df_expected.sort_values(by=df_actual.columns.values.tolist()).reset_index(drop=True)
@@ -93,15 +77,7 @@ def test_subclass_within_rds(set_up_rdflib):
     """
     res = g.query(q)
     results = [tuple(map(str, r)) for r in res]
-    df_actual = pd.DataFrame(results, columns=list(map(str, res.vars)))
-
-    # df_actual.to_csv(PATH_HERE + '/expected/test_from_rdslike_vanilla_with_owl/subclass_within_rds.csv', index=False)
-
-    df_expected = pd.read_csv(PATH_HERE + '/expected/test_from_rdslike_vanilla_with_owl/subclass_within_rds.csv')
-
-    df_actual = df_actual.sort_values(by=df_actual.columns.values.tolist()).reset_index(drop=True)
-    df_expected = df_expected.sort_values(by=df_actual.columns.values.tolist()).reset_index(drop=True)
-    pd.testing.assert_frame_equal(df_actual, df_expected)
+    assert len(results) == 0, 'Should not do inheritance closure'
 
 
 def test_subproperty_from_opcua(set_up_rdflib):
@@ -115,16 +91,7 @@ def test_subproperty_from_opcua(set_up_rdflib):
     """
     res = g.query(q)
     results = [tuple(map(str, r)) for r in res]
-
-    df_actual = pd.DataFrame(results, columns=list(map(str, res.vars)))
-
-    # df_actual.to_csv(PATH_HERE + '/expected/test_from_rdslike_vanilla_with_owl/subproperty_from_opcua.csv', index=False)
-
-    df_expected = pd.read_csv(PATH_HERE + '/expected/test_from_rdslike_vanilla_with_owl/subproperty_from_opcua.csv')
-
-    df_actual = df_actual.sort_values(by=df_actual.columns.values.tolist()).reset_index(drop=True)
-    df_expected = df_expected.sort_values(by=df_actual.columns.values.tolist()).reset_index(drop=True)
-    pd.testing.assert_frame_equal(df_actual, df_expected)
+    assert len(results) == 0, 'Should not do inheritance closure'
 
 
 def test_attributes(set_up_rdflib):
@@ -144,9 +111,9 @@ def test_attributes(set_up_rdflib):
     results = [tuple(map(str, r)) for r in res]
     df_actual = pd.DataFrame(results, columns=list(map(str, res.vars)))
 
-    # df_actual.to_csv(PATH_HERE + '/expected/test_from_rdslike_vanilla_with_owl/attributes.csv', index=False)
+    # df_actual.to_csv(PATH_HERE + '/expected/translate_from_rdslike_vanilla/attributes.csv', index=False)
 
-    df_expected = pd.read_csv(PATH_HERE + '/expected/test_from_rdslike_vanilla_with_owl/attributes.csv')
+    df_expected = pd.read_csv(PATH_HERE + '/expected/translate_from_rdslike_vanilla/attributes.csv')
 
     df_actual = df_actual.sort_values(by=df_actual.columns.values.tolist()).reset_index(drop=True)
     df_expected = df_expected.sort_values(by=df_actual.columns.values.tolist()).reset_index(drop=True).fillna('')
@@ -166,11 +133,33 @@ def test_functional_aspect_reference(set_up_rdflib):
     results = [tuple(map(str, r)) for r in res]
     df_actual = pd.DataFrame(results, columns=list(map(str, res.vars)))
 
-    # df_actual.to_csv(PATH_HERE + '/expected/test_from_rdslike_vanilla_with_owl/functional_aspect_reference.csv', index=False)
+    # df_actual.to_csv(PATH_HERE + '/expected/translate_from_rdslike_vanilla/functional_aspect_reference.csv', index=False)
 
-    df_expected = pd.read_csv(
-        PATH_HERE + '/expected/test_from_rdslike_vanilla_with_owl/functional_aspect_reference.csv')
+    df_expected = pd.read_csv(PATH_HERE + '/expected/translate_from_rdslike_vanilla/functional_aspect_reference.csv')
 
     df_actual = df_actual.sort_values(by=df_actual.columns.values.tolist()).reset_index(drop=True)
     df_expected = df_expected.sort_values(by=df_actual.columns.values.tolist()).reset_index(drop=True).fillna('')
+    pd.testing.assert_frame_equal(df_actual, df_expected)
+
+
+def test_hierarchical_closure(set_up_rdflib):
+    g = set_up_rdflib
+    q = """
+    PREFIX iec61850ln: <http://opcfoundation.org/UA/IEC61850-7-4#>
+    PREFIX rdslike: <http://prediktor.com/RDS-like-typelib/#>
+    PREFIX opcua: <http://opcfoundation.org/UA/#>
+    PREFIX uahelpers: <http://prediktor.com/UA-helpers/#>
+    SELECT ?nodea ?nodeb WHERE {
+        ?nodea rdslike:functionalAspect+ ?nodeb .}
+    """
+    res = g.query(q)
+    results = [tuple(map(str, r)) for r in res]
+    df_actual = pd.DataFrame(results, columns=list(map(str, res.vars)))
+
+    # df_actual.to_csv(PATH_HERE + '/expected/translate_from_rdslike_vanilla/hierarchical_closure2.csv', index=False)
+
+    df_expected = pd.read_csv(PATH_HERE + '/expected/translate_from_rdslike_vanilla/hierarchical_closure.csv')
+
+    df_actual = df_actual.sort_values(by=df_actual.columns.values.tolist()).reset_index(drop=True)
+    df_expected = df_expected.sort_values(by=df_actual.columns.values.tolist()).reset_index(drop=True)
     pd.testing.assert_frame_equal(df_actual, df_expected)

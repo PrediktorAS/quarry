@@ -13,12 +13,11 @@
 # limitations under the License.
 
 import os
-import opcua_tools
 import pandas as pd
 import pytest
 from rdflib import Graph
 
-import swt_translator as oswt
+import swt_translator as swtt
 
 PATH_HERE = os.path.dirname(__file__)
 
@@ -27,18 +26,10 @@ PATH_HERE = os.path.dirname(__file__)
 def create_ttl():
     namespaces = ['http://opcfoundation.org/UA/', 'http://prediktor.com/paper_example',
                   'http://prediktor.com/RDS-OG-Fragment', 'http://prediktor.com/iec63131_fragment']
-    parse_dict = opcua_tools.parse_xml_dir(PATH_HERE + '/input_data/paper_example', namespaces=namespaces)
+    output_file = PATH_HERE + '/expected/translate_paper_example_all_closures/kb.ttl'
 
-    params_dict = {'subclass_closure': True,
-                   'subproperty_closure': True}
-
-    triples_dfs = oswt.build_swt(nodes=parse_dict['nodes'], references=parse_dict['references'],
-                                 lookup_df=parse_dict['lookup_df'], params_dict=params_dict)
-
-    output_file = PATH_HERE + '/expected/paper_example_all_closures/kb.ttl'
-    g = oswt.build_instance_graph(triples_dfs=triples_dfs, namespaces=namespaces, params_dict=params_dict)
-
-    g.serialize(destination=output_file, format='ttl', encoding='utf-8')
+    swtt.translate(xml_dir=PATH_HERE + '/input_data/translate_paper_example', namespaces=namespaces,
+                   output_ttl_file=output_file, subproperty_closure=True, subclass_closure=True)
     return output_file
 
 
@@ -78,9 +69,9 @@ def test_functional_hierarchy_query(set_up_rdflib):
     results = [tuple(map(str, r)) for r in res]
     df_actual = pd.DataFrame(results, columns=list(map(str, res.vars)))
     ltx = df_actual.to_latex(index=False)
-    df_actual.to_csv(PATH_HERE + '/expected/paper_example_all_closures/functional_hierarchy.csv', index=False)
+    df_actual.to_csv(PATH_HERE + '/expected/translate_paper_example_all_closures/functional_hierarchy.csv', index=False)
 
-    df_expected = pd.read_csv(PATH_HERE + '/expected/paper_example_all_closures/functional_hierarchy.csv')
+    df_expected = pd.read_csv(PATH_HERE + '/expected/translate_paper_example_all_closures/functional_hierarchy.csv')
 
     df_actual = df_actual.sort_values(by=df_actual.columns.values.tolist()).reset_index(drop=True)
     df_expected = df_expected.sort_values(by=df_actual.columns.values.tolist()).reset_index(drop=True)

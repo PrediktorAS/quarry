@@ -34,7 +34,6 @@ def execute_query(sparql: str, sparql_endpoint: SPARQLWrapper) -> pd.DataFrame:
     infer_types(op)
     op_for_sparql, _ = rewrite_deepcopy_for_sparql_engine(op)
     model_sparql = op_to_query(op_for_sparql)
-    print(model_sparql)
     sparql_endpoint.setQuery(model_sparql)
     sparql_endpoint.setReturnFormat(JSON)
     static_dict = sparql_endpoint.query().convert()

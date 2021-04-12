@@ -12,6 +12,4 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-from .graph_builder import build_instance_graph
-from .graph_builder import build_type_graph
-from .swt_builder import build_swt
+from .translator import translate
