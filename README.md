@@ -1,5 +1,5 @@
 # Quarry
-This repository provides prototype tools for: 
+This repository provides prototype Python tools for: 
 - translating OPC UA NodeSet2 XML files to semantic web technologies (SWT) 
 - jointly querying OPC UA information models in a SPARQL database and data in a time series database
 
