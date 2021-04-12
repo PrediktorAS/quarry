@@ -99,7 +99,7 @@ execute_query(sparql: str,
 
 ##### Time series database support
 In the tests, a PostgreSQL docker image is used to store time series data.
-See [this file](https://github.com/PrediktorAS/quarry/blob/main/tests/SQLTimeSeriesDatabase.py) for a sample implementation for PostgreSQL.
+See [this file](https://github.com/PrediktorAS/quarry/blob/main/tests/postgresql_time_series_database.py) for a sample implementation for PostgreSQL.
 
 ## Known issues
 - We currently do not implement a SPARQL endpoint as this is outside of the scope of the prototype. 
