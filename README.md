@@ -20,8 +20,41 @@ We use [SPARQLWrapper](https://github.com/RDFLib/sparqlwrapper) and wrap the SPA
 The modified SPARQL query is sent to this endpoint. Based on the response from this endpoint and the original query, one or more queries targeting a time series database is produced.
 We combine the results of the SPARQL query and the responses from the time series database using [Pandas](https://github.com/pandas-dev/pandas) to produce the full result.
 ## Example
-Example goes here, soon...\
-Look at tests/test_split_query.py for an example meanwhile. 
+Our example is based on figure 11 on page 18 of the [READI-JIP O&G Manual 1st. revision](https://readi-jip.org/wp-content/uploads/2020/06/RDS-OG-Manual-revision-1st-revision-2020-06-19.pdf), which is an adaptation of the Reference Designation System to the Oil and Gas Sector. 
+We are querying a Jena Fuseki SPARQL endpoint, and we have time series data in a PostgreSQL database.
+
+```
+q = """
+    PREFIX rdsog: 
+    <http://prediktor.com/RDS-OG-Fragment#>
+    PREFIX opcua: 
+    <http://opcfoundation.org/UA/#>
+    PREFIX uahelpers: 
+    <http://prediktor.com/UA-helpers/#>
+    SELECT  ?cvalveName ?cayValue ?ts ?rv ?cayEU WHERE {
+        ?injSystem a rdsog:InjectionSystemType.
+        ?injSystem rdsog:functionalAspect+ ?cvalve. 
+        ?cvalve a rdsog:LiquidControlValveType.
+        ?cvalve opcua:displayName ?cvalveName.
+        ?cvalve opcua:hierarchicalReferences ?cay.
+        ?cay opcua:browseName "CA_Y".
+        ?cay opcua:value ?cayValue.
+        ?cayValue opcua:hasEngineeringUnit ?cayEU.
+        ?cayValue opcua:realValue ?rv.
+        ?cayValue opcua:timestamp ?ts.
+        FILTER (?rv < 0.06 && ?ts >= "2021-03-25T09:30:23.218499"^^xsd:dateTime)
+        }
+    """
+df = quarry.execute_query(q, sparql_endpoint, pg_time_series_database).reset_index(drop=True)
+```
+Produces the following data set:
+
+| cvalveName | cayValue | ts | rv | cayEU |
+| ---------------- |--------------------------------------------- | -------------------------- | ---- | - |
+| ControlValveInCC |http://prediktor.com/paper_example#i_42_Value | 2021-03-25 09:31:23.218498 | 0.01 | % |
+| ControlValveInCC |http://prediktor.com/paper_example#i_42_Value | 2021-03-25 09:32:23.218498 | 0.011 | % |
+
+See the following file for this and other testcases: [tests/test_split_query.py](https://github.com/PrediktorAS/quarry/blob/main/tests/test_split_query.py)
 
 ## Usage
 ### Translation
@@ -66,9 +99,7 @@ execute_query(sparql: str,
 
 ##### Time series database support
 In the tests, a PostgreSQL docker image is used to store time series data.
-Support can however be added for other time series databases in the following way. 
-
-... TBD
+See [this file](https://github.com/PrediktorAS/quarry/blob/main/tests/SQLTimeSeriesDatabase.py) for a sample implementation for PostgreSQL.
 
 ## Known issues
 - We currently do not implement a SPARQL endpoint as this is outside of the scope of the prototype. 
@@ -80,4 +111,3 @@ Exceptions apply to some of the test data (see document headers for license info
 
 Author:
 [Magnus Bakken](mba@prediktor.com)
-
