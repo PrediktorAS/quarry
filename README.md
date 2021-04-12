@@ -4,7 +4,7 @@ This repository provides prototype Python tools for:
 - jointly querying OPC UA information models in a SPARQL database and data in a time series database
 
 This allows the addition of information models to existing time series database / data lake / historian infrastructure.\
-The code is part of a (hopefully!) forthcoming paper. 
+The code is part of a (hopefully!) forthcoming paper. The translation from OPC UA to SWT is documented in this paper.
 ## Overview
 ### Translation
 First, OPC UA NodeSet2 xml files corresponding to OPC UA Information Models are parsed. We translate to the Semantic Web corresponding to the translation described in the associated paper. 
