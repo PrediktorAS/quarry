@@ -56,6 +56,15 @@ Produces the following data set:
 
 See the following file for this and other testcases: [tests/test_query_split.py](https://github.com/PrediktorAS/quarry/blob/main/tests/test_query_split.py)
 
+## Installation
+```
+pip install git+pip install git+https://github.com/PrediktorAS/quarry.git
+```
+If you want to run the tests, you need to install some additional dependencies.
+After cloning, in the repo directory:
+```
+pip install -r tests/requirements.txt
+```
 ## Usage
 ### Translation
 To translate import the swt_translator package and call the translate function.
