@@ -24,7 +24,7 @@ setup(
     description="SPARQL queries over OPC UA Information models and time series databases",
     long_description=README,
     long_description_content_type="text/markdown",
-    url="https://github.com/mbapred/quarry",
+    url="https://github.com/PrediktorAS/quarry",
     author="Magnus Bakken",
     author_email="mba@prediktor.com",
     license="Apache License 2.0",
