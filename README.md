@@ -58,7 +58,7 @@ See the following file for this and other testcases: [tests/test_query_split.py]
 
 ## Installation
 ```
-pip install git+pip install git+https://github.com/PrediktorAS/quarry.git
+pip install git+https://github.com/PrediktorAS/quarry.git
 ```
 If you want to run the tests, you need to install some additional dependencies.
 After cloning, in the repo directory:
