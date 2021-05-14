@@ -35,6 +35,7 @@ def execute_query(sparql: str, sparql_endpoint: SPARQLWrapper, time_series_datab
     infer_types(op)
     op_for_sparql, _ = rewrite_deepcopy_for_sparql_engine(op)
     model_sparql = op_to_query(op_for_sparql)
+    print(model_sparql)
     sparql_endpoint.setQuery(model_sparql)
     sparql_endpoint.setReturnFormat(JSON)
     static_dict = sparql_endpoint.query().convert()
@@ -53,7 +54,7 @@ def execute_query(sparql: str, sparql_endpoint: SPARQLWrapper, time_series_datab
     filtered_dropcols = [c for c in dropmore + dropvars if c in static_df.columns.values]
     static_df = static_df.drop(columns=filtered_dropcols)
 
-    result_df = generate_select_result(op, static_df, tsqs)
+    result_df, _ = generate_select_result(op, static_df, tsqs)
 
     return result_df
 

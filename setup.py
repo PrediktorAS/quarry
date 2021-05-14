@@ -20,7 +20,7 @@ README = (HERE / "README.md").read_text()
 
 setup(
     name="quarry",
-    version="0.0.2",
+    version="0.0.3",
     description="SPARQL queries over OPC UA Information models and time series databases",
     long_description=README,
     long_description_content_type="text/markdown",
@@ -42,6 +42,6 @@ setup(
         "SPARQLWrapper>=1.8.5", "SPARQLWrapper<2.0",
         "rdflib>=5.0.0", "rdflib<6.0",
         "requests>=2.25.1", "requests<3.0",
-        "opcua-tools @ https://github.com/PrediktorAS/opcua-tools/tarball/main#egg=opcua-tools-0.0.26"
+        "opcua-tools @ https://github.com/PrediktorAS/opcua-tools/tarball/main#egg=opcua-tools-0.0.30"
     ]
 )

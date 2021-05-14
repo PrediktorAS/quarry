@@ -59,11 +59,11 @@ def from_comp_value(name, cv: CompValue, children_operators: Set[Operator], term
     else:
         expressions = set()
 
-    if cv.name in {'SelectQuery', 'Project', 'LeftJoin'}:
+    if cv.name in {'SelectQuery', 'Project', 'LeftJoin', 'Join', 'Distinct'}:
         triples = set()
         operator = Operator(name=name, type=cv.name, children=children_operators,
                             triples=triples, expressions=expressions)
-        if cv.name == 'SelectQuery':
+        if cv.name in {'Project'}:
             operator.project_vars = [from_rdflib_term(v, term_dict) for v in cv['PV']]
         return operator
     elif cv.name in {'BGP'}:
@@ -72,7 +72,9 @@ def from_comp_value(name, cv: CompValue, children_operators: Set[Operator], term
 
         return Operator(name=name, type=cv.name, children=children_operators,
                         triples=triples, expressions=expressions)
-    elif cv.name in {'Filter'}:
+    elif cv.name in {'Filter', 'ToMultiSet'}:
+        if cv.name == 'ToMultiSet':
+            print('hi')
         triples = set()
         return Operator(name=name, type=cv.name, children=children_operators, triples=triples, expressions=expressions)
     else:

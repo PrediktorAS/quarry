@@ -77,7 +77,7 @@ def rewrite_deepcopy_for_sparql_engine(op: Operator):
             mandatory_triples.add(copy.deepcopy(trip))
 
     new_op = Operator(type=op.type, name=op.name, triples=mandatory_triples, children=rewritten_children)
-    if op.type == 'SelectQuery':
+    if op.type == 'Project':
         filtered_project_vars = [p for p in op.project_vars if
                                  len(p.constraints.intersection({TermConstraint.IS_TIMESTAMP,
                                                                  TermConstraint.IS_EXTERNAL_DATA_VALUE})) == 0]

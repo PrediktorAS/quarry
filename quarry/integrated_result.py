@@ -31,12 +31,22 @@ def generate_select_result(op: Operator, static_df: pd.DataFrame, tsqs: List[Tim
     for c in op.children:
         df, tsqs = generate_result_delegate(c, df, tsqs)
 
-    cols = [str(pv.rdflib_term) for pv in op.project_vars]
+    return df, tsqs
 
-    assert len(tsqs) == 0, 'Should always be 0 after processing'
+def generate_distinct(op: Operator, static_df: pd.DataFrame, tsqs: List[TimeSeriesQuery]) -> pd.DataFrame:
+    #TODO drop duplicates
+    df = static_df.copy()
+    for c in op.children:
+        df, tsqs = generate_result_delegate(c, df, tsqs)
 
-    return df[cols].copy()
+    return df, tsqs
 
+def generate_project(op: Operator, df: pd.DataFrame, tsqs: List[TimeSeriesQuery]) -> pd.DataFrame:
+    for c in op.children:
+        df, tsqs = generate_result_delegate(c, df, tsqs)
+
+    cols = [str(pv.rdflib_term) for pv in op.project_vars if str(pv.rdflib_term) in df.columns.values]
+    return df[cols].copy(), tsqs
 
 def generate_result_delegate(op: Operator, df: pd.DataFrame, tsqs: List[TimeSeriesQuery]) -> Tuple[
     pd.DataFrame, List[TimeSeriesQuery]]:
@@ -46,9 +56,14 @@ def generate_result_delegate(op: Operator, df: pd.DataFrame, tsqs: List[TimeSeri
         return generate_bgp(op, df, tsqs)
     elif op.type == 'Filter':
         return generate_filter(op, df, tsqs)
+    elif op.type == 'Join':
+        return generate_join(op, df, tsqs)
     elif op.type == 'Project':
-        # TODO: perhaps not so smart to skip a level here..
-        return generate_result_delegate(next(c for c in op.children), df, tsqs)
+        return generate_project(op, df, tsqs)
+    elif op.type == 'ToMultiSet':
+        return generate_bgp(op, df, tsqs) #TODO: Probably also stupid
+    elif op.type == 'Distinct':
+        return generate_distinct(op, df, tsqs) #TODO: Fix properly
     else:
         raise NotImplementedError(op.type)
 
@@ -67,6 +82,22 @@ def generate_left_join(op: Operator, df: pd.DataFrame, tsqs: List[TimeSeriesQuer
     df_rhs, tsqs_rhs = generate_result_delegate(op=p2_child, df=df, tsqs=tsqs_lhs)  # TODO: Check if correct..
     rhs_newcols = [c for c in df_rhs.columns.values if c not in df_lhs.columns.values]
     df = df_lhs.set_index(join_col).join(df_rhs.set_index(join_col)[rhs_newcols], how='left')
+    return df, tsqs_rhs
+
+def generate_join(op: Operator, df: pd.DataFrame, tsqs: List[TimeSeriesQuery]) -> Tuple[
+    pd.DataFrame, List[TimeSeriesQuery]]:
+    p1_child = [c for c in op.children if c.name == 'p1'][0]
+    p2_child = [c for c in op.children if c.name == 'p2'][0]
+
+    global join_ind
+    join_col = 'my_special_join_col' + str(join_ind)
+    df[join_col] = range(len(df))
+    join_ind += 1
+
+    df_lhs, tsqs_lhs = generate_result_delegate(op=p1_child, df=df, tsqs=tsqs)
+    df_rhs, tsqs_rhs = generate_result_delegate(op=p2_child, df=df, tsqs=tsqs_lhs)  # TODO: Check if correct..
+    rhs_newcols = [c for c in df_rhs.columns.values if c not in df_lhs.columns.values]
+    df = df_lhs.set_index(join_col).join(df_rhs.set_index(join_col)[rhs_newcols], how='inner')
     return df, tsqs_rhs
 
 
