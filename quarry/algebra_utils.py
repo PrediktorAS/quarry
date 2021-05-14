@@ -73,8 +73,6 @@ def from_comp_value(name, cv: CompValue, children_operators: Set[Operator], term
         return Operator(name=name, type=cv.name, children=children_operators,
                         triples=triples, expressions=expressions)
     elif cv.name in {'Filter', 'ToMultiSet'}:
-        if cv.name == 'ToMultiSet':
-            print('hi')
         triples = set()
         return Operator(name=name, type=cv.name, children=children_operators, triples=triples, expressions=expressions)
     else:
@@ -106,6 +104,4 @@ def from_rdflib_term(t, term_dict) -> Term:
 
 def find_children(q: CompValue) -> List[Tuple[Any, Any]]:
     children = [(p, q[p]) for p in q if p.startswith('p')]
-    if None in children:
-        print('Hello')
     return children

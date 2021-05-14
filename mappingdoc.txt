@@ -1,0 +1,85 @@
+\subsection{Translation of namespaces}
+The concept of namespaces corresponds in OPC UA information models corresponds to a great degree to namespaces in the semantic web. The mapping is therefore 1:1. We will use the "opcua:"-prefix to denote the namespace associated with "http://opcfoundation.org/UA/". We use the "ex:"-prefix to denote an example namespace containing instances. 
+\subsection{Unique resource identifiers}
+Variable and object nodes belonging to instance-level namespaces are translated in the following way. URIs are composed of the namespace URI, the NodeId type and the NodeId value, a combination which is guaranteed to be unique. For instance the NodeId "ns=1;i=19" where the namespace with index 1 is "https://example.org/" is translated to the URI:"https://example.org/\#i=19".
+
+We assume that the DisplayName attribute of object types, data types, variable types and reference types are unique for all nodes in a namespace. This assumption is required in order to give the types and properties of the translated OPC UA information models user friendly names such as opcua:hierarchicalReferences and opcua:FolderType instead of basing these on the strictly unique but opaque NodeIds "i=33"; and "i=61" respectively. The first character of the UA reference type displaynames is lowercased, as these are translated to properties in RDF.
+
+According to the OPC UA specification, DisplayNames are localized \cite[Part 3, 5.2.5]{opcua}, so this approach may not be appropriate in a multilingual setting, following the guidelines in \cite{styleguide}.  
+\subsection{Translation of type level nodes and references}
+In OPC UA, nodes defining types refer to instances in the type namespace that encode what their instances should look like \cite[Part 3]{opcua}. If these were included, users querying for all instances of a type would get the proper instances of a type, but also the prototypical instances that are used only to describe the type, and not to describe reality. To avoid such confusion, no translation of this part of OPC UA type namespaces is given. The only part of the type namespaces that is translated is type hierarchies for objects, variables, data types and references. 
+
+In order to to exploit RDF-native typing, the OPC UA references of type HasSubtype is translated in a piecewise way to rdf:subClassOf and rdf:subPropertyOf respectively. I.e. we translate a reference from $B$ to $A$ of the HasSubtype reference type to:
+\begin{enumerate}
+\item $T(A)$ rdf:subClassOf $T(B)$ \\if A and B are UA object types, UA data types or UA variable types\\
+\item $T(A)$ rdf:subPropertyOf $T(B)$ \\if A and B are UA reference types
+\end{enumerate}
+Where $T$ designates the transformation of UA Nodes and References to URIs in the semantic web. 
+An example of 1 is given in figure \ref{fig:trans_subtype} and an example of 2 is given in figure \ref{fig:trans_subrel}.
+\begin{figure}[!htb]
+\centering
+\scalebox{0.9}{
+\begin{tikzpicture}[node distance=1.6cm, scale=0.95, every node/.style={scale=0.95}]
+\node (baseot) [process, text width=3.6cm] {BaseObjectType\\(from OPC UA spec.)};
+\node (system) [process, below of=baseot, text width=3.6cm] {SystemType};
+\draw [arrow] (baseot) -- node[left] {HasSubtype} (system);
+%\node (ogsys) [process, below of=system, xshift=-5cm] {OilAndGasSystemType};
+\node (baseot_swt) [elli, right of=baseot, xshift=2.85cm] {opcua:BaseObjectType};
+\node (system_swt) [elli, right of=system, xshift=2.85cm] {rdsog:SystemType};
+\draw [arrow] (system_swt) -- node[right] {rdfs:subClassOf} (baseot_swt);
+
+
+\draw [darrow] (baseot) -- (baseot_swt);
+\draw [darrow] (system) -- (system_swt);
+\draw [darrow] ($(baseot)!.5!(system)$) -- ($(baseot_swt)!.5!(system_swt)$);
+
+\end{tikzpicture}
+}
+\caption{Example translation of part of the ObjectType hierarchy in OPC UA. Note that this part of the translation is reverses arrows.}
+
+\label{fig:trans_subtype}
+\end{figure}
+
+\begin{figure}[!htb]
+\centering
+\scalebox{0.9}{
+\begin{tikzpicture}[node distance=1.6cm, scale=0.95, every node/.style={scale=0.95}]
+\node (hco) [process, text width=3.6cm] {HasComponent (from OPC UA Spec.)};
+\node (fasp) [process, below of=hco, text width=3.6cm] {FunctionalAspect};
+\draw [arrow] (hco) -- node[left] {HasSubtype} (fasp);
+
+\node (hco_swt) [elli, right of=hco, xshift=2.85cm] {opcua:hasComponent};
+\node (fasp_swt) [elli, right of=fasp, xshift=2.85cm] {rdsog:functionalAspect};
+\draw [arrow] (fasp_swt) -- node[right] {rdfs:subPropertyOf} (hco_swt);
+
+
+\draw [darrow] (hco) -- (hco_swt);
+\draw [darrow] (fasp) -- (fasp_swt);
+\draw [darrow] ($(hco)!.5!(fasp)$) -- ($(hco_swt)!.5!(fasp_swt)$);
+
+\end{tikzpicture}
+}
+\caption{Example translation of part of the ReferenceType hierarchy in OPC UA. Note that this part of the translation is reverses arrows.}
+
+\label{fig:trans_subrel}
+\end{figure}
+We provide the possibility of deriving important implied triples following RDFS semantics \cite{rdfsem}. If we have the triple ex:i=29 rdf:type opcua:AnalogItemType, we also have ex:i=29 rdf:type opcua:BaseDataVariableType, since the AnalogItemType is a subtype of the BaseDataVariableType in OPC UA. If we have the triple ex:i=28 opcua:hasComponent ex:i=29, we also have ex:i=28 opcua:hierarchicalReferences ex:i=29, since the HasComponent reference type is a subtype of the HierarchicalReferences reference type. Alternatively, a database supporting RDFS inferencing may derive this itself by virtue of RDFS semantics attached to rdfs:subClassOf and rdfs:subPropertyOf. 
+\subsection{Translation of instance level nodes and references}
+The UA reference types HasTypeDefinition and HasInterface determine the type and interfaces of a OPC UA node, and are both translated to rdf:type. I.e. if $A$ HasTypeDefinition $B$ in OPC UA, then $T(A),\text{rdf:type},T(B)$. In our query examples we will use the established abbreviation "a" to mean rdf:type.
+
+UA References that are between UA nodes in instance namespaces are translated in the following straightforward way. If $A$ has a reference $R$ of reference type $RT$ to $B$, then $(T(A)$, $T(RT)$, $T(B))$. So if we have a reference of the type Organizes from "i=85" (ns=0 is omitted) to "ns=1;i=19", we translate this to a triple: opcua:i=85 opcua:organizes ex:i=19
+\subsection{Translation of node attributes}
+NodeClass, NodeId, DisplayName, BrowseName, and Description attributes are translated to a string-valued data properties opcua:nodeClass, opcua:nodeId, opcua:displayName, opcua:browseName and opcua:description. Browsenames are prefixed with namespaces. This prefix is an integer corresponding to a namespace, and is removed from the string representation of the browse name. The translation introduces a property  opcua:browseNameNamespace that links OPC UA nodes to the resource corresponding to the namespace of their browsename. 
+
+\iffalse
+NodeId attributes are encoded as four properties: 
+\begin{itemize}
+\item opcua:nodeId which is the original NodeId encoded as a string. 
+\item opcua:namespace which associates nodes with the resource corresponding to their namespace.
+\item opcua:nodeIdValue which is the string representation of the NodeId.
+\item opcua:nodeIdType which is one of the strings "NUMERIC", "STRING", "GUID" or "OPAQUE" 
+\end{itemize}
+This is done in order to avoid the need for regular expressions to extract these parts inside queries. 
+\fi
+
+The translation of the Value attribute is described in detail in the next section. Other attributes exist in OPC UA, but have not been prioritized in the present realization. 
