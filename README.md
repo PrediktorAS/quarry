@@ -119,4 +119,5 @@ The code in this repository is copyrighted to [Prediktor AS](http://prediktor.co
 Exceptions apply to some of the test data (see document headers for license information). 
 
 Author:
-[Magnus Bakken](mba@prediktor.com)
+[Magnus Bakken](https://magbak.github.io)
+

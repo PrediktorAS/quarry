@@ -112,7 +112,7 @@ def to_multiset_to_query(op:Operator):
     return query
 
 def triple_string(triple: Triple):
-    return term_string(triple.subject) + ' ' + term_string(triple.verb) + ' ' + term_string(triple.object) + '.\n'
+    return term_string(triple.subject) + ' ' + term_string(triple.verb) + ' ' + term_string(triple.object) + ' .\n'
 
 
 def term_string(term: Term):

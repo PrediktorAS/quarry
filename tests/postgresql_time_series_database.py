@@ -46,6 +46,7 @@ class SQLTimeSeriesDatabase(TimeSeriesDatabase):
             rename_dict[tsq.datatype + '_value'] = str(tsq.data_variable.rdflib_term)
 
         if tsq.timestamp_variable is not None:
+            df['ts'] = pd.DatetimeIndex(df['ts']).tz_localize('UTC')
             rename_dict['ts'] = str(tsq.timestamp_variable.rdflib_term)
 
         df = df.rename(columns=rename_dict, errors='raise')
