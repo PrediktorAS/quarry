@@ -156,7 +156,7 @@ SELECT  ?cvalveName ?ts ?rv WHERE {
     actual_df = quarry.execute_query(q, sparql_endpoint, pg_time_series_database).reset_index(drop=True)
     #actual_df.to_csv(PATH_HERE + '/expected/query_split/basic2.csv', index=False)
     expected_df = pd.read_csv(PATH_HERE + '/expected/query_split/basic.csv')
-    expected_df['ts'] =  pd.DatetimeIndex(expected_df['ts']).tz_localize('UTC')
+    expected_df['ts'] = pd.to_datetime(expected_df['ts'])
     #ltx = actual_df.to_latex(index=False)
     #print(ltx)
     pd.testing.assert_frame_equal(actual_df, expected_df)
@@ -213,7 +213,7 @@ def test_timestamp(sparql_endpoint, pg_time_series_database):
     actual_df = quarry.execute_query(q, sparql_endpoint, pg_time_series_database).reset_index(drop=True)
     #actual_df.to_csv(PATH_HERE + '/expected/query_split/timestamp2.csv', index=False)
     expected_df = pd.read_csv(PATH_HERE + '/expected/query_split/timestamp.csv')
-    expected_df['ts'] = pd.DatetimeIndex(expected_df['ts']).tz_localize('UTC')
+    expected_df['ts'] = pd.to_datetime(expected_df['ts'])
     pd.testing.assert_frame_equal(actual_df, expected_df)
 
 def test_timestamp_sync(sparql_endpoint, timeseriesdata, pg_time_series_database):
@@ -247,5 +247,5 @@ def test_timestamp_sync(sparql_endpoint, timeseriesdata, pg_time_series_database
     actual_df = quarry.execute_query(q, sparql_endpoint, pg_time_series_database).reset_index(drop=True)
     #actual_df.to_csv(PATH_HERE + '/expected/query_split/timestamp_sync2.csv', index=False)
     expected_df = pd.read_csv(PATH_HERE + '/expected/query_split/timestamp_sync.csv')
-    expected_df['ts'] =  pd.DatetimeIndex(expected_df['ts']).tz_localize('UTC')
+    expected_df['ts'] = pd.to_datetime(expected_df['ts'])
     pd.testing.assert_frame_equal(actual_df, expected_df)
